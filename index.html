@@ -6,14 +6,60 @@
 </head>
 <body>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu de Navegação</title>
-</head>
-<body>
+  <style>
+    :root {
+      color-scheme: light;
+      --azul-escuro: #123b68;
+      --azul: #1769aa;
+      --azul-claro: #eaf4ff;
+      --texto: #18324b;
+      --branco: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
+    }   
+  header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 5vw, 2.4rem);
+    }
+    header p {
+      margin: 0;
+      color: #e2f0ff;
+    }
+    .menu {
+      display: grid;
+      gap: 12px;
+    }
+    .menu-item {
+      overflow: hidden;
+      border: 1px solid #d5e6f7;
+      border-radius: 12px;
+      background: var(--branco);
+      box-shadow: 0 3px 12px #123b680d;
+    }
+    .menu-item summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 17px 20px;
+      color: var(--azul-escuro);
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+    }
+    .menu-item[open] summary {
+      background: var(--azul-claro);
+    }
+  </style>
 <nav class="navbar">
 <h2>MANUAL</h2>
 
@@ -143,7 +189,5 @@
       </li>
     </ul>
   </nav>
-
-
 </body>
 </html>
