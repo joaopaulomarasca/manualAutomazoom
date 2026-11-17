@@ -1,195 +1,205 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sensor Analógico</title>
 </head>
 <body>
-    5.1	SENSOR ANALÓGICO
 
-5.1.1	FACEPLATE
+<h1>5.1 SENSOR ANALÓGICO</h1>
+
+<h2>5.1.1 FACEPLATE</h2>
+
+<p>
+Cada sensor analógico possui um painel com informações básicas do equipamento,
+conforme apresentado na FIGURA 25. Ao clicar no painel, é possível acessar sua tela de operação.
+</p>
+
+<p><strong>FIGURA 25: PAINEL DE INFORMAÇÕES RESUMIDAS SENSOR ANALÓGICO.</strong></p>
+
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Nome do equipamento.</td></tr>
+    <tr><td>2</td><td>Valor real medido.</td></tr>
+    <tr><td>3</td><td>Unidade de medida.</td></tr>
+    <tr><td>4</td><td>Indicador de sinal real forçado.</td></tr>
+</table>
+
+<p><strong>TABELA 25: ÍCONES DO PAINEL SENSOR ANALÓGICO.</strong></p>
+
+<hr>
+
+<h2>5.1.2 OPERAÇÃO</h2>
+
+<p>
+A tela de operação possui duas guias, que apresentam informações do sensor
+e permitem realizar algumas configurações conforme o nível de acesso do usuário.
+</p>
+
+<p><strong>FIGURA 26: TELA OPERAÇÃO GUIA 01 - SENSOR ANALÓGICO.</strong></p>
+
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Acessa a aba de operação.</td></tr>
+    <tr><td>2</td><td>Acessa a aba de parâmetros.</td></tr>
+    <tr><td>3</td><td>Acessa a aba de mensageria.</td></tr>
+    <tr><td>4</td><td>Nome da aba atual.</td></tr>
+    <tr><td>5</td><td>Nome do sensor.</td></tr>
+    <tr><td>6</td><td>Descrição do sensor.</td></tr>
+    <tr><td>7</td><td>Valor de offset atual.</td></tr>
+    <tr><td>8</td><td>Valor real forçado.</td></tr>
+    <tr><td>9</td><td>Habilita ou desabilita o valor forçado.</td></tr>
+    <tr><td>10</td><td>Indicador gráfico do valor real e das faixas de alarme.</td></tr>
+    <tr><td>11</td><td>Valor real de saída.</td></tr>
+    <tr><td>12</td><td>Indicação do alarme ativo.</td></tr>
+    <tr><td>13</td><td>Acessa a segunda guia.</td></tr>
+    <tr><td>14</td><td>Fecha o pop-up.</td></tr>
+</table>
+
+<p><strong>TABELA 26: ÍCONES DA TELA DE OPERAÇÃO GUIA 01.</strong></p>
 
-Para cada sensor analógico existente no sistema, há um painel de informações resumidas, referente a este. Este painel pode ser observado na FIGURA 25.
-O painel tem o intuito de dar informações básicas do status do sensor analógico, assim como dar acesso à tela de operação do respectivo equipamento, para isso basta clicar sobre ela.  Na TABELA 25 há uma descrição de cada ícone de status.
+<p><strong>FIGURA 27: TELA OPERAÇÃO GUIA 02 - SENSOR ANALÓGICO.</strong></p>
 
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Habilita ou desabilita os alarmes.</td></tr>
+    <tr><td>2</td><td>Campos para configurar os limites dos alarmes.</td></tr>
+    <tr><td>3</td><td>Retorna à guia 01.</td></tr>
+</table>
 
+<p><strong>TABELA 27: ÍCONES DA TELA DE OPERAÇÃO GUIA 02.</strong></p>
 
- 
-FIGURA 25: PAINEL DE INFORMAÇÕES RESUMIDAS SENSOR ANALÓGICO.
+<hr>
 
+<h2>5.1.3 PARÂMETROS</h2>
 
-ÍCONES FACEPLATE SENSOR ANALÓGICO
-1	Nome do Equipamento.
-2	Valor real medido.
-3	Unidade de medida configurada.
-4	Indicador de sinal real forçado.
-TABELA 25: ÍCONES PAINEL DE INFORMAÇÕES RESUMIDAS SINAL ANALÓGICO.
+<p>
+Nesta tela são configurados os valores máximos e mínimos, escala, offset,
+unidade de medida e filtro digital do sensor.
+</p>
 
-5.1.2	OPERAÇÃO
+<p>
+Também é possível configurar o modo acumulador, selecionar o tipo de acumulação,
+definir sua unidade de medida e zerar o valor acumulado.
+</p>
 
-Esta primeira tela da pop up possui duas guias (FIGURA 26 e FIGURA 27). Nela são mostradas algumas informações resumidas das leituras do sensor, além disso também possibilita realizar algumas configurações simples (tendo o acesso adequado para tal).
-As informações sobre as guias serão apresentadas na TABELA 26 e TABELA 27.
+<p>
+Essas configurações são permitidas apenas para usuários de manutenção ou administração.
+</p>
 
- FIGURA 26: TELA OPERAÇÃO GUIA 01 - POP UP SENSOR ANALÓGICO
+<p><strong>FIGURA 28: TELA PARÂMETROS GUIA 01 - SENSOR ANALÓGICO.</strong></p>
 
-ÍCONES TELA DE OPERAÇÃO GUIA 01 - SENSOR ANALÓGICO
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Valor analógico de entrada no CLP.</td></tr>
+    <tr><td>2</td><td>Valor de saída dentro da escala definida.</td></tr>
+    <tr><td>3</td><td>Inversão de escala.</td></tr>
+    <tr><td>4</td><td>Valor máximo da escala real.</td></tr>
+    <tr><td>5</td><td>Valor mínimo da escala real.</td></tr>
+    <tr><td>6</td><td>Configuração do offset.</td></tr>
+    <tr><td>7</td><td>Valor mínimo da escala analógica.</td></tr>
+    <tr><td>8</td><td>Valor máximo da escala analógica.</td></tr>
+    <tr><td>9</td><td>Seleção da unidade de medida.</td></tr>
+    <tr><td>10</td><td>Acessa a guia 02.</td></tr>
+</table>
 
-1	Botão abre aba de operação.
-2	Botão abre aba de parâmetros.
-3	Botão abre aba de mensageria.
-4	Nome da aba atual.
-5	Nome do sensor.
-6	Descrição do sensor.
-7	Display valor de offset atual.
-8	Display valor real forçado quando está com o fundo preto e letra branca. Se for habilitado o valor forçado ficará com fundo branco e letra preta, permitindo então a alteração do valor.
-9	Botão habilita/desabilita valor real forçado.
-10	Indicador visual em formato de GAUGE. Segue uma dinamização em relação aos valores máximos e mínimos do valor real de saída que forem configurados, apresentando assim uma visão gráfica de quão alto ou quão baixo o valor atual é em referência a escala permitida. Caso os alarmes estejam habilitados o medidor trocará de cor conforme chegar nas faixas de alarme, sendo amarelo para valores altos (HI) e baixos (LO), vermelho para valores muito altos (HIHI) e muito baixos (LOLO). Caso o valor medido esteja entre os valores baixo e alto determinados a cor se manterá azul.
-11	Valor real de saída.
-12	Indicador de alarme, o texto modifica dependendo do alarme ativo (Nível alto, baixo, muito alto ou muito baixo).
-13	Botão abre a segunda guia da tela de operação.
-14	Botão fechar pop up
+<p><strong>TABELA 28: ÍCONES DA TELA DE PARÂMETROS GUIA 01.</strong></p>
 
-TABELA 26: ÍCONES TELA OPERAÇÃO GUIA 01 - SENSOR ANALÓGICO.
+<p><strong>FIGURA 29: TELA PARÂMETROS GUIA 02 - SENSOR ANALÓGICO.</strong></p>
 
- FIGURA 27: TELA OPERAÇÃO GUIA 02 - POP UP SENSOR ANALÓGICO
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Ativa o filtro digital.</td></tr>
+    <tr><td>2</td><td>Configura o intervalo entre as amostras.</td></tr>
+    <tr><td>3</td><td>Define o número de amostras.</td></tr>
+    <tr><td>4</td><td>Retorna à guia 01.</td></tr>
+    <tr><td>5</td><td>Acessa a guia 03.</td></tr>
+</table>
 
-ÍCONES TELA DE OPERAÇÃO GUIA 02 - SENSOR ANALÓGICO
+<p><strong>TABELA 29: ÍCONES DA TELA DE PARÂMETROS GUIA 02.</strong></p>
 
-1	Botões habilita/desabilita geração de alarmes. (habilita/desabilita o alarme ao seu lado).
-2	Campo para digitar os valores limites para cada alarmes (acima de tal valor será considerado nível alto ou muito alto, e, abaixo de tal valor será considerado nível baixo ou muito baixo).
-3	Botão abre a guia 01 da tela de operação.
+<p><strong>FIGURA 30: TELA PARÂMETROS GUIA 03 - SENSOR ANALÓGICO.</strong></p>
 
-TABELA 27: ÍCONES TELA OPERAÇÃO GUIA 02 - SENSOR ANALÓGICO.
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à guia 02.</td></tr>
+    <tr><td>2</td><td>Ativa o modo acumulador.</td></tr>
+    <tr><td>3</td><td>Define o modo de acumulação direta.</td></tr>
+    <tr><td>4</td><td>Define o modo de acumulação por pulsos.</td></tr>
+    <tr><td>5</td><td>Acumula apenas valores positivos.</td></tr>
+    <tr><td>6</td><td>Define a escala do acumulador.</td></tr>
+    <tr><td>7</td><td>Seleciona a unidade de medida do acumulador.</td></tr>
+    <tr><td>8</td><td>Zera o valor acumulado.</td></tr>
+</table>
 
-5.1.3	PARÂMETROS
+<p><strong>TABELA 30: ÍCONES DA TELA DE PARÂMETROS GUIA 03.</strong></p>
 
-Aqui é feita a parametrização para tratamento da leitura de sensor. Onde os valores tratados máximos e mínimos são inseridos, assim como os valores de máximo e mínimo analógico. Há o botão para seleção de escala direta ou inversamente proporcional, campo para inserção de offset, seleção de unidade de medida do sensor e apresentação de seu valor real atual. Além da possibilidade de ativação de filtro digital para os valores lidos, com configuração de tempo de amostragem e número de amostras. Também há uma guia específica para sensores do tipo acumulativo, onde é possível indicar se o sensor é ou não acumulativo, a forma que será executada a acumulação (direta, por pulso ou apenas valores positivos), nesta guia também se pode definir a unidade de medida do acumulador, a escala do mesmo zerar o acumulador caso o mesmo não seja um valor oriundo do sensor (para casos de acumuladores por pulso ou outra forma que seja um acúmulo digital com cálculo realizado pelo CLP).
-Estas configurações só podem ser manipuladas por usuários de manutenção ou administração. A tela pode ser visualizada separada por suas guias na FIGURA 28, FIGURA 29 e FIGURA 30, juntamente com as tabelas explicativas para figura.
+<hr>
 
- 
- FIGURA 28: TELA PARÂMETROS GUIA 01 - SENSOR ANALÓGICO
+<h2>5.1.4 MENSAGERIA</h2>
 
-ÍCONES TELA DE PARÂMETROS GUIA 01 - SENSOR ANALÓGICO
+<p>
+A aba de mensageria dos sensores analógicos não acumulativos possui três telas:
+log de ações dos usuários, alarmes ativos e gráfico do valor real do sensor na última hora.
+</p>
 
-1	Valor analógico de entrada no CLP.
-2	Valor de saída dinamizado dentro da escala definida.
-3	Inversão de escala. NORMAL - proporcional; INVERTIDO - inversamente proporcional.
-4	Valor máximo para a escala real de valor.
-5	Valor mínimo para escala real de valor.
-6	Configuração de valor de offset na leitura.
-7	Valor mínimo na escala de valor analógico de entrada.
-8	Valor máximo na escala de valor analógico de entrada.
-9	Lista de seleção de unidade de medida do equipamento.
-10	Botão abre a guia 02.
+<h2>5.1.5 LOG AÇÕES</h2>
 
-TABELA 28: ÍCONES TELA PARÂMETROS GUIA 01 - SENSOR ANALÓGICO.
+<p><strong>FIGURA 31: TELA MENSAGERIA LOG DE AÇÕES - SENSOR ANALÓGICO.</strong></p>
 
- 
- FIGURA 29: TELA PARÂMETROS GUIA 02 - SENSOR ANALÓGICO
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Avança para a tela de alarmes ativos.</td></tr>
+</table>
 
-ÍCONES TELA DE PARÂMETROS GUIA 02 - SENSOR ANALÓGICO
+<p><strong>TABELA 31: ÍCONES DA TELA LOG DE AÇÕES.</strong></p>
 
-1	Botão ativa filtro digital.
-2	Campo configura tempo de intervalo entre amostras em milissegundos.
-3	Campo define o número de amostras.
-4	Botão abre a guia 01
-5	Botão abre a guia 03
+<hr>
 
-TABELA 29: ÍCONES TELA PARÂMETROS GUIA 02 - SENSOR ANALÓGICO.
+<h2>5.1.6 GRÁFICO VALOR REAL</h2>
 
- 
-  FIGURA 30: TELA PARÂMETROS GUIA 03 - SENSOR ANALÓGICO
+<p><strong>FIGURA 32: TELA MENSAGERIA GRÁFICO VALOR REAL SENSOR ANALÓGICO.</strong></p>
 
-ÍCONES TELA DE PARÂMETROS GUIA 03 - SENSOR ANALÓGICO
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à tela anterior.</td></tr>
+    <tr><td>2</td><td>Avança para a tela de gráfico de valor bruto.</td></tr>
+</table>
 
-1	Botão abre a guia 02.
-2	Botão ativa modo acumulador (define sensor como sendo do tipo acumulador).
-3	Botão define que o modo de acúmulo é modo direto.
-4	Botão define que o modo do acúmulo é por pulsos.
-5	Botão define que o modo do acúmulo é apenas de valores positivos.
-6	Botão define a escala do acumulador (de quanto em quanto vai aumentar o valor acumulado).
-7	Lista de seleção da unidade de medida do acumulador.
-8	Botão zerar valores do acumulado.
+<p><strong>TABELA 32: ÍCONES DA TELA GRÁFICO VALOR REAL.</strong></p>
 
-TABELA 30: ÍCONES TELA PARÂMETROS GUIA 03 - SENSOR ANALÓGICO.
+<hr>
 
+<h2>5.1.7 GRÁFICO VALOR BRUTO</h2>
 
+<p><strong>FIGURA 33: TELA MENSAGERIA GRÁFICO VALOR BRUTO SENSOR ANALÓGICO.</strong></p>
 
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à tela do gráfico de valor real.</td></tr>
+</table>
 
-5.1.4	MENSAGERIA
+<p><strong>TABELA 33: ÍCONES DA TELA GRÁFICO VALOR BRUTO.</strong></p>
 
-	A aba de mensageria para os sensores analógicos que não são acumuladores é dividida em três guias, sendo elas: Log de ações dos usuários, alarmes ativos e gráfico do valor real do sensor na última hora de operação.
+<hr>
 
-5.1.5	LOG AÇÕES
+<h2>5.1.8 ALARMES ATIVOS</h2>
 
- 
-                          FIGURA 31: TELA MENSAGERIA LOG DE AÇÕES - SENSOR ANALÓGICO.
+<p><strong>FIGURA 34: TELA MENSAGERIA ALARMES ATIVOS - SENSOR ANALÓGICO.</strong></p>
 
-ÍCONES TELA MENSAGERIA LOG AÇÕES - SENSOR ANALÓGICO
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Avança para a tela do gráfico de valor real.</td></tr>
+    <tr><td>2</td><td>Retorna à tela de log de ações.</td></tr>
+</table>
 
-1	Botão avançar para a próxima tela (Tela alarmes ativos).
+<p><strong>TABELA 34: ÍCONES DA TELA DE ALARMES ATIVOS.</strong></p>
 
-                              TABELA 31: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - POP UP SENSOR ANALÓGICO
+<hr>
 
+<a href="./index.html"><button type="button">VOLTAR</button></a>
 
-
-
-
-
-5.1.6	GRÁFICO VALOR REAL
-
- 
-                               FIGURA 32: TELA MENSAGERIA GRÁFICO VALOR REAL SENSOR ANALÓGICO.
-
-ÍCONES TELA MENSAGERIA GRÁFICO VALOR REAL - SENSOR ANALÓGICO
-1	Botão retornar para a tela anterior (Tela alarmes ativos).
-2	Botão avançar para a próxima tela (Tela gráfico valor bruto).
-                              TABELA 32: ÍCONES TELA MENSAGERIA GRÁFICO VALOR REAL - POP UP SENSOR ANALÓGICO
-
-
-
-
-
-
-
-
-
-
-
-5.1.7	GRÁFICO VALOR BRUTO
-
- 
-                               FIGURA 33: TELA MENSAGERIA GRÁFICO VALOR BRUTO SENSOR ANALÓGICO.
-
-ÍCONES TELA MENSAGERIA GRÁFICO VALOR REAL - SENSOR ANALÓGICO
-1	Botão retornar para a tela anterior (Tela gráfico valor real).
-                              TABELA 33: ÍCONES TELA MENSAGERIA GRÁFICO VALOR REAL - POP UP SENSOR ANALÓGICO
-
-
-
-
-
-
-
-
-
-
-
-
-5.1.8	ALARMES ATIVOS
-
- 
-                                 FIGURA 34: TELA MENSAGERIA ALARMES ATIVOS - SENSOR ANALÓGICO
-
-ÍCONES TELA MENSAGERIA ALARMES ATIVOS - SENSOR ANALÓGICO
-
-1	Botão avançar para a próxima tela (Tela gráfico valor real).
-2	Botão retornar para a tela anterior (Tela log de ações).
-
-                              TABELA 34: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - POP UP SENSOR ANALÓGICO
-
-
-      <a href="./index.html"> <button> VOLTAR </button> </a>
 </body>
 </html>

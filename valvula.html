@@ -1,179 +1,225 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Válvula</title>
 </head>
-<body>9.1	VÁLVULA
-9.1.1	FACEPLATE
+<body>
 
-Para cada válvula existente no sistema, há um painel de informações resumidas, referente a esta. Este painel pode ser observado na FIGURA 41.
+<h1>9.1 VÁLVULA</h1>
 
- 
-                            FIGURA 41: PAINEL DE INFORMAÇÕES RESUMIDAS VÁLVULA.
+<h2>9.1.1 FACEPLATE</h2>
 
-O painel tem o intuito de dar informações básicas do status da válvula, assim como dar acesso à tela de operação do respectivo equipamento, para isso basta clicar sobre ela.  Na TABELA 42 há uma descrição de cada ícone de status.
+<p>
+Cada válvula possui um painel com informações básicas de seu status, conforme apresentado na FIGURA 41.
+Ao clicar no painel, é possível acessar a tela de operação do equipamento.
+</p>
 
-ÍCONES FACEPLATE VÁLVULAS
-1	Desenho da válvula, muda de cor de acordo com o seu status:
-	 	VÁLVULA OFFLINE
-	 	VÁLVULA ABERTA EM AUTOMÁTICO
-	 	VÁLVULA FECHADA EM AUTOMÁTICO
-	 	VÁLVULA ABERTA EM MANUAL
-	 	VÁLVULA FECHADA EM MANUAL
-	 	VÁLVULA FECHADA EM FALHA
-	 	VÁLVULA FECHADA EM BLOQ. SEGURANÇA
-	 	VÁLVULA FECHADA EM MANUTENÇÃO
-	 	VÁLVULA FECHADA EM POWER BREAKING
-2	Nome válvula
-3	Ícones indicadores para certos estados do motor:
-	 	EM MODO MANUAL	 	EM MODO COMANDO EXTERNO
-	 	LIVRE POR BYPASS	 	BLOQUEADO POR INTERLOCK
-	 	BLOQUEIO DE SEGURANÇA	 	EM FALHA
-	 	EM MODO MANUTENÇÃO	 	BLOQUEADO POR POWER BRAKING
-                            TABELA 42: ÍCONES FACEPLATE VÁLVULA.
-9.1.2	OPERAÇÃO
+<p><strong>FIGURA 41: PAINEL DE INFORMAÇÕES RESUMIDAS VÁLVULA.</strong></p>
 
-	Na tela de operação, é possível monitorar status resumidos da válvula como o de interlock livre, nome/tag do equipamento, descrição e status global.
-	Também permite modificar a forma de operação entre manual e automático, realizar a operação da mesma (abrir, fechar, resetar falhas) e acessar as demais telas da pop up.
+<p><strong>ÍCONES FACEPLATE VÁLVULAS</strong></p>
 
- 
-                                         FIGURA 43: TELA OPERAÇÃO VÁLVULA.
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr>
+        <td>1</td>
+        <td>
+            Desenho da válvula, que muda de cor conforme seu status:
+            <ul>
+                <li>Offline.</li>
+                <li>Aberta em automático.</li>
+                <li>Fechada em automático.</li>
+                <li>Aberta em manual.</li>
+                <li>Fechada em manual.</li>
+                <li>Fechada em falha.</li>
+                <li>Fechada por bloqueio de segurança.</li>
+                <li>Fechada em manutenção.</li>
+                <li>Fechada por Power Breaking.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr><td>2</td><td>Nome da válvula.</td></tr>
+    <tr>
+        <td>3</td>
+        <td>
+            Indicadores de status:
+            <ul>
+                <li>Modo manual.</li>
+                <li>Comando externo.</li>
+                <li>Livre por bypass.</li>
+                <li>Bloqueado por interlock.</li>
+                <li>Bloqueio de segurança.</li>
+                <li>Em falha.</li>
+                <li>Modo manutenção.</li>
+                <li>Bloqueado por Power Braking.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
-ÍCONES TELA DE OPERAÇÃO - VÁLVULA
-1	Abre a tela de operação
-2	Abre a tela de parâmetros
-3	Abre a tela de mensageria.
-4	Nome da tela atual.
-5	Desenho da válvula muda de acordo com seu status:
-	 	VÁLVULA OFFLINE
-	 	VÁLVULA ABERTA EM AUTOMÁTICO
-	 	VÁLVULA FECHADA EM AUTOMÁTICO
-	 	VÁLVULA ABERTA EM MANUAL
-	 	VÁLVULA FECHADA EM MANUAL
-	 	VÁLVULA FECHADA EM FALHA
-	 	VÁLVULA FECHADA EM BLOQ. SEGURANÇA
-	 	VÁLVULA FECHADA EM MANUTENÇÃO
-	 	VÁLVULA FECHADA EM POWER BREAKING
-6	Nome/tag da válvula.
-7	Botão abre tela de interlock.
-8	Ícones indicadores para certos estados do motor:
-	 	EM MODO MANUAL	 	EM MODO COMANDO EXTERNO
-	 	LIVRE POR BYPASS	 	BLOQUEADO POR INTERLOCK
-	 	BLOQUEIO DE SEGURANÇA	 	EM FALHA
-	 	EM MODO MANUTENÇÃO	 	BLOQUEADO POR POWER BRAKING
-9	Descrição da válvula.
-10	Status da válvula.
-11	Botão abre tela de diagnóstico de falhas.
-12	Indicadores de ativo ou não para os status no painel resumido.
-13	Seleção do modo de operação: automático ou manual.
-14	Botão abrir/fechar válvula.
-15	Botão reset de falhas.
-16	Botão fechar pop up.
-                                 TABELA 43: ÍCONES OPERAÇÃO VÁLVULAS.
+<p><strong>TABELA 42: ÍCONES FACEPLATE VÁLVULA.</strong></p>
 
-9.1.3	PARÂMETROS
+<hr>
 
-	As funcionalidades da tela de parâmetros só podem ser utilizadas por usuários de manutenção e acima.
-	Nesta tela é possível configurar e habilitar confirmações simuladas para abertura e fechamento da válvula (sua utilização se deve para questões de lógica de automação, só serão ativas para válvulas que não possuem retornos de aberto e fechado para o CLP).
-	Também é possível habilitar a geração de falhas de abertura e fechamento, e configurar os tempos em segundos que o CLP aguarda o retorno dos fins de curso da válvula e, caso não os receba no tempo determinado gera a falha. Pode-se também colocar a válvula em modo manutenção e ativar o bypass geral da mesma, ignorando todos os interlocks.
-	Na segunda guia da tela de parâmetros, pode-se monitorar a quantidade de flipagens da válvula (ciclo de abertura e fechamento), configurar o valor de flipagens em que será gerado um alerta/alarme e também alterar algumas configurações para funcionamento a depender do tipo de válvula que está sendo utilizado, como informar que é uma válvula de 3 posições ou mesmo uma válvula normalmente aberta.
+<h2>9.1.2 OPERAÇÃO</h2>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         FIGURA 44: TELA PARÂMETROS GUIA 01 - VÁLVULAS.
+<p>
+Na tela de operação é possível visualizar o status da válvula, alternar entre os modos
+manual e automático, abrir ou fechar a válvula, resetar falhas e acessar as demais telas.
+</p>
 
-ÍCONES TELA DE PARÂMETROS GUIA 01 - VÁLVULA
-1	Habilita confirmação simulada de abertura.
-2	Habilita a geração de falhas de acionamentos.
-3	Coloca em modo manutenção.
-4	Coloca em modo livre por Bypass.
-5	Abre a guia 02 da tela de parâmetros.
-6	Habilita confirmação simulada de fechamento.
-7	Campos de digitação para configurar os tempos de abertura e fechamento simulados.
-8	Campo de digitação para configuração dos tempos de falhas.
-TABELA 44: ÍCONES TELA DE PARÂMETROS  GUIA 01 - VÁLVULAS
+<p><strong>FIGURA 43: TELA OPERAÇÃO VÁLVULA.</strong></p>
 
- 
-                          FIGURA 45: TELA PARÂMETROS GUIA 02 - VÁLVULAS.
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Acessa a tela de operação.</td></tr>
+    <tr><td>2</td><td>Acessa a tela de parâmetros.</td></tr>
+    <tr><td>3</td><td>Acessa a tela de mensageria.</td></tr>
+    <tr><td>4</td><td>Nome da tela atual.</td></tr>
+    <tr><td>5</td><td>Desenho da válvula conforme seu status.</td></tr>
+    <tr><td>6</td><td>Nome/tag da válvula.</td></tr>
+    <tr><td>7</td><td>Acessa a tela de interlock.</td></tr>
+    <tr><td>8</td><td>Indicadores de status da válvula.</td></tr>
+    <tr><td>9</td><td>Descrição da válvula.</td></tr>
+    <tr><td>10</td><td>Status da válvula.</td></tr>
+    <tr><td>11</td><td>Acessa a tela de diagnóstico de falhas.</td></tr>
+    <tr><td>12</td><td>Indicadores dos status do painel resumido.</td></tr>
+    <tr><td>13</td><td>Seleciona o modo automático ou manual.</td></tr>
+    <tr><td>14</td><td>Comando para abrir ou fechar a válvula.</td></tr>
+    <tr><td>15</td><td>Reseta as falhas.</td></tr>
+    <tr><td>16</td><td>Fecha o pop-up.</td></tr>
+</table>
 
-ÍCONES TELA DE PARÂMETROS GUIA 02  - VÁLVULA
+<p><strong>TABELA 43: ÍCONES OPERAÇÃO VÁLVULAS.</strong></p>
 
-1	Habilita a válvula como válvula de 3 posições.
-2	Habilita a válvula como válvula NA.
-3	Habilita comando de desligar a saída/acionamento ao confirmar a ação (abertura ou fechamento).
-4	Botão para zerar o contador de flipagens.
-5	Botão retorna para a guia 01 da tela de parâmetros.
-6	Campo para digitação e configuração do valor de flipagens para gerar alarmes.
-7	Display da quantidade de flipagens atual.
+<hr>
 
-TABELA 45: ÍCONES TELA DE PARÂMETROS  GUIA 02 - VÁLVULAS
+<h2>9.1.3 PARÂMETROS</h2>
 
+<p>
+A tela de parâmetros é destinada aos usuários de manutenção ou níveis superiores.
+Nela é possível configurar confirmações simuladas de abertura e fechamento, habilitar
+falhas e definir os tempos de resposta da válvula.
+</p>
 
+<p>
+Também é possível ativar o modo manutenção e o bypass geral. Na segunda guia,
+são configurados os tipos de válvula e o contador de flipagens, que registra os ciclos
+de abertura e fechamento.
+</p>
 
+<p><strong>FIGURA 44: TELA PARÂMETROS GUIA 01 - VÁLVULAS.</strong></p>
 
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Habilita a confirmação simulada de abertura.</td></tr>
+    <tr><td>2</td><td>Habilita a geração de falhas de acionamento.</td></tr>
+    <tr><td>3</td><td>Ativa o modo manutenção.</td></tr>
+    <tr><td>4</td><td>Ativa o modo livre por bypass.</td></tr>
+    <tr><td>5</td><td>Acessa a guia 02.</td></tr>
+    <tr><td>6</td><td>Habilita a confirmação simulada de fechamento.</td></tr>
+    <tr><td>7</td><td>Configura os tempos de abertura e fechamento simulados.</td></tr>
+    <tr><td>8</td><td>Configura os tempos para geração de falhas.</td></tr>
+</table>
 
+<p><strong>TABELA 44: ÍCONES TELA DE PARÂMETROS GUIA 01.</strong></p>
 
-9.1.4	MENSAGERIA
+<p><strong>FIGURA 45: TELA PARÂMETROS GUIA 02 - VÁLVULAS.</strong></p>
 
-A aba de mensageria para as válvulas é dividida em três guias, sendo elas: Log de ações dos usuários, alarmes ativos e gráfico da quantidade de flipagens na última hora de operação.
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Configura a válvula como modelo de três posições.</td></tr>
+    <tr><td>2</td><td>Configura a válvula como normalmente aberta (NA).</td></tr>
+    <tr><td>3</td><td>Desliga a saída após a confirmação da abertura ou fechamento.</td></tr>
+    <tr><td>4</td><td>Zera o contador de flipagens.</td></tr>
+    <tr><td>5</td><td>Retorna à guia 01.</td></tr>
+    <tr><td>6</td><td>Configura o limite de flipagens para gerar alarmes.</td></tr>
+    <tr><td>7</td><td>Mostra a quantidade atual de flipagens.</td></tr>
+</table>
 
- 
-                                 FIGURA 46: MENSAGERIA LOG DE AÇÕES VÁLVULA.
+<p><strong>TABELA 45: ÍCONES TELA DE PARÂMETROS GUIA 02.</strong></p>
 
-ÍCONES TELA MENSAGERIA LOG DE AÇÕES - POP UP VÁLVULAS
-1	Botão abre próxima guia.
-TABELA 46: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - POP UP VÁLVULAS
+<hr>
 
- 
-FIGURA 47: MENSAGERIA ALARMES ATIVOS.
+<h2>9.1.4 MENSAGERIA</h2>
 
-ÍCONES TELA MENSAGERIA ALARMES ATIVOS - POP UP VÁLVULAS
+<p>
+A aba de mensageria das válvulas possui três telas: log de ações dos usuários,
+alarmes ativos e gráfico da quantidade de flipagens na última hora de operação.
+</p>
 
-1	Botão abre a guia anterior.
-2	Botão abre próxima guia.
+<p><strong>FIGURA 46: MENSAGERIA LOG DE AÇÕES VÁLVULA.</strong></p>
 
-TABELA 47: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - POP UP VÁLVULAS
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Avança para a próxima guia.</td></tr>
+</table>
 
- 
-FIGURA 48: MENSAGERIA GRÁFICO DE ACIONAMENTO.
+<p><strong>TABELA 46: ÍCONES TELA MENSAGERIA LOG DE AÇÕES.</strong></p>
 
-ÍCONES TELA MENSAGERIA GRÁFICO QUANTIDADE DE FLIPAGENS - POP UP VÁLVULAS
+<p><strong>FIGURA 47: MENSAGERIA ALARMES ATIVOS.</strong></p>
 
-1	Botão abre a guia anterior.
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à guia anterior.</td></tr>
+    <tr><td>2</td><td>Avança para a próxima guia.</td></tr>
+</table>
 
-TABELA 48: ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS - POP UP VÁLVULAS
+<p><strong>TABELA 47: ÍCONES TELA MENSAGERIA ALARMES ATIVOS.</strong></p>
 
-9.1.5	INTERLOCK
+<p><strong>FIGURA 48: MENSAGERIA GRÁFICO DE ACIONAMENTO.</strong></p>
 
-A tela de interlock (FIGURA 49) mostra o status dos Intertravamentos do sistema, é possível verificar a condição de cada sinal de interlock através do ícone ao lado da do texto do interlock, onde a indicação estará na cor azul com um ponto de exclamação dentro quando ativado e com a cor próxima a das letras e sem o ponto de exclamação quando desativado. Caso todos os sinais de interlock estejam ativos a indicação de “LIVRE” é acionada. 
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à guia anterior.</td></tr>
+</table>
 
- 
-FIGURA 49: TELA INTERLOCK – VÁLVULA.
+<p><strong>TABELA 48: ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS.</strong></p>
 
-ÍCONES FACEPLATE SENSOR ANALÓGICO ACUMULATIVO.
-1	Botão retornar para tela de operação.
-2	Botão habilita bypass individual para cada interlock.
-3	Status de interlock ok.
-4	Texto de descrição do interlock.
-5	Status dois de interlock.
-6	Nome do equipamento.
-7	Status de livre por interlock.
-TABELA 49: ÍCONES PAINEL RESUMIDO SINAL ANALÓGICO ACUMULATIVO.
+<hr>
 
-9.1.6	DIAGNÓSTICO DE FALHAS
+<h2>9.1.5 INTERLOCK</h2>
 
- 
-FIGURA 50: TELA DIAGNÓSTICO DE FALHAS – VÁLVULA.
+<p>
+A tela de interlock apresenta os status dos intertravamentos da válvula.
+Cada sinal possui um indicador que mostra se o interlock está ativo ou desativado.
+Quando todos os interlocks estão liberados, a indicação "LIVRE" é exibida.
+</p>
 
-ÍCONES FACEPLATE SENSOR ANALÓGICO ACUMULATIVO.
-1	Botão retornar para tela de operação.
-2	Status de ativo.
-TABELA 50: ÍCONES PAINEL RESUMIDO SINAL ANALÓGICO ACUMULATIVO.
+<p><strong>FIGURA 49: TELA INTERLOCK - VÁLVULA.</strong></p>
 
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à tela de operação.</td></tr>
+    <tr><td>2</td><td>Habilita o bypass individual de cada interlock.</td></tr>
+    <tr><td>3</td><td>Indica o status do interlock.</td></tr>
+    <tr><td>4</td><td>Descrição do interlock.</td></tr>
+    <tr><td>5</td><td>Segundo indicador de status do interlock.</td></tr>
+    <tr><td>6</td><td>Nome do equipamento.</td></tr>
+    <tr><td>7</td><td>Indica se a válvula está livre por interlock.</td></tr>
+</table>
 
+<p><strong>TABELA 49: ÍCONES DA TELA DE INTERLOCK.</strong></p>
 
+<hr>
 
+<h2>9.1.6 DIAGNÓSTICO DE FALHAS</h2>
 
-      <a href="./index.html"> <button> VOLTAR </button> </a>
+<p><strong>FIGURA 50: TELA DIAGNÓSTICO DE FALHAS - VÁLVULA.</strong></p>
+
+<table border="1">
+    <tr><th>Nº</th><th>Descrição</th></tr>
+    <tr><td>1</td><td>Retorna à tela de operação.</td></tr>
+    <tr><td>2</td><td>Indica o status de ativo.</td></tr>
+</table>
+
+<p><strong>TABELA 50: ÍCONES DA TELA DE DIAGNÓSTICO DE FALHAS.</strong></p>
+
+<hr>
+
+<a href="./index.html"><button type="button">VOLTAR</button></a>
+
 </body>
 </html>

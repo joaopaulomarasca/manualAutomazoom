@@ -1,213 +1,362 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inversor de Frequência</title>
 </head>
 <body>
-    3.1	INVERSOR DE FREQUÊNCIA
 
-3.1.1	FACEPLATE
+    <h1>3.1 INVERSOR DE FREQUÊNCIA</h1>
 
-Para cada inversor existente no sistema, há um painel de informações resumidas, referente a este. Este painel pode ser observado na FIGURA 9.
-O painel tem o intuito de dar informações básicas do status do equipamento, assim como dar acesso à tela de operação do respectivo equipamento, para isso basta clicar sobre ela.  Na TABELA 9 há uma descrição de cada ícone de status.
+    <h2>3.1.1 FACEPLATE</h2>
 
+    <p>
+        Cada inversor possui um painel com informações básicas sobre o status do equipamento.
+        Ao clicar nesse painel, é possível acessar a tela de operação do inversor.
+    </p>
 
+    <p><strong>FIGURA 9: FACEPLATE INVERSOR DE FREQUÊNCIA.</strong></p>
 
+    <h3>ÍCONES FACEPLATE INVERSORES</h3>
 
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                Indicadores de estado do motor:
+                <ul>
+                    <li>Em modo manual</li>
+                    <li>Livre por bypass</li>
+                    <li>Bloqueado por interlock</li>
+                    <li>Em modo comando externo</li>
+                    <li>Em modo manutenção</li>
+                    <li>Bloqueado por Power Braking</li>
+                    <li>Bloqueio de segurança</li>
+                    <li>Em falha</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Velocidade atual do motor.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nome do inversor.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Desenho do motor, que muda de cor conforme o status:
+                <ul>
+                    <li>Motor offline</li>
+                    <li>Motor em falha</li>
+                    <li>Motor desligado em automático</li>
+                    <li>Motor bloqueado por segurança</li>
+                    <li>Motor ligado em automático</li>
+                    <li>Motor em manutenção</li>
+                    <li>Motor desligado em manual</li>
+                    <li>Motor em Power Braking</li>
+                    <li>Motor ligado em manual</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 
+    <p><strong>TABELA 9: ÍCONES FACEPLATE – INVERSORES.</strong></p>
 
+    <hr>
 
+    <h2>3.1.2 OPERAÇÃO</h2>
 
+    <p>
+        A operação do inversor é semelhante à partida direta apresentada anteriormente,
+        com diferenças nas configurações e na visualização do setpoint de velocidade.
+    </p>
 
+    <p><strong>FIGURA 10: OPERAÇÃO 01 INVERSOR.</strong></p>
 
-                                FIGURA 9: FACEPLATE INVERSOR DE FREQUÊNCIA.
-ÍCONES FACEPLATE INVERSORES
+    <h3>ÍCONES TELA DE OPERAÇÃO - INVERSORES</h3>
 
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Seleciona o modo manual ou automático.</td></tr>
+        <tr><td>2</td><td>Botão para ligar o motor.</td></tr>
+        <tr><td>3</td><td>Botão para resetar falhas.</td></tr>
+        <tr><td>4</td><td>Aciona o motor em modo Jog enquanto o botão estiver pressionado.</td></tr>
+        <tr><td>5</td><td>Mostra a corrente atual do motor.</td></tr>
+        <tr><td>6</td><td>Painel de informações resumidas.</td></tr>
+        <tr><td>7</td><td>Acessa a tela de diagnóstico de falhas.</td></tr>
+        <tr><td>8</td><td>Inverte o sentido de giro do motor, se habilitado.</td></tr>
+        <tr><td>9</td><td>Campo para definir o setpoint de velocidade.</td></tr>
+        <tr><td>10</td><td>Mostra a velocidade atual do inversor.</td></tr>
+        <tr><td>11</td><td>Visualiza parâmetros e leituras do inversor.</td></tr>
+        <tr><td>12</td><td>Acessa a tela de interlock.</td></tr>
+        <tr><td>13</td><td>Mostra o status do inversor.</td></tr>
+        <tr>
+            <td>14</td>
+            <td>
+                Desenho do motor, que muda de cor conforme o status:
+                <ul>
+                    <li>Motor offline</li>
+                    <li>Motor desligado em automático</li>
+                    <li>Motor ligado em automático</li>
+                    <li>Motor desligado em manual</li>
+                    <li>Motor ligado em manual</li>
+                </ul>
+            </td>
+        </tr>
+        <tr><td>15</td><td>Acessa a aba de operação.</td></tr>
+        <tr><td>16</td><td>Acessa a aba de parâmetros.</td></tr>
+        <tr><td>17</td><td>Acessa a aba de mensageria.</td></tr>
+        <tr><td>18</td><td>Nome da aba.</td></tr>
+        <tr><td>19</td><td>Nome do equipamento.</td></tr>
+        <tr><td>20</td><td>Descrição do equipamento.</td></tr>
+        <tr><td>21</td><td>Botão para fechar o pop-up.</td></tr>
+        <tr><td>22</td><td>Reduz a velocidade para operação em baixa rotação.</td></tr>
+        <tr>
+            <td>23</td>
+            <td>
+                Indicadores de estado do motor:
+                <ul>
+                    <li>Em modo manual</li>
+                    <li>Livre por bypass</li>
+                    <li>Bloqueado por interlock</li>
+                    <li>Em modo comando externo</li>
+                    <li>Em modo manutenção</li>
+                    <li>Bloqueado por Power Braking</li>
+                    <li>Bloqueio de segurança</li>
+                    <li>Em falha</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 
+    <p><strong>TABELA 10: ÍCONES TELA DE OPERAÇÃO – INVERSORES.</strong></p>
 
-1	Ícones indicadores de certos estados do motor:
-	 	EM MODO MANUAL	 	LIVRE POR BYPASS
-	
-BLOQ. POR INTERLOCK	
-EM MODO COMANDO EXTERNO
-	
-EM MODO MANUTENÇÃO	
-BLOQ. POR POWER BRAKING
-	 	BLOQUEIO DE SEGURANÇA	 	EM FALHA
+    <hr>
 
-2	Velocidade Atual do Motor.
+    <h2>3.1.3 PARÂMETROS DO INVERSOR</h2>
 
-3	Nome do inversor.
+    <p><strong>FIGURA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES.</strong></p>
 
+    <h3>ÍCONES TELA DE PARÂMETROS - INVERSORES</h3>
 
-4	Desenho motor, muda de cor de acordo com o seu status:
-	Representação Inversor Motor
-	 	MOTOR OFFLINE	 	MOTOR EM FALHA
-	 	MOTOR DESLIGADO AUTO	 	MOTOR BLOQ. SEGURANÇA
-	 	MOTOR LIGADO AUTO	 	MOTOR EM MANUTENÇÃO
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Apresenta os parâmetros e as leituras do inversor em tempo real.</td>
+        </tr>
+    </table>
 
-	 	MOTOR DESLIGADO MAN.	 	MOTOR POWER BREAKING
-	 	MOTOR LIGADO MAN.		
-                                       TABELA 9: ÍCONES FACEPLATE – INVERSORES
+    <p><strong>TABELA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES.</strong></p>
 
-3.1.2	OPERAÇÃO
-A operação do inversor se dá igual da partida direta apresentada anteriormente, exceto pelas configurações e visualização de setpoint. Para dúvidas de operação, a FIGURA 10 mostra a tela de operação.
- 
+    <hr>
 
-                                         FIGURA 10: OPERAÇÃO 01 INVERSOR.
+    <h2>3.1.4 DIAGNÓSTICO DE FALHAS</h2>
 
-ÍCONES TELA DE PARÂMETROS - INVERSORES
-1	Botão de seleção de modo: manual ou automático.
-2	Botão liga o motor.
-3	Botão reset de falhas
-4	Botão aciona motor em modo Jog (mantém ligado enquanto o botão estiver pressionado).
-5	Display corrente atual do motor.
-6	Painel de informações resumidas.
-7	Botão de acesso a tela de diagnóstico de falhas.
-8	Botão reverter/inverter o sentido de giro do motor se habilitada a opção.
-9	Campo para definir setpoint de velocidade do inversor.
-10	Display da velocidade atual do inversor.
-11	Visualizar parâmetros e leituras do inversor (FIGURA 4-10).
-12	Botão de acesso a tela de interlock.
-13	Status do inversor.
-14	Desenho motor, muda de cor de acordo com o seu status:
-	 	MOTOR OFFLINE
-	 	MOTOR DESLIGADO AUTO
-	 	MOTOR LIGADO AUTO
-	 	MOTOR DESLIGADO MANUAL
-	 	MOTOR LIGADO MANUAL
-15	Botão de acesso a aba de operação.
-16	Botão de acesso a aba de parâmetros.
-17	Botão de acesso a aba de mensageria.
-18	Nome da aba.
-19	Nome do equipamento.
-20	Descrição do equipamento.
-21	Botão fechar pop up.
-22	Velocidade reduzida, para operação em baixa velocidade.
-23	Ícones indicadores de certos estados do motor:
-	 	EM MODO MANUAL	 	LIVRE POR BYPASS
-	 	BLOQUEADO POR INTERLOCK	 	EM MODO COMANDO EXTERNO
-	 	EM MODO MANUTENÇÃO	 	BLOQ. POR POWER BRAKING
-	 	BLOQUEIO DE SEGURANÇA	 	EM FALHA
-                                      TABELA 10: ÍCONES TELA PARÂMETROS  –  INVERSORES
+    <p>
+        A tela apresenta o diagnóstico de falhas e estados do equipamento.
+        Os estados esperados para o funcionamento são indicados na cor verde quando ativos.
+        As falhas e condições inadequadas são indicadas em cinza escuro.
+    </p>
 
-3.1.3	PARÂMETROS DO INVERSOR
- 
-FIGURA 11:  TELA PARÂMETROS ADICIONAIS –  INVERSORES
-ÍCONES TELA DE PARÂMETROS - INVERSORES
-1	Parâmetro e leituras do inversor (feedback em tempo real).
-TABELA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES
+    <p><strong>FIGURA 12: TELA DIAGNÓSTICO DE FALHAS - INVERSOR.</strong></p>
 
-3.1.4	DIAGNÓSTICO DE FALHAS
+    <h3>ÍCONES TELA DIAGNÓSTICO DE FALHAS - INVERSOR</h3>
 
-Na FIGURA 12 é possível visualizar um diagnóstico tanto de falhas quanto de estados do equipamento, onde os estados esperados para funcionamento do equipamento possuem seu ícone de acionamento trocados para a cor verde quando estão ativos, da mesma forma que as falhas e estados inadequados trocam para a cor cinza escuro.
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Retorna para a aba de operação.</td></tr>
+        <tr><td>2</td><td>Indicador de status ativo.</td></tr>
+    </table>
 
- 
-FIGURA 12: TELA DIAGNÓSTICO DE FALHAS - INVERSOR.
+    <p><strong>TABELA 12: ÍCONES TELA DIAGNÓSTICO DE FALHAS - INVERSOR.</strong></p>
 
-ÍCONES TELA DIAGNÓSTICO DE FALHAS - INVERSOR
+    <hr>
 
-1	Botão retorna para a aba de operação.
-2	Indicador de status ativo
+    <h2>3.1.5 PARÂMETROS</h2>
 
-                              TABELA 12: ÍCONES TELA DIAGNÓSTICO DE FALHAS - POP UP INVERSOR
+    <p>
+        Esta aba permite configurar os parâmetros do inversor e só pode ser manipulada
+        por usuários de manutenção.
+    </p>
 
-3.1.5	PARÂMETROS
+    <p><strong>FIGURA 13: ABA PARÂMETROS DO INVERSOR.</strong></p>
 
-Esta aba requer usuário de manutenção para ser manipulada. Essa tela pode ser visualizada na FIGURA 13.
+    <h3>ÍCONES ABA PARÂMETROS - INVERSOR</h3>
 
- 
- FIGURA 13: ABA PARÂMETROS DO INVERSOR.
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Define o valor para gerar alerta do horímetro.</td></tr>
+        <tr><td>2</td><td>Mostra o horímetro do inversor.</td></tr>
+        <tr><td>3</td><td>Botão para zerar o horímetro.</td></tr>
+        <tr><td>4</td><td>Define o limite máximo de corrente do equipamento.</td></tr>
+        <tr><td>5</td><td>Mostra a corrente do inversor.</td></tr>
+        <tr><td>6</td><td>Seleciona a unidade de medida do setpoint.</td></tr>
+        <tr><td>7</td><td>Coloca o inversor em modo manutenção.</td></tr>
+        <tr><td>8</td><td>Coloca o inversor em modo bypass.</td></tr>
+        <tr><td>9</td><td>Visualiza os parâmetros e as leituras do inversor.</td></tr>
+    </table>
 
-ÍCONES ABA PARÂMETROS - INVERSOR
-1	Campo para definir valor em que será gerado alerta de horímetro.
-2	Display de horímetro do inversor.
-3	Botão para zerar horímetro.
-4	Define o limite máximo de corrente para o equipamento.
-5	Display de corrente do inversor.
-6	Permite selecionar a unidade de medida do Setpoint.
-7	Botão coloca inversor em modo MANUTENÇÃO.
-8	Botão coloca inversor em modo BYPASS.
-9	Visualizar parâmetros e leituras do inversor (FIGURA 4-13).
-                                       TABELA 13: ÍCONES ABA PARÂMETROS - INVERSOR
+    <p><strong>TABELA 13: ÍCONES ABA PARÂMETROS - INVERSOR.</strong></p>
 
+    <p><strong>FIGURA 14: ABA PARÂMETROS DO INVERSOR.</strong></p>
 
- 
-FIGURA 14: ABA PARÂMETROS DO INVERSOR.
+    <h3>ÍCONES ABA PARÂMETROS - INVERSOR</h3>
 
-ÍCONES ABA PARÂMETROS - INVERSOR
-1	Campo para enviar Parâmetro 1080 - Velocidade Mínima.
-2	Campo para enviar Parâmetro 1082 - Velocidade Máxima.
-3	Campo para enviar Parâmetro 1120 - Rampa Aceleração.
-4	Campo para enviar Parâmetro 1121 - Rampa Desaceleração.
-5	Display do Parâmetro 2000 – Velocidade.
-6	Display do Parâmetro 2002 – Corrente.
-7	Display do Parâmetro 2003 – Torque.
-8	Display do Parâmetro 0311 - Velocidade Nominal.
-9	Traz (lê) os parâmetros do inversor para a tela do supervisório.
-10	Envia (grava) os parâmetros digitados/ajustados no supervisório para o inversor.
-11	Indicam o resultado da comunicação/ação com inversor.
-                                       TABELA 14: ÍCONES ABA PARÂMETROS - INVERSOR
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Define o Parâmetro 1080 – Velocidade Mínima.</td></tr>
+        <tr><td>2</td><td>Define o Parâmetro 1082 – Velocidade Máxima.</td></tr>
+        <tr><td>3</td><td>Define o Parâmetro 1120 – Rampa de Aceleração.</td></tr>
+        <tr><td>4</td><td>Define o Parâmetro 1121 – Rampa de Desaceleração.</td></tr>
+        <tr><td>5</td><td>Mostra o Parâmetro 2000 – Velocidade.</td></tr>
+        <tr><td>6</td><td>Mostra o Parâmetro 2002 – Corrente.</td></tr>
+        <tr><td>7</td><td>Mostra o Parâmetro 2003 – Torque.</td></tr>
+        <tr><td>8</td><td>Mostra o Parâmetro 0311 – Velocidade Nominal.</td></tr>
+        <tr><td>9</td><td>Lê os parâmetros do inversor e apresenta na tela.</td></tr>
+        <tr><td>10</td><td>Envia os parâmetros configurados para o inversor.</td></tr>
+        <tr><td>11</td><td>Indica o resultado da comunicação ou ação com o inversor.</td></tr>
+    </table>
 
-3.1.6	MENSAGERIA
+    <p><strong>TABELA 14: ÍCONES ABA PARÂMETROS - INVERSOR.</strong></p>
 
-Na aba de mensageria dos inversores existem quatro guias, uma com os logs de ações dos usuários, outra guia com as falhas ativas do periférico, a terceira guia apresenta um gráfico com a variação de corrente do equipamento nas últimas horas de operação e na quarta guia há um gráfico para monitoramento dos valores de setpoint de velocidade do inversor.
-3.1.6.1	  LOG DE AÇÕES
- 
- FIGURA 15: TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.
+    <hr>
 
-ÍCONES TELA MENSAGERIA LOG DE AÇÕES - INVERSOR
-1	Botão avança para a guia dois da aba mensageria (tela de falhas ativas).
-                              TABELA 15: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - POP UP INVERSOR
+    <h2>3.1.6 MENSAGERIA</h2>
 
+    <p>
+        A aba de mensageria possui quatro guias:
+    </p>
 
-3.1.6.2	 GRÁFICO VELOCIDADE
+    <ul>
+        <li>Histórico de ações dos usuários.</li>
+        <li>Falhas ativas do equipamento.</li>
+        <li>Gráfico de variação da corrente nas últimas horas.</li>
+        <li>Gráfico de monitoramento do setpoint de velocidade.</li>
+    </ul>
 
- 
- FIGURA 16: TELA MENSAGERIA GRÁFICO DE VELOCIDADE - INVERSOR.
+    <h3>3.1.6.1 LOG DE AÇÕES</h3>
 
-ÍCONES TELA MENSAGERIA GRÁFICO CORRENTE - INVERSOR
-1	Retorna para a tela anterior (Tela gráfico de corrente).
-                              TABELA 16: ÍCONES TELA MENSAGERIA GRÁFICO VELOCIDADE - POP UP INVERSOR
+    <p><strong>FIGURA 15: TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.</strong></p>
 
-3.1.6.3	 GRÁFICO CORRENTE
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Avança para a guia de falhas ativas.</td>
+        </tr>
+    </table>
 
- 
-       FIGURA 17: TELA MENSAGERIA GRÁFICO CORRENTE - INVERSOR.
+    <p><strong>TABELA 15: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.</strong></p>
 
-ÍCONES TELA MENSAGERIA GRÁFICO SETPOINT - INVERSOR
-1	Botão retorna para a tela anterior (Tela de falhas ativas).
-2	Botão avança para a próxima tela (Tela gráfico de velocidade).
-TABELA 17: ÍCONES TELA MENSAGERIA GRÁFICO SETPOINT - POP UP INVERSOR
-3.1.6.4	FALHAS ATIVAS
+    <h3>3.1.6.2 GRÁFICO VELOCIDADE</h3>
 
- 
- FIGURA 18: TELA MENSAGERIA FALHAS ATIVAS - INVERSOR
+    <p><strong>FIGURA 16: TELA MENSAGERIA GRÁFICO DE VELOCIDADE - INVERSOR.</strong></p>
 
-ÍCONES TELA MENSAGERIA ALARMES ATIVOS - INVERSOR
-1	Botão retorna para a tela anterior (Tela log de ações).
-2	Botão avança para a próxima tela (Tela gráfico de corrente).
-                              TABELA 18: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - POP UP INVERSOR
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Retorna para a tela anterior (gráfico de corrente).</td>
+        </tr>
+    </table>
 
-3.1.7	INTERLOCK
+    <p><strong>TABELA 16: ÍCONES TELA MENSAGERIA GRÁFICO VELOCIDADE - INVERSOR.</strong></p>
 
-A tela de interlock (FIGURA 19) mostra o status dos Intertravamentos do sistema, é possível verificar a condição de cada sinal de interlock através do ícone ao lado da do texto do interlock, onde a indicação estará na cor verde quando ativado e com a cor próxima a do fundo quando desativado. Caso todos os sinais de interlock estejam ativos a indicação de “LIVRE” é acionada. 
+    <h3>3.1.6.3 GRÁFICO CORRENTE</h3>
 
-  FIGURA 19: TELA INTERLOCK – INVERSOR.
+    <p><strong>FIGURA 17: TELA MENSAGERIA GRÁFICO CORRENTE - INVERSOR.</strong></p>
 
-ÍCONES TELA DE PARÂMETROS - INVERSOR
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Retorna para a tela anterior (falhas ativas).</td></tr>
+        <tr><td>2</td><td>Avança para a próxima tela (gráfico de velocidade).</td></tr>
+    </table>
 
-1	Botão retorna para a aba de operação.
-2	Indicação de interlock ok ou não.
-3	Botão ativa bypass individual para cada interlock.
-4	Texto descritivo do interlock
-5	Nome do equipamento
-6	Indicação 2 de interlock ok.
-7	Indicação de livre, equipamento desbloqueado por interlock.
+    <p><strong>TABELA 17: ÍCONES TELA MENSAGERIA GRÁFICO SETPOINT - INVERSOR.</strong></p>
 
-TABELA 19: ÍCONES ABA DE INTERLOCK - POP UP INVERSOR
-      <a href="./index.html"> <button> VOLTAR </button> </a>
+    <h3>3.1.6.4 FALHAS ATIVAS</h3>
+
+    <p><strong>FIGURA 18: TELA MENSAGERIA FALHAS ATIVAS - INVERSOR.</strong></p>
+
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Retorna para a tela anterior (log de ações).</td></tr>
+        <tr><td>2</td><td>Avança para a próxima tela (gráfico de corrente).</td></tr>
+    </table>
+
+    <p><strong>TABELA 18: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - INVERSOR.</strong></p>
+
+    <hr>
+
+    <h2>3.1.7 INTERLOCK</h2>
+
+    <p>
+        A tela de interlock apresenta o status dos intertravamentos do sistema.
+        Cada sinal possui um indicador ao lado de sua descrição. A cor verde indica
+        que o sinal está ativo. Quando todos os sinais estão ativos, a indicação
+        "LIVRE" é apresentada, informando que o equipamento está desbloqueado.
+    </p>
+
+    <p><strong>FIGURA 19: TELA INTERLOCK – INVERSOR.</strong></p>
+
+    <h3>ÍCONES ABA DE INTERLOCK - INVERSOR</h3>
+
+    <table border="1">
+        <tr>
+            <th>Ícone</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Retorna para a aba de operação.</td></tr>
+        <tr><td>2</td><td>Indica se o interlock está liberado ou bloqueado.</td></tr>
+        <tr><td>3</td><td>Ativa o bypass individual de cada interlock.</td></tr>
+        <tr><td>4</td><td>Apresenta a descrição do interlock.</td></tr>
+        <tr><td>5</td><td>Mostra o nome do equipamento.</td></tr>
+        <tr><td>6</td><td>Segunda indicação do status do interlock.</td></tr>
+        <tr><td>7</td><td>Indica que o equipamento está livre de bloqueios por interlock.</td></tr>
+    </table>
+
+    <p><strong>TABELA 19: ÍCONES ABA DE INTERLOCK - POP UP INVERSOR.</strong></p>
+
+    <hr>
+
+    <a href="./index.html"><button type="button">VOLTAR</button></a>
+
 </body>
 </html>
