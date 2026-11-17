@@ -6,186 +6,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensor Analógico Acumulativo</title>
 </head>
+
 <body>
 
-<h1>10.1.1 MENSAGERIA</h1>
+<header>
+    <h1>DOCUMENTAÇÃO TÉCNICA</h1>
+    <h2>10.2 - SENSOR ANALÓGICO ACUMULATIVO</h2>
+    <hr>
+</header>
 
-<p>
-A aba de mensageria dos sensores analógicos acumulativos possui quatro telas:
-log de ações dos usuários, alarmes ativos, gráfico do valor real e gráfico do valor acumulado da última hora.
-</p>
+<nav>
+    <h3>MENU PRINCIPAL</h3>
 
-<hr>
+    <ul>
+        <li><a href="#mensageria">10.1.1 - Mensageria</a></li>
 
-<h1>10.2 SENSOR ANALÓGICO ACUMULATIVO</h1>
+        <li><a href="#faceplate">10.2.1 - Faceplate</a></li>
 
-<h2>10.2.1 FACEPLATE</h2>
+        <li>
+            <a href="#operacao">10.2.2 - Operação</a>
+            <ul>
+                <li><a href="#operacao01">Guia 01</a></li>
+                <li><a href="#operacao02">Guia 02</a></li>
+            </ul>
+        </li>
 
-<p>
-Cada sensor possui um painel com informações básicas, conforme apresentado na FIGURA 51.
-Ao clicar no painel, é possível acessar a tela de operação do equipamento.
-</p>
+        <li>
+            <a href="#parametros">10.2.3 - Parâmetros</a>
+            <ul>
+                <li><a href="#parametros01">Guia 01</a></li>
+                <li><a href="#parametros02">Guia 02</a></li>
+            </ul>
+        </li>
 
-<p><strong>FIGURA 51: PAINEL RESUMIDO SENSOR ANALÓGICO ACUMULATIVO.</strong></p>
+        <li><a href="#logs">10.2.4 - Log de ações</a></li>
 
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Nome do equipamento.</td></tr>
-    <tr><td>2</td><td>Valor real.</td></tr>
-    <tr><td>3</td><td>Valor acumulado.</td></tr>
-    <tr><td>4</td><td>Ícone de valor real forçado.</td></tr>
-</table>
+        <li><a href="#valorreal">10.2.5 - Gráfico valor real</a></li>
 
-<p><strong>TABELA 51: ÍCONES DO PAINEL RESUMIDO.</strong></p>
+        <li><a href="#valorbruto">10.2.6 - Gráfico valor bruto</a></li>
 
-<hr>
-
-<h2>10.2.2 OPERAÇÃO</h2>
-
-<p>
-A tela de operação possui duas guias, apresentando informações do sensor e permitindo
-alterações conforme o nível de acesso do usuário.
-</p>
-
-<p><strong>FIGURA 51: OPERAÇÃO SENSOR ANALÓGICO ACUMULATIVO.</strong></p>
-
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Acessa a aba de operação.</td></tr>
-    <tr><td>2</td><td>Acessa a aba de parâmetros.</td></tr>
-    <tr><td>3</td><td>Acessa a aba de mensageria.</td></tr>
-    <tr><td>4</td><td>Nome da aba atual.</td></tr>
-    <tr><td>5</td><td>Nome do sensor.</td></tr>
-    <tr><td>6</td><td>Descrição do sensor.</td></tr>
-    <tr><td>7</td><td>Valor de offset atual.</td></tr>
-    <tr><td>8</td><td>Valor real forçado.</td></tr>
-    <tr><td>9</td><td>Habilita ou desabilita o valor forçado.</td></tr>
-    <tr><td>10</td><td>Valor acumulado.</td></tr>
-    <tr><td>11</td><td>Indicador gráfico do valor real e das faixas de alarme.</td></tr>
-    <tr><td>12</td><td>Valor real de saída.</td></tr>
-    <tr><td>13</td><td>Acessa a segunda guia.</td></tr>
-    <tr><td>14</td><td>Fecha o pop-up.</td></tr>
-</table>
-
-<p><strong>TABELA 51: ÍCONES DA TELA DE OPERAÇÃO GUIA 01.</strong></p>
-
-<p><strong>FIGURA 52: OPERAÇÃO SENSOR ANALÓGICO ACUMULATIVO.</strong></p>
-
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Habilita ou desabilita os alarmes.</td></tr>
-    <tr><td>2</td><td>Campos para configurar os limites dos alarmes.</td></tr>
-    <tr><td>3</td><td>Retorna à guia 01.</td></tr>
-</table>
-
-<p><strong>TABELA 52: ÍCONES DA TELA DE OPERAÇÃO GUIA 02.</strong></p>
+        <li><a href="#alarmes">10.2.7 - Alarmes ativos</a></li>
+    </ul>
+</nav>
 
 <hr>
 
-<h2>10.2.3 PARÂMETROS</h2>
+<main>
 
-<p>
-Nesta tela são configurados os valores máximos e mínimos, escala, offset, unidade de medida
-e filtro digital do sensor.
-</p>
+<!-- MENSAGERIA -->
+<section id="mensageria">
 
-<p>
-Também são definidos os parâmetros de acumulação, como tipo de acumulação (direta, por pulso
-ou apenas valores positivos), unidade de medida e opção de zerar o acumulador.
-</p>
+    <h2>10.1.1 - MENSAGERIA</h2>
 
-<p>
-Essas configurações são permitidas apenas para usuários de manutenção ou administração.
-</p>
+    <p>
+        A aba de mensageria dos sensores analógicos acumulativos
+        possui quatro telas:
+    </p>
 
-<p><strong>FIGURA 53: PARÂMETROS 01 SENSOR ANALÓGICO ACUMULATIVO.</strong></p>
+    <ul>
+        <li>Log de ações dos usuários.</li>
+        <li>Alarmes ativos.</li>
+        <li>Gráfico do valor real.</li>
+        <li>Gráfico do valor acumulado da última hora.</li>
+    </ul>
 
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Valor analógico de entrada no CLP.</td></tr>
-    <tr><td>2</td><td>Valor de saída dentro da escala definida.</td></tr>
-    <tr><td>3</td><td>Inversão de escala.</td></tr>
-    <tr><td>4</td><td>Valor máximo da escala real.</td></tr>
-    <tr><td>5</td><td>Valor mínimo da escala real.</td></tr>
-    <tr><td>6</td><td>Configuração do offset.</td></tr>
-    <tr><td>7</td><td>Valor mínimo da escala analógica.</td></tr>
-    <tr><td>8</td><td>Valor máximo da escala analógica.</td></tr>
-    <tr><td>9</td><td>Seleção da unidade de medida.</td></tr>
-    <tr><td>10</td><td>Acessa a guia 02.</td></tr>
-</table>
+    <p><a href="#">Voltar ao menu</a></p>
 
-<p><strong>TABELA 53: ÍCONES DA TELA DE PARÂMETROS GUIA 01.</strong></p>
-
-<p><strong>FIGURA 54: PARÂMETROS 02 SENSOR ANALÓGICO ACUMULATIVO.</strong></p>
-
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Ativa o filtro digital.</td></tr>
-    <tr><td>2</td><td>Configura o intervalo entre as amostras.</td></tr>
-    <tr><td>3</td><td>Define o número de amostras.</td></tr>
-    <tr><td>4</td><td>Retorna à guia 01.</td></tr>
-    <tr><td>5</td><td>Acessa a guia 03.</td></tr>
-</table>
-
-<p><strong>TABELA 54: ÍCONES DA TELA DE PARÂMETROS GUIA 02.</strong></p>
+</section>
 
 <hr>
 
-<h2>10.2.4 LOG DE AÇÕES</h2>
+<!-- FACEPLATE -->
+<section id="faceplate">
 
-<p><strong>FIGURA 56: MENSAGERIA LOG DE AÇÕES SINAL ANALÓGICO.</strong></p>
+    <h2>10.2.1 - FACEPLATE</h2>
 
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Avança para a tela de alarmes ativos.</td></tr>
-</table>
+    <p>
+        Cada sensor possui um painel com informações básicas.
+        Ao clicar no painel, é possível acessar a tela de operação
+        do equipamento.
+    </p>
 
-<p><strong>TABELA 56: ÍCONES DA TELA LOG DE AÇÕES.</strong></p>
+    <h3>Figura 51: Painel resumido sensor analógico acumulativo</h3>
 
-<hr>
+    <table border="1">
+        <tr>
+            <th>Nº</th>
+            <th>Descrição</th>
+        </tr>
+        <tr><td>1</td><td>Nome do equipamento.</td></tr>
+        <tr><td>2</td><td>Valor real.</td></tr>
+        <tr><td>3</td><td>Valor acumulado.</td></tr>
+        <tr><td>4</td><td>Ícone de valor real forçado.</td></tr>
+    </table>
 
-<h2>10.2.5 GRÁFICO VALOR REAL</h2>
+    <p><strong>Tabela 51: Ícones do painel resumido.</strong></p>
 
-<p><strong>FIGURA 57: MENSAGERIA VALOR REAL SINAL ANALÓGICO ACUMULATIVO.</strong></p>
+    <p><a href="#">Voltar ao menu</a></p>
 
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Retorna à tela de alarmes ativos.</td></tr>
-    <tr><td>2</td><td>Avança para a tela de valor bruto.</td></tr>
-</table>
-
-<p><strong>TABELA 57: ÍCONES DA TELA GRÁFICO VALOR REAL.</strong></p>
-
-<hr>
-
-<h2>10.2.6 GRÁFICO VALOR BRUTO</h2>
-
-<p><strong>FIGURA 58: MENSAGERIA VALOR BRUTO SINAL ANALÓGICO ACUMULATIVO.</strong></p>
-
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Retorna à tela de valor real.</td></tr>
-</table>
-
-<p><strong>TABELA 58: ÍCONES DA TELA GRÁFICO VALOR ACUMULADO.</strong></p>
+</section>
 
 <hr>
 
-<h2>10.2.7 ALARMES ATIVOS</h2>
+<!-- OPERAÇÃO -->
+<section id="operacao">
 
-<p><strong>FIGURA 59: ALARMES SINAL ANALÓGICO ACUMULATIVO.</strong></p>
+    <h2>10.2.2 - OPERAÇÃO</h2>
 
-<table border="1">
-    <tr><th>Nº</th><th>Descrição</th></tr>
-    <tr><td>1</td><td>Avança para a tela do gráfico de valor real.</td></tr>
-    <tr><td>2</td><td>Retorna à tela de log de ações.</td></tr>
-</table>
+    <p>
+        A tela de operação possui duas guias, apresentando
+        informações do sensor e permitindo alterações conforme
+        o nível de acesso do usuário.
+    </p>
 
-<p><strong>TABELA 59: ÍCONES DA TELA DE ALARMES ATIVOS.</strong></p>
+    <h3 id="operacao01">Guia 01 - Operação</h3>
+
+    <p>Figura 51: Operação sensor analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Acessa a aba de operação.</td></tr>
+        <tr><td>2</td><td>Acessa a aba de parâmetros.</td></tr>
+        <tr><td>3</td><td>Acessa a aba de mensageria.</td></tr>
+        <tr><td>4</td><td>Nome da aba atual.</td></tr>
+        <tr><td>5</td><td>Nome do sensor.</td></tr>
+        <tr><td>6</td><td>Descrição do sensor.</td></tr>
+        <tr><td>7</td><td>Valor de offset atual.</td></tr>
+        <tr><td>8</td><td>Valor real forçado.</td></tr>
+        <tr><td>9</td><td>Habilita ou desabilita o valor forçado.</td></tr>
+        <tr><td>10</td><td>Valor acumulado.</td></tr>
+        <tr><td>11</td><td>Indicador gráfico do valor real e das faixas de alarme.</td></tr>
+        <tr><td>12</td><td>Valor real de saída.</td></tr>
+        <tr><td>13</td><td>Acessa a segunda guia.</td></tr>
+        <tr><td>14</td><td>Fecha o pop-up.</td></tr>
+    </table>
+
+    <p><strong>Tabela 51: Ícones da tela de operação guia 01.</strong></p>
+
+    <h3 id="operacao02">Guia 02 - Operação</h3>
+
+    <p>Figura 52: Operação sensor analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Habilita ou desabilita os alarmes.</td></tr>
+        <tr><td>2</td><td>Campos para configurar os limites dos alarmes.</td></tr>
+        <tr><td>3</td><td>Retorna à guia 01.</td></tr>
+    </table>
+
+    <p><strong>Tabela 52: Ícones da tela de operação guia 02.</strong></p>
+
+    <p><a href="#">Voltar ao menu</a></p>
+
+</section>
 
 <hr>
 
-<a href="./index.html"><button type="button">VOLTAR</button></a>
+<!-- PARÂMETROS -->
+<section id="parametros">
+
+    <h2>10.2.3 - PARÂMETROS</h2>
+
+    <p>
+        Nesta tela são configurados os valores máximos e mínimos,
+        escala, offset, unidade de medida e filtro digital do sensor.
+    </p>
+
+    <p>
+        Também são definidos os parâmetros de acumulação,
+        como tipo de acumulação, unidade de medida e opção
+        de zerar o acumulador.
+    </p>
+
+    <p>
+        Essas configurações são permitidas apenas para usuários
+        de manutenção ou administração.
+    </p>
+
+    <h3 id="parametros01">Guia 01 - Parâmetros</h3>
+
+    <p>Figura 53: Parâmetros 01 sensor analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Valor analógico de entrada no CLP.</td></tr>
+        <tr><td>2</td><td>Valor de saída dentro da escala definida.</td></tr>
+        <tr><td>3</td><td>Inversão de escala.</td></tr>
+        <tr><td>4</td><td>Valor máximo da escala real.</td></tr>
+        <tr><td>5</td><td>Valor mínimo da escala real.</td></tr>
+        <tr><td>6</td><td>Configuração do offset.</td></tr>
+        <tr><td>7</td><td>Valor mínimo da escala analógica.</td></tr>
+        <tr><td>8</td><td>Valor máximo da escala analógica.</td></tr>
+        <tr><td>9</td><td>Seleção da unidade de medida.</td></tr>
+        <tr><td>10</td><td>Acessa a guia 02.</td></tr>
+    </table>
+
+    <p><strong>Tabela 53: Ícones da tela de parâmetros guia 01.</strong></p>
+
+    <h3 id="parametros02">Guia 02 - Parâmetros</h3>
+
+    <p>Figura 54: Parâmetros 02 sensor analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Ativa o filtro digital.</td></tr>
+        <tr><td>2</td><td>Configura o intervalo entre as amostras.</td></tr>
+        <tr><td>3</td><td>Define o número de amostras.</td></tr>
+        <tr><td>4</td><td>Retorna à guia 01.</td></tr>
+        <tr><td>5</td><td>Acessa a guia 03.</td></tr>
+    </table>
+
+    <p><strong>Tabela 54: Ícones da tela de parâmetros guia 02.</strong></p>
+
+    <p><a href="#">Voltar ao menu</a></p>
+
+</section>
+
+<hr>
+
+<!-- LOG DE AÇÕES -->
+<section id="logs">
+
+    <h2>10.2.4 - LOG DE AÇÕES</h2>
+
+    <p>Figura 56: Mensageria log de ações sinal analógico.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Avança para a tela de alarmes ativos.</td></tr>
+    </table>
+
+    <p><strong>Tabela 56: Ícones da tela log de ações.</strong></p>
+
+    <p><a href="#">Voltar ao menu</a></p>
+
+</section>
+
+<hr>
+
+<!-- GRÁFICO VALOR REAL -->
+<section id="valorreal">
+
+    <h2>10.2.5 - GRÁFICO VALOR REAL</h2>
+
+    <p>Figura 57: Mensageria valor real sinal analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Retorna à tela de alarmes ativos.</td></tr>
+        <tr><td>2</td><td>Avança para a tela de valor bruto.</td></tr>
+    </table>
+
+    <p><strong>Tabela 57: Ícones da tela gráfico valor real.</strong></p>
+
+    <p><a href="#">Voltar ao menu</a></p>
+
+</section>
+
+<hr>
+
+<!-- GRÁFICO VALOR BRUTO -->
+<section id="valorbruto">
+
+    <h2>10.2.6 - GRÁFICO VALOR BRUTO</h2>
+
+    <p>Figura 58: Mensageria valor bruto sinal analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Retorna à tela de valor real.</td></tr>
+    </table>
+
+    <p><strong>Tabela 58: Ícones da tela gráfico valor acumulado.</strong></p>
+
+    <p><a href="#">Voltar ao menu</a></p>
+
+</section>
+
+<hr>
+
+<!-- ALARMES ATIVOS -->
+<section id="alarmes">
+
+    <h2>10.2.7 - ALARMES ATIVOS</h2>
+
+    <p>Figura 59: Alarmes sinal analógico acumulativo.</p>
+
+    <table border="1">
+        <tr><th>Nº</th><th>Descrição</th></tr>
+        <tr><td>1</td><td>Avança para a tela do gráfico de valor real.</td></tr>
+        <tr><td>2</td><td>Retorna à tela de log de ações.</td></tr>
+    </table>
+
+    <p><strong>Tabela 59: Ícones da tela de alarmes ativos.</strong></p>
+
+    <p><a href="#">Voltar ao menu</a></p>
+
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>Documentação Técnica - Sistema de Automação</p>
+    <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
+</footer>
 
 </body>
 </html>
