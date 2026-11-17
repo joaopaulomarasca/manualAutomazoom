@@ -5,7 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body>11.1	CONTROLE PID
+11.1.1	 FACEPLATE
+
+Para cada sistema de controle PID instanciado na aplicação, há um painel com o resumo das informações do respectivo controle, conforme a FIGURA 60.
+
+ 
+FIGURA 60: TELA RESUMIDA PID
+
+ 	A tabela a seguir descreve cada campo do painel do controle PID. Clicando em cima do painel uma tela com as informações detalhadas do bloco é apresentada, conforme a FIGURA 61.
+
+ÍCONES DA FACEPLATE - PID
+1	Nome do Equipamento.
+2	SP-Setpoint (Valor desejado)
+3	PV – Variável de leitura
+4	MV – Ação de controle
+5	Ícones para representar certos status do controlador:
+	 	VALOR FORÇADO DE SAÍDA	 	BLOQUEADO POR INTERLOCK
+	 	EM MODO MANUAL	 	EM MODO MANUTENÇÃO
+	 	BLOQUEIO DE SEGURANÇA	 	EM FALHA
+TABELA 60: ÍCONES FACEPLATE - PID
+
+11.1.2	 OPERAÇÃO
+
+	Na aba de operação é possível monitorar de forma gráfica um comparativo entre os valores de interesse do controlador, como o setpoint (SP), o valor de processo (PV) que é o valor monitorado, o qual por meio da ação de controle deve se aproximar o máximo possível do valor de setpoint. E o último valor é a saída do controlador (ação de controle - MV), a qual está sempre em percentual variando de 0% a 100%.
+	Além destas informações também é possível monitorar de forma resumida os status do controlador (com o painel lateral de status simplificado) e também com o status global do mesmo. Nesta tela ainda, pode-se acessar todas as demais telas da pop up, e realizar certas ações, como modificar o modo de operação entre manual e automático, resetar as falhas, definir o setpoint desejado, definir um valor fixo para a saída de controle quando operando em modo manual e for habilitado um sinal forçado de saída.
+	A FIGURA 61 e FIGURA 62 apresentam esta tela dividindo por suas guias e, as respectivas tabelas explicativas de cada figura trazem a descrição de cada elemento em cada guia.
+
+ 
+                                         FIGURA 61: TELA DE OPERAÇÃO GUIA 01 - PID
+
+ÍCONES TELA DE OPERAÇÃO GUIA 01 - PID
+1	Botão abre próxima guia da tela de operação.
+2	Botão abre tela de operação.
+3	Botão abre tela de configuração.
+4	Botão abre tela de mensageria.
+5	Nome do controlador.
+6	Descrição do controlador.
+7	Status do controlador.
+8	Seleção de modo de operação: manual ou automático.
+9	Nome da tela atual.
+10	Botão para ligar o controlador quando em modo manual.
+11	Botão reset de falhas.
+12	Botão força valor fixo definido para ação de controle quando em modo manual.
+13	Botão abre tela de diagnóstico.
+14	Campo para configurar setpoint desejado.
+15	Campo para configurar valor de saída fixo.
+16	Valores monitorados (SP, PV e MV) em formato decimal.
+17	Valor do SP em forma gráfica.
+18	Valor do PV em forma gráfica.
+19	Valor do MV de aquecimento em forma gráfica.
+20	Valor do MV de resfriamento em forma gráfica.
+21	Botão fechar pop up.
+TABELA 61: ÍCONES TELA DE OPERAÇÃO GUIA 01  - PID
+
+
+ 
+                                   FIGURA 62: TELA DE OPERAÇÃO GUIA 02 - PID
+
+ÍCONES TELA DE OPERAÇÃO GUIA 02 - PID
+01	Botão retornar para a guia 01 da tela de operação.
+02	Indicador de ativos.
+03	Botão abre tela de interlock
+                                          TABELA 62: ÍCONES TELA DE OPERAÇÃO GUIA 02 - PID
+
+11.1.3	 PARÂMETROS
+
+	As funcionalidades da tela de parâmetros só podem ser utilizadas por usuários do nível de manutenção e acima.
+	Nesta tela é possível colocar o controlador em modo manutenção (acompanhando o motor ao qual o mesmo está associado para que não cause erros ao PID, ou mesmo para desabilitar a sua utilização). Assim como outros equipamentos, o PID pode ser colocado em modo bypass nesta tela.
+	Além destas funcionalidades, é possível também definir a unidade de medida do PID (valores de SP e PV assumirão esta unidade de medida).
+	esta tela é dividida em duas guias, onde na primeira além do que foi mencionado anteriormente, há a possibilidade de alterar configurações do próprio controlador PID, como os limites de saída (valores máximo e mínimo que que o PID estará gerando como sua variável de saída (ação de controle -MV), os valores serão sempre em percentual). Pode-se definir um valor fixo para a saída de controle quando o PID estiver em erro, inverter a ação de controle e habilitar falhas para valores que ultrapassem o limite previsto para o valor de processo (PV).
+	Na segunda guia da tela, estão os parâmetros do PID, tais valores só podem ser alterados com usuário do nível de engenharia e acima. Além destes valores que podem ser digitados e testados para o desenvolvimento de um PID por tentativa e erro, há a possibilidade de executar um comando de fine tuning e pré tunning em que o bloco do controlador PID buscará valores que dentro da simulação por ele executada são os melhores para garantir um controlador com características boas.
+
+ 
+FIGURA 63: TELA DE PARÂMETROS GUIA 01 - PID
+
+ÍCONES TELA DE PARÂMETROS GUIA 01 - PID
+1	Parametriza o máximo valor que poderá atingir a variável manipulada (MV aquecimento)
+2	Parametriza o mínimo valor que poderá atingir a variável manipulada (MV aquecimento)
+3	Parametriza o máximo valor que poderá atingir a variável manipulada (MV resfriamento)
+4	Parametriza o mínimo valor que poderá atingir a variável manipulada (MV resfriamento)
+5	Escolhe a unidade de medida que o processo está controlando.
+6	Esta opção inverte a ação de controle, ou seja, ao habilitar a inversão de controle o MV passa a aumentar e o PV diminuir.
+7	Habilita a falha limite de PV, esta configuração é utilizada para que em caso de extrapolação do valor de PV estabelecido o controle PID entre em falha.  
+8	Muitas vezes é necessário estabelecer um limite máximo que o PV possa atingir, neste campo é inserido o valor máximo que possa chegar o PV. Para esta configuração é necessário habilitar a falha limite descrito no balão indicador 8.
+9	Valor que a saída (MV) vai assumir quando o PID estiver em falha/erro.
+10	Coloca o PID em manutenção. Para acionar esse botão, o usuário deve ter nível de acesso de manutenção ou administrador.
+11	Coloca o PID em modo bypass.
+12	Botão abre a guia 02.
+TABELA 63: ÍCONES TELA DE PARÂMETROS GUIA 01 - PID
+
+ 
+FIGURA 64: TELA DE PARÂMETROS GUIA 02 - PID
+
+ÍCONES TELA PARÂMETROS GUIA 02 - PID
+1	Define o valor do ganho/proporcional do controlador (PID HEAT/COOL). 
+2	Define o valor da parcela integrativa do controlador (PID HEAT/COOL).
+3	Define o valor da parcela derivativa do controlador (PID HEAT/COOL).
+4	Define o peso para os valores informados de ganho/proporcional (PID HEAT/COOL).
+5	Define o peso dos valores informados para o derivativo (PID HEAT/COOL).
+6	Define o valor do filtro do derivativo (PID HEAT/COOL).
+7	Defino o ciclo em segundos da leitura (PID HEAT/COOL).
+8	É a faixa do setpoint onde o PID passa a atuar de forma proporcional (PID HEAT/COOL).
+9	É a faixa próxima ao setpoint onde o PID NÃO reage (PID HEAT/COOL).
+10	Executa pré tunning.
+11	executa fine tunning.
+12	Status/passo do pré-tunning ou fine tunning (dependendo do processo escolhido)
+13	Botão cancelar pré tunning ou fine tunning (dependendo do processo escolhido).
+14	Progresso do pré-tunning ou fine tunning (dependendo do processo escolhido).
+15	Botão abre a guia 01.
+TABELA 64: ÍCONES TELA DE PARÂMETROS GUIA 02 - PID
+
+11.1.4	 MENSAGERIA
+
+A aba de mensageria para os controladores PID é dividida em quatro guias, sendo elas: Log de ações dos usuários, alarmes ativos e gráficos da última hora de operação dos valores de setpoint (SP)/PV e MV Atual.
+
+11.1.5	 LOG DE AÇÕES	
+ 
+FIGURA 65: TELA MENSAGERIA LOG DE AÇÕES - PID
+
+ÍCONES TELA MENSAGERIA LOG DE AÇÕES - PID
+1	Botão abre próxima guia.
+TABELA 65: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - PID
+
+11.1.6	 ALARMES ATIVOS
+
+ 
+FIGURA 66: TELA MENSAGERIA ALARMES ATIVOS - PID
+
+ÍCONES TELA MENSAGERIA ALARMES ATIVOS - PID
+1	Botão abre próxima guia
+2	Botão retorna para a guia anterior
+TABELA 66: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - PID
+
+
+
+
+
+
+
+
+
+
+11.1.7	GRÁFICO DE SETPOINT (SP) E PV
+
+ 
+FIGURA 67: TELA MENSAGERIA GRÁFICO DE SETPOINT E PV - PID
+
+ÍCONES TELA MENSAGERIA GRÁFICO DE SETPOINT - PID
+1	Botão abre próxima guia.
+2	Botão retorna para a guia anterior.
+TABELA 67: ÍCONES TELA MENSAGERIA GRÁFICO DE SETPOINT E PV - PID
+
+
+
+
+
+
+
+
+
+
+
+
+
+11.1.8	 GRÁFICO DO VALOR DE SAÍDA DO CONTROLADOR (MV)
+
+ 
+FIGURA 68: TELA MENSAGERIA GRÁFICO DO VALOR DE SAÍDA DO CONTROLADOR (MV) - PID
+
+ÍCONES TELA MENSAGERIA GRÁFICO DE AÇÃO DE CONTROLE - PID
+01	Botão retorna para a guia anterior
+TABELA 68: ÍCONES TELA MENSAGERIA DO VALOR DE SAÍDA DO CONTROLADOR (MV) - PID
+
+11.1.9	 INTERLOCK
+
+A tela de interlock (FIGURA 69) mostra o status dos Intertravamentos do sistema, é possível verificar a condição de cada sinal de interlock através do ícone ao lado da do texto do interlock, onde a indicação estará na cor azul com um ponto de exclamação dentro quando ativado e com a cor próxima a das letras e sem o ponto de exclamação quando desativado. Caso todos os sinais de interlock estejam ativos a indicação de “LIVRE” é acionada. 
+
+ 
+FIGURA 69: TELA DE INTERLOCK - PID
+
+ÍCONES TELA DE INTERLOCK- PID
+1	Retorna para a tela de operação.
+2	Habilita bypass individualmente em cada interlock desejado.
+3	Status de interlock ok.
+4	Texto descritivo de interlock.
+5	Nome/tag do PID
+6	Segundo status de interlock ok.
+7	Status de livre por interlock.
+TABELA 69: ÍCONES TELA DE INTERLOCK - PID
+
+
+
+
+
+
+
+
       <a href="./index.html"> <button> VOLTAR </button> </a>
 </body>
 </html>
