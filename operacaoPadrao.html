@@ -1,268 +1,470 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Documentação - Partida Direta</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #12345a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        header h2 {
+            margin: 8px 0 0;
+            font-size: 18px;
+            font-weight: normal;
+            color: #c9dced;
+        }
+
+        nav {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 20px;
+            background: white;
+            border: 1px solid #d5dee8;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            color: #12345a;
+        }
+
+        nav ul {
+            padding-left: 22px;
+        }
+
+        nav li {
+            margin: 5px 0;
+        }
+
+        nav a {
+            color: #245b91;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border: 1px solid #d5dee8;
+            border-radius: 6px;
+            scroll-margin-top: 15px;
+        }
+
+        section h2 {
+            color: #12345a;
+            font-size: 21px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dce6f0;
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #245b91;
+            font-size: 16px;
+            margin-top: 22px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+            font-size: 14px;
+        }
+
+        th {
+            background: #e5edf5;
+            color: #12345a;
+            text-align: left;
+            padding: 11px;
+            border: 1px solid #ccd8e4;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #d5dee8;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background: #f6f8fb;
+        }
+
+        td:first-child {
+            width: 75px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 7px 13px;
+            background: #e5edf5;
+            color: #12345a;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .voltar:hover {
+            background: #d3e1ef;
+        }
+
+        footer {
+            background: #12345a;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: #c9dced;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 21px;
+            }
+
+            section {
+                padding: 16px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>DOCUMENTAÇÃO TÉCNICA</h1>
-        <h2>2.1 - PARTIDA DIRETA</h2>
-        <hr>
-    </header>
+<header>
+    <h1>DOCUMENTAÇÃO TÉCNICA</h1>
+    <h2>2.1 - PARTIDA DIRETA</h2>
+</header>
 
-    <nav>
-        <h3>MENU PRINCIPAL</h3>
+<nav>
+    <h3>MENU PRINCIPAL</h3>
+
+    <ul>
+        <li><a href="#faceplate">2.1.1 - Faceplate</a></li>
+        <li><a href="#operacao">2.1.2 - Operação</a></li>
+        <li><a href="#parametros">2.1.3 - Parâmetros</a></li>
+        <li>
+            <a href="#mensageria">2.1.4 - Mensageria</a>
+            <ul>
+                <li><a href="#logs">Log de ações</a></li>
+                <li><a href="#alarmes">Alarmes ativos</a></li>
+                <li><a href="#acionamentos">Log de acionamentos</a></li>
+            </ul>
+        </li>
+        <li><a href="#interlock">2.1.5 - Interlock</a></li>
+        <li><a href="#diagnostico">2.1.6 - Diagnóstico de falhas</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- FACEPLATE -->
+
+    <section id="faceplate">
+
+        <h2>2.1.1 - FACEPLATE</h2>
+
+        <p>
+            Para cada motor existente no sistema, há um painel
+            de informações resumidas referente a este.
+        </p>
+
+        <img src="./imagens/Capturar.PNG" alt="Faceplate">
+
+        <h3>Figura 1: Faceplate inversor de frequência</h3>
+
+        <p>Ícones da Faceplate - Partida Direta:</p>
+
+        <table>
+            <tr>
+                <th>ITEM</th>
+                <th>DESCRIÇÃO</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    Ícones indicadores de estados do motor:
+                    <ul>
+                        <li>Em modo manual</li>
+                        <li>Livre por bypass</li>
+                        <li>Bloqueado por interlock</li>
+                        <li>Em modo comando externo</li>
+                        <li>Em modo manutenção</li>
+                        <li>Bloqueio por Power Braking</li>
+                        <li>Bloqueio de segurança</li>
+                        <li>Em falha</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nome do motor.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Desenho do motor, que muda de cor de acordo com seu status.</td>
+            </tr>
+        </table>
+
+        <a href="#" class="voltar">Voltar ao menu</a>
+
+    </section>
+
+    <!-- OPERAÇÃO -->
+
+    <section id="operacao">
+
+        <h2>2.1.2 - OPERAÇÃO</h2>
+
+        <img src="./imagens/Capturar2.PNG" alt="Operação">
+
+        <h3>Figura 2: Pop-up partida direta - Aba operação</h3>
+
+        <p>
+            A tela apresenta um resumo das condições atuais do motor,
+            além dos comandos de operação.
+        </p>
+
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Botão abre a aba de operação.</td></tr>
+            <tr><td>2</td><td>Botão abre a aba de parâmetros.</td></tr>
+            <tr><td>3</td><td>Botão abre a aba de mensageria.</td></tr>
+            <tr><td>4</td><td>Nome da aba atual.</td></tr>
+            <tr><td>5</td><td>Botão para fechar a popup.</td></tr>
+            <tr><td>6</td><td>Desenho do motor conforme seu status.</td></tr>
+            <tr><td>7</td><td>Ícones indicadores de estados do motor.</td></tr>
+            <tr><td>8</td><td>Status do motor.</td></tr>
+            <tr><td>9</td><td>Nome do motor.</td></tr>
+            <tr><td>10</td><td>Descrição do motor.</td></tr>
+            <tr><td>11</td><td>Botão abre a aba de diagnóstico.</td></tr>
+            <tr><td>12</td><td>Resumo das condições do motor.</td></tr>
+            <tr><td>13</td><td>Botão abre a aba de interlock.</td></tr>
+            <tr><td>14</td><td>Seleciona o modo manual ou automático.</td></tr>
+            <tr><td>15</td><td>Botão liga o motor.</td></tr>
+            <tr><td>16</td><td>Botão de reset de falhas.</td></tr>
+            <tr><td>17</td><td>Botão liga o motor em modo Jog.</td></tr>
+            <tr><td>18</td><td>Botão de reversão do sentido de giro.</td></tr>
+        </table>
+
+        <a href="#" class="voltar">Voltar ao menu</a>
+
+    </section>
+
+    <!-- PARÂMETROS -->
+
+    <section id="parametros">
+
+        <h2>2.1.3 - PARÂMETROS</h2>
+
+        <p>Esta aba requer usuário de manutenção para ser manipulada.</p>
+
+        <img src="./imagens/Capturar3.PNG" alt="Parâmetros">
+
+        <h3>Figura 3: Parâmetros - Partida Direta</h3>
+
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Configura o tempo de operação para gerar alerta de horímetro.</td></tr>
+            <tr><td>2</td><td>Tempo de operação do motor.</td></tr>
+            <tr><td>3</td><td>Zera o tempo de operação do motor.</td></tr>
+            <tr><td>4</td><td>Desativa o retorno de ligado do motor.</td></tr>
+            <tr><td>5</td><td>Inverte o sinal de retorno.</td></tr>
+            <tr><td>6</td><td>Coloca o motor em modo manutenção.</td></tr>
+            <tr><td>7</td><td>Coloca o motor em modo BYPASS.</td></tr>
+        </table>
+
+        <a href="#" class="voltar">Voltar ao menu</a>
+
+    </section>
+
+    <!-- MENSAGERIA -->
+
+    <section id="mensageria">
+
+        <h2>2.1.4 - MENSAGERIA</h2>
+
+        <p>A aba de mensageria possui três guias:</p>
 
         <ul>
-            <li><a href="#faceplate">2.1.1 - Faceplate</a></li>
-            <li><a href="#operacao">2.1.2 - Operação</a></li>
-            <li><a href="#parametros">2.1.3 - Parâmetros</a></li>
-            <li>
-                <a href="#mensageria">2.1.4 - Mensageria</a>
-                <ul>
-                    <li><a href="#logs">Log de ações</a></li>
-                    <li><a href="#alarmes">Alarmes ativos</a></li>
-                    <li><a href="#acionamentos">Log de acionamentos</a></li>
-                </ul>
-            </li>
-            <li><a href="#interlock">2.1.5 - Interlock</a></li>
-            <li><a href="#diagnostico">2.1.6 - Diagnóstico de falhas</a></li>
+            <li>Logs de ações dos usuários.</li>
+            <li>Alarmes ativos do periférico.</li>
+            <li>Log em formato de gráfico dos acionamentos.</li>
         </ul>
-    </nav>
 
-    <hr>
+        <h3 id="logs">2.1.4.1 - LOG DE AÇÕES</h3>
 
-    <main>
+        <img src="./imagens/Capturar4.PNG" alt="Log de ações">
 
-        <!-- FACEPLATE -->
-        <section id="faceplate">
-            <h2>2.1.1 - FACEPLATE</h2>
+        <p>Figura 4: Mensageria - Log de ações.</p>
 
-            <p>
-                Para cada motor existente no sistema, há um painel
-                de informações resumidas referente a este.
-            </p>
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Botão abre a guia de alarmes ativos.</td></tr>
+        </table>
 
-            <h3>Figura 1: Faceplate inversor de frequência</h3>
+        <h3 id="alarmes">2.1.4.2 - ALARMES ATIVOS</h3>
 
-            <p>Ícones da Faceplate - Partida Direta:</p>
+        <img src="./imagens/Capturar5.PNG" alt="Alarmes">
 
-            <table border="1">
-                <tr>
-                    <th>ITEM</th>
-                    <th>DESCRIÇÃO</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        Ícones indicadores de estados do motor:
-                        <ul>
-                            <li>Em modo manual</li>
-                            <li>Livre por bypass</li>
-                            <li>Bloqueado por interlock</li>
-                            <li>Em modo comando externo</li>
-                            <li>Em modo manutenção</li>
-                            <li>Bloqueio por Power Braking</li>
-                            <li>Bloqueio de segurança</li>
-                            <li>Em falha</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Nome do motor.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>
-                        Desenho do motor, que muda de cor de acordo
-                        com seu status.
-                    </td>
-                </tr>
-            </table>
+        <p>Figura 5: Mensageria - Alarmes.</p>
 
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Botão abre a guia de log dos acionamentos.</td></tr>
+        </table>
 
-        <hr>
+        <h3 id="acionamentos">2.1.4.3 - LOG DE ACIONAMENTOS</h3>
 
-        <!-- OPERAÇÃO -->
-        <section id="operacao">
-            <h2>2.1.2 - OPERAÇÃO</h2>
+        <img src="./imagens/Capturar6.PNG" alt="Log de acionamentos">
 
-            <h3>Figura 2: Pop-up partida direta - Aba operação</h3>
+        <p>Figura 6: Mensageria - Log de acionamentos.</p>
 
-            <p>
-                A tela apresenta um resumo das condições atuais do motor,
-                além dos comandos de operação.
-            </p>
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Botão retorna para o log de alarmes.</td></tr>
+        </table>
 
-            <table border="1">
-                <tr>
-                    <th>ITEM</th>
-                    <th>DESCRIÇÃO</th>
-                </tr>
-                <tr><td>1</td><td>Botão abre a aba de operação.</td></tr>
-                <tr><td>2</td><td>Botão abre a aba de parâmetros.</td></tr>
-                <tr><td>3</td><td>Botão abre a aba de mensageria.</td></tr>
-                <tr><td>4</td><td>Nome da aba atual.</td></tr>
-                <tr><td>5</td><td>Botão para fechar a popup.</td></tr>
-                <tr><td>6</td><td>Desenho do motor conforme seu status.</td></tr>
-                <tr><td>7</td><td>Ícones indicadores de estados do motor.</td></tr>
-                <tr><td>8</td><td>Status do motor.</td></tr>
-                <tr><td>9</td><td>Nome do motor.</td></tr>
-                <tr><td>10</td><td>Descrição do motor.</td></tr>
-                <tr><td>11</td><td>Botão abre a aba de diagnóstico.</td></tr>
-                <tr><td>12</td><td>Resumo das condições do motor.</td></tr>
-                <tr><td>13</td><td>Botão abre a aba de interlock.</td></tr>
-                <tr><td>14</td><td>Seleciona o modo manual ou automático.</td></tr>
-                <tr><td>15</td><td>Botão liga o motor.</td></tr>
-                <tr><td>16</td><td>Botão de reset de falhas.</td></tr>
-                <tr><td>17</td><td>Botão liga o motor em modo Jog.</td></tr>
-                <tr><td>18</td><td>Botão de reversão do sentido de giro.</td></tr>
-            </table>
+        <a href="#" class="voltar">Voltar ao menu</a>
 
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
+    </section>
 
-        <hr>
+    <!-- INTERLOCK -->
 
-        <!-- PARÂMETROS -->
-        <section id="parametros">
-            <h2>2.1.3 - PARÂMETROS</h2>
+    <section id="interlock">
 
-            <p>
-                Esta aba requer usuário de manutenção para ser manipulada.
-            </p>
+        <h2>2.1.5 - INTERLOCK</h2>
 
-            <h3>Figura 3: Parâmetros - Partida Direta</h3>
+        <p>
+            A tela de interlock mostra o status dos intertravamentos
+            do sistema. É possível verificar a condição de cada sinal
+            através do ícone ao lado do texto do interlock.
+        </p>
 
-            <table border="1">
-                <tr>
-                    <th>ITEM</th>
-                    <th>DESCRIÇÃO</th>
-                </tr>
-                <tr><td>1</td><td>Configura o tempo de operação para gerar alerta de horímetro.</td></tr>
-                <tr><td>2</td><td>Tempo de operação do motor.</td></tr>
-                <tr><td>3</td><td>Zera o tempo de operação do motor.</td></tr>
-                <tr><td>4</td><td>Desativa o retorno de ligado do motor.</td></tr>
-                <tr><td>5</td><td>Inverte o sinal de retorno.</td></tr>
-                <tr><td>6</td><td>Coloca o motor em modo manutenção.</td></tr>
-                <tr><td>7</td><td>Coloca o motor em modo BYPASS.</td></tr>
-            </table>
+        <p>
+            Quando todos os sinais estão ativos, a indicação de
+            "LIVRE" será acionada.
+        </p>
 
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
+        <img src="./imagens/Capturar7.PNG" alt="Interlock">
 
-        <hr>
+        <h3>Figura 7: Interlock</h3>
 
-        <!-- MENSAGERIA -->
-        <section id="mensageria">
-            <h2>2.1.4 - MENSAGERIA</h2>
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Botão retorna para a aba de operação.</td></tr>
+            <tr><td>2</td><td>Indicação de interlock OK ou não.</td></tr>
+            <tr><td>3</td><td>Botão ativa bypass individual para cada interlock.</td></tr>
+            <tr><td>4</td><td>Texto descritivo do interlock.</td></tr>
+            <tr><td>5</td><td>Nome do equipamento.</td></tr>
+            <tr><td>6</td><td>Segunda indicação de interlock OK.</td></tr>
+            <tr><td>7</td><td>Indicação de equipamento livre.</td></tr>
+        </table>
 
-            <p>A aba de mensageria possui três guias:</p>
+        <a href="#" class="voltar">Voltar ao menu</a>
 
-            <ul>
-                <li>Logs de ações dos usuários.</li>
-                <li>Alarmes ativos do periférico.</li>
-                <li>Log em formato de gráfico dos acionamentos.</li>
-            </ul>
+    </section>
 
-            <h3 id="logs">2.1.4.1 - LOG DE AÇÕES</h3>
-            <p>Figura 4: Mensageria - Log de ações.</p>
+    <!-- DIAGNÓSTICO -->
 
-            <table border="1">
-                <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
-                <tr><td>1</td><td>Botão abre a guia de alarmes ativos.</td></tr>
-            </table>
+    <section id="diagnostico">
 
-            <h3 id="alarmes">2.1.4.2 - ALARMES ATIVOS</h3>
-            <p>Figura 5: Mensageria - Alarmes.</p>
+        <h2>2.1.6 - DIAGNÓSTICO DE FALHAS</h2>
 
-            <table border="1">
-                <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
-                <tr><td>1</td><td>Botão abre a guia de log dos acionamentos.</td></tr>
-            </table>
+        <p>
+            Nesta tela é possível visualizar o diagnóstico de falhas
+            e estados do equipamento.
+        </p>
 
-            <h3 id="acionamentos">2.1.4.3 - LOG DE ACIONAMENTOS</h3>
-            <p>Figura 6: Mensageria - Log de acionamentos.</p>
+        <img src="./imagens/Capturar8.PNG" alt="Diagnóstico de falhas">
 
-            <table border="1">
-                <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
-                <tr><td>1</td><td>Botão retorna para o log de alarmes.</td></tr>
-            </table>
+        <h3>Figura 8: Diagnóstico de falhas</h3>
 
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
+        <table>
+            <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
+            <tr><td>1</td><td>Botão retorna para a aba de operação.</td></tr>
+            <tr><td>2</td><td>Indicador de status ativo.</td></tr>
+        </table>
 
-        <hr>
+        <a href="#" class="voltar">Voltar ao menu</a>
 
-        <!-- INTERLOCK -->
-        <section id="interlock">
-            <h2>2.1.5 - INTERLOCK</h2>
+    </section>
 
-            <p>
-                A tela de interlock mostra o status dos intertravamentos
-                do sistema. É possível verificar a condição de cada sinal
-                através do ícone ao lado do texto do interlock.
-            </p>
+</main>
 
-            <p>
-                Quando todos os sinais estão ativos, a indicação de
-                "LIVRE" será acionada.
-            </p>
-
-            <h3>Figura 7: Interlock</h3>
-
-            <table border="1">
-                <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
-                <tr><td>1</td><td>Botão retorna para a aba de operação.</td></tr>
-                <tr><td>2</td><td>Indicação de interlock OK ou não.</td></tr>
-                <tr><td>3</td><td>Botão ativa bypass individual para cada interlock.</td></tr>
-                <tr><td>4</td><td>Texto descritivo do interlock.</td></tr>
-                <tr><td>5</td><td>Nome do equipamento.</td></tr>
-                <tr><td>6</td><td>Segunda indicação de interlock OK.</td></tr>
-                <tr><td>7</td><td>Indicação de equipamento livre.</td></tr>
-            </table>
-
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
-
-        <hr>
-
-        <!-- DIAGNÓSTICO -->
-        <section id="diagnostico">
-            <h2>2.1.6 - DIAGNÓSTICO DE FALHAS</h2>
-
-            <p>
-                Nesta tela é possível visualizar o diagnóstico de falhas
-                e estados do equipamento.
-            </p>
-
-            <h3>Figura 8: Diagnóstico de falhas</h3>
-
-            <table border="1">
-                <tr><th>ITEM</th><th>DESCRIÇÃO</th></tr>
-                <tr><td>1</td><td>Botão retorna para a aba de operação.</td></tr>
-                <tr><td>2</td><td>Indicador de status ativo.</td></tr>
-            </table>
-
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
-
-    </main>
-
-    <hr>
-
-    <footer>
-        <p>Documentação Técnica - Sistema de Automação</p>
-        <p><a href="./index.html">VOLTAR À PÁGINA INICIAL</a></p>
-    </footer>
+<footer>
+    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
+    <p>Chapecó - Santa Catarina</p>
+    <p>Documentação Técnica - Sistema de Automação</p>
+     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
+</footer>
 
 </body>
 </html>

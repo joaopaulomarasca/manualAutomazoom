@@ -4,7 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sensor Digital</title>
+    <title>Documentação - Sensor Digital</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12345a;
+            color: #fff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 20px 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            color: #12345a;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        nav li {
+            margin-bottom: 6px;
+        }
+
+        nav a {
+            color: #1d527f;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+            padding: 25px;
+            margin-bottom: 25px;
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            color: #12345a;
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dce6f1;
+        }
+
+        h3 {
+            color: #1d527f;
+            font-size: 18px;
+            margin: 25px 0 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid #d5dfeb;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid #cbd7e4;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #dce8f3;
+            color: #12345a;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f8fb;
+        }
+
+        .legenda {
+            text-align: center;
+            font-weight: bold;
+            color: #12345a;
+            font-size: 14px;
+            margin: 15px 0 25px;
+        }
+
+        .voltar {
+            margin-top: 20px;
+        }
+
+        .voltar a {
+            color: #1d527f;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .voltar a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 13px;
+        }
+
+        footer p {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            header h2 {
+                font-size: 17px;
+            }
+
+            nav, main {
+                margin: 15px auto;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -12,7 +218,6 @@
 <header>
     <h1>DOCUMENTAÇÃO TÉCNICA</h1>
     <h2>4.1 SENSOR DIGITAL</h2>
-    <hr>
 </header>
 
 <nav>
@@ -22,6 +227,7 @@
         <li><a href="#faceplate">3.1.8 FACEPLATE</a></li>
         <li><a href="#operacao">3.1.9 OPERAÇÃO</a></li>
         <li><a href="#parametros">3.1.10 PARÂMETROS</a></li>
+
         <li>
             <a href="#mensageria">3.1.11 MENSAGERIA</a>
             <ul>
@@ -32,193 +238,198 @@
     </ul>
 </nav>
 
-<hr>
-
 <main>
 
-<section id="faceplate">
-    <h2>3.1.8 FACEPLATE</h2>
+    <!-- FACEPLATE -->
+    <section id="faceplate">
+        <h2>3.1.8 FACEPLATE</h2>
 
-    <p>
-        Cada sensor digital possui um painel com informações básicas sobre seu status.
-        Ao clicar no painel, é possível acessar a tela de operação do equipamento.
-    </p>
+        <p>
+            Cada sensor digital possui um painel com informações básicas sobre seu status.
+            Ao clicar no painel, é possível acessar a tela de operação do equipamento.
+        </p>
 
-    <p><strong>FIGURA 20: FACEPLATE DE SENSORES DIGITAIS.</strong></p>
+        <img src="./imagens/Capturar20.PNG" alt="Faceplate Sensor Digital">
 
-    <h3>ÍCONES FACEPLATE - SENSOR DIGITAL</h3>
+        <p class="legenda">FIGURA 20: FACEPLATE DE SENSORES DIGITAIS.</p>
 
-    <table border="1">
-        <tr>
-            <th>Ícone</th>
-            <th>Descrição</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Nome do equipamento.</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Sinal forçado.</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Indicador de status do sensor.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Sensor ligado ou desligado.</td>
-        </tr>
-    </table>
+        <h3>ÍCONES FACEPLATE - SENSOR DIGITAL</h3>
 
-    <p><strong>TABELA 20: ÍCONES FACEPLATE SENSOR DIGITAL.</strong></p>
+        <table>
+            <tr>
+                <th>Ícone</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nome do equipamento.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sinal forçado.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Indicador de status do sensor.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Sensor ligado ou desligado.</td>
+            </tr>
+        </table>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <p class="legenda">TABELA 20: ÍCONES FACEPLATE SENSOR DIGITAL.</p>
 
-<hr>
+        <p class="voltar"><a href="#">Voltar ao menu</a></p>
+    </section>
 
-<section id="operacao">
-    <h2>3.1.9 OPERAÇÃO</h2>
+    <!-- OPERAÇÃO -->
+    <section id="operacao">
+        <h2>3.1.9 OPERAÇÃO</h2>
 
-    <p><strong>FIGURA 21: OPERAÇÃO – SENSOR DIGITAL.</strong></p>
+        <img src="./imagens/Capturar21.PNG" alt="Tela de Operação Sensor Digital">
 
-    <p>
-        Esta tela apresenta informações do sensor digital, conforme sua parametrização.
-    </p>
+        <p class="legenda">FIGURA 21: OPERAÇÃO – SENSOR DIGITAL.</p>
 
-    <h3>ÍCONES TELA DE OPERAÇÃO - SENSOR DIGITAL</h3>
+        <p>
+            Esta tela apresenta informações do sensor digital, conforme sua parametrização.
+        </p>
 
-    <table border="1">
-        <tr>
-            <th>Ícone</th>
-            <th>Descrição</th>
-        </tr>
-        <tr><td>1</td><td>Abre a aba de operação.</td></tr>
-        <tr><td>2</td><td>Abre a aba de parâmetros.</td></tr>
-        <tr><td>3</td><td>Abre a aba de mensageria.</td></tr>
-        <tr><td>4</td><td>Nome do sensor.</td></tr>
-        <tr><td>5</td><td>Leitura do sensor.</td></tr>
-        <tr><td>6</td><td>Valor do sinal convencional.</td></tr>
-        <tr><td>7</td><td>Status do sensor.</td></tr>
-        <tr><td>8</td><td>Descrição do sensor.</td></tr>
-        <tr><td>9</td><td>Indicador de sensor ligado ou desligado.</td></tr>
-        <tr><td>10</td><td>Alerta de sinal forçado com descrição.</td></tr>
-    </table>
+        <h3>ÍCONES TELA DE OPERAÇÃO - SENSOR DIGITAL</h3>
 
-    <p><strong>TABELA 21: ÍCONES DE OPERAÇÃO SENSOR DIGITAL.</strong></p>
+        <table>
+            <tr>
+                <th>Ícone</th>
+                <th>Descrição</th>
+            </tr>
+            <tr><td>1</td><td>Abre a aba de operação.</td></tr>
+            <tr><td>2</td><td>Abre a aba de parâmetros.</td></tr>
+            <tr><td>3</td><td>Abre a aba de mensageria.</td></tr>
+            <tr><td>4</td><td>Nome do sensor.</td></tr>
+            <tr><td>5</td><td>Leitura do sensor.</td></tr>
+            <tr><td>6</td><td>Valor do sinal convencional.</td></tr>
+            <tr><td>7</td><td>Status do sensor.</td></tr>
+            <tr><td>8</td><td>Descrição do sensor.</td></tr>
+            <tr><td>9</td><td>Indicador de sensor ligado ou desligado.</td></tr>
+            <tr><td>10</td><td>Alerta de sinal forçado com descrição.</td></tr>
+        </table>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <p class="legenda">TABELA 21: ÍCONES DE OPERAÇÃO SENSOR DIGITAL.</p>
 
-<hr>
+        <p class="voltar"><a href="#">Voltar ao menu</a></p>
+    </section>
 
-<section id="parametros">
-    <h2>3.1.10 PARÂMETROS</h2>
+    <!-- PARÂMETROS -->
+    <section id="parametros">
+        <h2>3.1.10 PARÂMETROS</h2>
 
-    <p>
-        Tela utilizada para configurar o sensor digital, permitindo inverter o sinal
-        e definir tempos de retardo para atuação e desatuação. Essas configurações
-        são permitidas apenas para usuários de manutenção ou administração.
-    </p>
+        <p>
+            Tela utilizada para configurar o sensor digital, permitindo inverter o sinal
+            e definir tempos de retardo para atuação e desatuação. Essas configurações
+            são permitidas apenas para usuários de manutenção ou administração.
+        </p>
 
-    <p><strong>FIGURA 22: TELA PARÂMETROS - SENSOR DIGITAL.</strong></p>
+        <img src="./imagens/Capturar22.PNG" alt="Tela de Parâmetros Sensor Digital">
 
-    <h3>ÍCONES TELA DE PARÂMETROS - SENSOR DIGITAL</h3>
+        <p class="legenda">FIGURA 22: TELA PARÂMETROS - SENSOR DIGITAL.</p>
 
-    <table border="1">
-        <tr>
-            <th>Ícone</th>
-            <th>Descrição</th>
-        </tr>
-        <tr><td>1</td><td>Inverte o sinal do sensor.</td></tr>
-        <tr><td>2</td><td>Define o tempo de retardo para atuação.</td></tr>
-        <tr><td>3</td><td>Define o tempo de retardo para desatuação.</td></tr>
-        <tr><td>4</td><td>Força o sinal do sensor para ligado.</td></tr>
-        <tr><td>5</td><td>Mantém o sinal ligado enquanto o botão estiver pressionado.</td></tr>
-        <tr><td>6</td><td>Força o sinal do sensor para desligado.</td></tr>
-        <tr><td>7</td><td>Mantém o sinal desligado enquanto o botão estiver pressionado.</td></tr>
-    </table>
+        <h3>ÍCONES TELA DE PARÂMETROS - SENSOR DIGITAL</h3>
 
-    <p><strong>TABELA 22: ÍCONES TELA DE PARÂMETROS - SENSOR DIGITAL.</strong></p>
+        <table>
+            <tr>
+                <th>Ícone</th>
+                <th>Descrição</th>
+            </tr>
+            <tr><td>1</td><td>Inverte o sinal do sensor.</td></tr>
+            <tr><td>2</td><td>Define o tempo de retardo para atuação.</td></tr>
+            <tr><td>3</td><td>Define o tempo de retardo para desatuação.</td></tr>
+            <tr><td>4</td><td>Força o sinal do sensor para ligado.</td></tr>
+            <tr><td>5</td><td>Mantém o sinal ligado enquanto o botão estiver pressionado.</td></tr>
+            <tr><td>6</td><td>Força o sinal do sensor para desligado.</td></tr>
+            <tr><td>7</td><td>Mantém o sinal desligado enquanto o botão estiver pressionado.</td></tr>
+        </table>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <p class="legenda">TABELA 22: ÍCONES TELA DE PARÂMETROS - SENSOR DIGITAL.</p>
 
-<hr>
+        <p class="voltar"><a href="#">Voltar ao menu</a></p>
+    </section>
 
-<section id="mensageria">
-    <h2>3.1.11 MENSAGERIA</h2>
+    <!-- MENSAGERIA -->
+    <section id="mensageria">
+        <h2>3.1.11 MENSAGERIA</h2>
 
-    <p>
-        A aba de mensageria possui duas guias: uma com o histórico de ações dos usuários
-        e outra com um gráfico que apresenta os acionamentos e desacionamentos do sensor
-        durante a última hora.
-    </p>
+        <p>
+            A aba de mensageria possui duas guias: uma com o histórico de ações dos usuários
+            e outra com um gráfico que apresenta os acionamentos e desacionamentos do sensor
+            durante a última hora.
+        </p>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <p class="voltar"><a href="#">Voltar ao menu</a></p>
+    </section>
 
-<hr>
+    <!-- GRÁFICO DE ACIONAMENTOS -->
+    <section id="grafico-acionamentos">
+        <h2>3.1.12 GRÁFICO ACIONAMENTOS</h2>
 
-<section id="grafico-acionamentos">
-    <h2>3.1.12 GRÁFICO ACIONAMENTOS</h2>
+        <img src="./imagens/Capturar23.PNG" alt="Tela Gráfico de Acionamentos Sensor Digital">
 
-    <p>
-        <strong>FIGURA 23: TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS - POP UP SENSOR DIGITAL.</strong>
-    </p>
+        <p class="legenda">
+            FIGURA 23: TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS - POP UP SENSOR DIGITAL.
+        </p>
 
-    <h3>ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS - SENSOR DIGITAL</h3>
+        <h3>ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS - SENSOR DIGITAL</h3>
 
-    <table border="1">
-        <tr>
-            <th>Ícone</th>
-            <th>Descrição</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Retorna para a tela anterior (log de ações).</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th>Ícone</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Retorna para a tela anterior (log de ações).</td>
+            </tr>
+        </table>
 
-    <p><strong>TABELA 23: ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS.</strong></p>
+        <p class="legenda">TABELA 23: ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS.</p>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <p class="voltar"><a href="#">Voltar ao menu</a></p>
+    </section>
 
-<hr>
+    <!-- LOG DE AÇÕES -->
+    <section id="log-acoes">
+        <h2>3.1.13 LOG DE AÇÕES</h2>
 
-<section id="log-acoes">
-    <h2>3.1.13 LOG DE AÇÕES</h2>
+        <img src="./imagens/Capturar24.PNG" alt="Tela Log de Ações Sensor Digital">
 
-    <p><strong>FIGURA 24: TELA MENSAGERIA LOG DE AÇÕES - SENSOR DIGITAL.</strong></p>
+        <p class="legenda">FIGURA 24: TELA MENSAGERIA LOG DE AÇÕES - SENSOR DIGITAL.</p>
 
-    <h3>ÍCONES TELA MENSAGERIA LOG DE AÇÕES - SENSOR DIGITAL</h3>
+        <h3>ÍCONES TELA MENSAGERIA LOG DE AÇÕES - SENSOR DIGITAL</h3>
 
-    <table border="1">
-        <tr>
-            <th>Ícone</th>
-            <th>Descrição</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Avança para a próxima tela (gráfico de acionamentos).</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th>Ícone</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Avança para a próxima tela (gráfico de acionamentos).</td>
+            </tr>
+        </table>
 
-    <p><strong>TABELA 24: ÍCONES TELA MENSAGERIA LOG DE AÇÕES.</strong></p>
+        <p class="legenda">TABELA 24: ÍCONES TELA MENSAGERIA LOG DE AÇÕES.</p>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <p class="voltar"><a href="#">Voltar ao menu</a></p>
+    </section>
 
 </main>
 
-<hr>
-
 <footer>
+    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
+    <p>Chapecó - Santa Catarina</p>
     <p>Documentação Técnica - Sistema de Automação</p>
-    <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
+     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
 </footer>
 
 </body>
 </html>
+

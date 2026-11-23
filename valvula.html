@@ -4,15 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Válvula</title>
+    <title>9.1 - Válvula</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 25px;
+            background: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            color: #12345a;
+        }
+
+        nav ul {
+            padding-left: 22px;
+            margin-bottom: 0;
+        }
+
+        nav li {
+            margin: 7px 0;
+        }
+
+        a {
+            color: #1d527f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px 30px;
+        }
+
+        section {
+            background: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+            padding: 25px;
+            margin: 25px auto;
+        }
+
+        section h2 {
+            color: #12345a;
+            border-bottom: 2px solid #dce8f3;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #1d527f;
+            margin-top: 25px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        figure {
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid #d5dfeb;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #345b7d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid #cbd7e4;
+            padding: 11px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #dce8f3;
+            color: #12345a;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f8fb;
+        }
+
+        td ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 22px;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        footer a {
+            display: inline-block;
+            margin-top: 12px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 22px 15px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            nav,
+            section {
+                padding: 18px;
+                margin: 15px;
+            }
+
+            main {
+                padding: 0 5px 20px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
         <h1>9.1 VÁLVULA</h1>
     </header>
 
-    <nav>
+    <nav id="menu">
         <h3>MENU PRINCIPAL</h3>
         <ul>
             <li><a href="#faceplate">9.1.1 FACEPLATE</a></li>
@@ -47,60 +242,69 @@
                 Ao clicar no painel, é possível acessar a tela de operação do equipamento.
             </p>
 
-            <p><strong>FIGURA 41: PAINEL DE INFORMAÇÕES RESUMIDAS VÁLVULA.</strong></p>
+            <figure>
+                <img src="./imagens/Capturar41.PNG" alt="Faceplate da válvula">
+                <figcaption>FIGURA 41: PAINEL DE INFORMAÇÕES RESUMIDAS VÁLVULA.</figcaption>
+            </figure>
 
             <p><strong>ÍCONES FACEPLATE VÁLVULAS</strong></p>
 
-            <table border="1">
-                <tr>
-                    <th>Nº</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        Desenho da válvula, que muda de cor conforme seu status:
-                        <ul>
-                            <li>Offline.</li>
-                            <li>Aberta em automático.</li>
-                            <li>Fechada em automático.</li>
-                            <li>Aberta em manual.</li>
-                            <li>Fechada em manual.</li>
-                            <li>Fechada em falha.</li>
-                            <li>Fechada por bloqueio de segurança.</li>
-                            <li>Fechada em manutenção.</li>
-                            <li>Fechada por Power Breaking.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Nome da válvula.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>
-                        Indicadores de status:
-                        <ul>
-                            <li>Modo manual.</li>
-                            <li>Comando externo.</li>
-                            <li>Livre por bypass.</li>
-                            <li>Bloqueado por interlock.</li>
-                            <li>Bloqueio de segurança.</li>
-                            <li>Em falha.</li>
-                            <li>Modo manutenção.</li>
-                            <li>Bloqueado por Power Braking.</li>
-                        </ul>
-                    </td>
-                </tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            Desenho da válvula, que muda de cor conforme seu status:
+                            <ul>
+                                <li>Offline.</li>
+                                <li>Aberta em automático.</li>
+                                <li>Fechada em automático.</li>
+                                <li>Aberta em manual.</li>
+                                <li>Fechada em manual.</li>
+                                <li>Fechada em falha.</li>
+                                <li>Fechada por bloqueio de segurança.</li>
+                                <li>Fechada em manutenção.</li>
+                                <li>Fechada por Power Breaking.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nome da válvula.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            Indicadores de status:
+                            <ul>
+                                <li>Modo manual.</li>
+                                <li>Comando externo.</li>
+                                <li>Livre por bypass.</li>
+                                <li>Bloqueado por interlock.</li>
+                                <li>Bloqueio de segurança.</li>
+                                <li>Em falha.</li>
+                                <li>Modo manutenção.</li>
+                                <li>Bloqueado por Power Braking.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
             <p><strong>TABELA 42: ÍCONES FACEPLATE VÁLVULA.</strong></p>
 
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
+            <figure>
+                <img src="./imagens/Capturar42.PNG" alt="Ícones do faceplate da válvula">
+            </figure>
 
-        <hr>
+            <a class="voltar" href="#menu">Voltar ao menu</a>
+        </section>
 
         <section id="operacao">
             <h2>9.1.2 OPERAÇÃO</h2>
@@ -110,37 +314,46 @@
                 manual e automático, abrir ou fechar a válvula, resetar falhas e acessar as demais telas.
             </p>
 
-            <p><strong>FIGURA 43: TELA OPERAÇÃO VÁLVULA.</strong></p>
+            <figure>
+                <img src="./imagens/Capturar43.PNG" alt="Tela de operação da válvula">
+                <figcaption>FIGURA 43: TELA OPERAÇÃO VÁLVULA.</figcaption>
+            </figure>
 
-            <table border="1">
-                <tr>
-                    <th>Nº</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr><td>1</td><td>Acessa a tela de operação.</td></tr>
-                <tr><td>2</td><td>Acessa a tela de parâmetros.</td></tr>
-                <tr><td>3</td><td>Acessa a tela de mensageria.</td></tr>
-                <tr><td>4</td><td>Nome da tela atual.</td></tr>
-                <tr><td>5</td><td>Desenho da válvula conforme seu status.</td></tr>
-                <tr><td>6</td><td>Nome/tag da válvula.</td></tr>
-                <tr><td>7</td><td>Acessa a tela de interlock.</td></tr>
-                <tr><td>8</td><td>Indicadores de status da válvula.</td></tr>
-                <tr><td>9</td><td>Descrição da válvula.</td></tr>
-                <tr><td>10</td><td>Status da válvula.</td></tr>
-                <tr><td>11</td><td>Acessa a tela de diagnóstico de falhas.</td></tr>
-                <tr><td>12</td><td>Indicadores dos status do painel resumido.</td></tr>
-                <tr><td>13</td><td>Seleciona o modo automático ou manual.</td></tr>
-                <tr><td>14</td><td>Comando para abrir ou fechar a válvula.</td></tr>
-                <tr><td>15</td><td>Reseta as falhas.</td></tr>
-                <tr><td>16</td><td>Fecha o pop-up.</td></tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Acessa a tela de operação.</td></tr>
+                    <tr><td>2</td><td>Acessa a tela de parâmetros.</td></tr>
+                    <tr><td>3</td><td>Acessa a tela de mensageria.</td></tr>
+                    <tr><td>4</td><td>Nome da tela atual.</td></tr>
+                    <tr><td>5</td><td>Desenho da válvula conforme seu status.</td></tr>
+                    <tr><td>6</td><td>Nome/tag da válvula.</td></tr>
+                    <tr><td>7</td><td>Acessa a tela de interlock.</td></tr>
+                    <tr><td>8</td><td>Indicadores de status da válvula.</td></tr>
+                    <tr><td>9</td><td>Descrição da válvula.</td></tr>
+                    <tr><td>10</td><td>Status da válvula.</td></tr>
+                    <tr><td>11</td><td>Acessa a tela de diagnóstico de falhas.</td></tr>
+                    <tr><td>12</td><td>Indicadores dos status do painel resumido.</td></tr>
+                    <tr><td>13</td><td>Seleciona o modo automático ou manual.</td></tr>
+                    <tr><td>14</td><td>Comando para abrir ou fechar a válvula.</td></tr>
+                    <tr><td>15</td><td>Reseta as falhas.</td></tr>
+                    <tr><td>16</td><td>Fecha o pop-up.</td></tr>
+                </tbody>
             </table>
 
             <p><strong>TABELA 43: ÍCONES OPERAÇÃO VÁLVULAS.</strong></p>
 
-            <p><a href="#">Voltar ao menu</a></p>
-        </section>
+            <figure>
+                <img src="./imagens/Capturar43.PNG" alt="Ícones da tela de operação da válvula">
+            </figure>
 
-        <hr>
+            <a class="voltar" href="#menu">Voltar ao menu</a>
+        </section>
 
         <section id="parametros">
             <h2>9.1.3 PARÂMETROS</h2>
@@ -160,52 +373,67 @@
             <div id="parametros-guia-01">
                 <h3>GUIA 01</h3>
 
-                <p><strong>FIGURA 44: TELA PARÂMETROS GUIA 01 - VÁLVULAS.</strong></p>
+                <figure>
+                    <img src="./imagens/Capturar43.PNG" alt="Tela de parâmetros da válvula - Guia 01">
+                    <figcaption>FIGURA 44: TELA PARÂMETROS GUIA 01 - VÁLVULAS.</figcaption>
+                </figure>
 
-                <table border="1">
-                    <tr>
-                        <th>Nº</th>
-                        <th>Descrição</th>
-                    </tr>
-                    <tr><td>1</td><td>Habilita a confirmação simulada de abertura.</td></tr>
-                    <tr><td>2</td><td>Habilita a geração de falhas de acionamento.</td></tr>
-                    <tr><td>3</td><td>Ativa o modo manutenção.</td></tr>
-                    <tr><td>4</td><td>Ativa o modo livre por bypass.</td></tr>
-                    <tr><td>5</td><td>Acessa a guia 02.</td></tr>
-                    <tr><td>6</td><td>Habilita a confirmação simulada de fechamento.</td></tr>
-                    <tr><td>7</td><td>Configura os tempos de abertura e fechamento simulados.</td></tr>
-                    <tr><td>8</td><td>Configura os tempos para geração de falhas.</td></tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Habilita a confirmação simulada de abertura.</td></tr>
+                        <tr><td>2</td><td>Habilita a geração de falhas de acionamento.</td></tr>
+                        <tr><td>3</td><td>Ativa o modo manutenção.</td></tr>
+                        <tr><td>4</td><td>Ativa o modo livre por bypass.</td></tr>
+                        <tr><td>5</td><td>Acessa a guia 02.</td></tr>
+                        <tr><td>6</td><td>Habilita a confirmação simulada de fechamento.</td></tr>
+                        <tr><td>7</td><td>Configura os tempos de abertura e fechamento simulados.</td></tr>
+                        <tr><td>8</td><td>Configura os tempos para geração de falhas.</td></tr>
+                    </tbody>
                 </table>
 
-                <p><strong>TABELA 44: ÍCONES TELA DE PARÂMETROS GUIA 01.</strong></p>
+                <figure>
+                    <img src="./imagens/Capturar44.PNG" alt="Ícones da tela de parâmetros da válvula - Guia 01">
+                    <figcaption>TABELA 44: ÍCONES TELA DE PARÂMETROS GUIA 01.</figcaption>
+                </figure>
             </div>
 
             <div id="parametros-guia-02">
                 <h3>GUIA 02</h3>
 
-                <p><strong>FIGURA 45: TELA PARÂMETROS GUIA 02 - VÁLVULAS.</strong></p>
+                <figure>
+                    <img src="./imagens/Capturar45.PNG" alt="Tela de parâmetros da válvula - Guia 02">
+                    <figcaption>FIGURA 45: TELA PARÂMETROS GUIA 02 - VÁLVULAS.</figcaption>
+                </figure>
 
-                <table border="1">
-                    <tr>
-                        <th>Nº</th>
-                        <th>Descrição</th>
-                    </tr>
-                    <tr><td>1</td><td>Configura a válvula como modelo de três posições.</td></tr>
-                    <tr><td>2</td><td>Configura a válvula como normalmente aberta (NA).</td></tr>
-                    <tr><td>3</td><td>Desliga a saída após a confirmação da abertura ou fechamento.</td></tr>
-                    <tr><td>4</td><td>Zera o contador de flipagens.</td></tr>
-                    <tr><td>5</td><td>Retorna à guia 01.</td></tr>
-                    <tr><td>6</td><td>Configura o limite de flipagens para gerar alarmes.</td></tr>
-                    <tr><td>7</td><td>Mostra a quantidade atual de flipagens.</td></tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Configura a válvula como modelo de três posições.</td></tr>
+                        <tr><td>2</td><td>Configura a válvula como normalmente aberta (NA).</td></tr>
+                        <tr><td>3</td><td>Desliga a saída após a confirmação da abertura ou fechamento.</td></tr>
+                        <tr><td>4</td><td>Zera o contador de flipagens.</td></tr>
+                        <tr><td>5</td><td>Retorna à guia 01.</td></tr>
+                        <tr><td>6</td><td>Configura o limite de flipagens para gerar alarmes.</td></tr>
+                        <tr><td>7</td><td>Mostra a quantidade atual de flipagens.</td></tr>
+                    </tbody>
                 </table>
 
                 <p><strong>TABELA 45: ÍCONES TELA DE PARÂMETROS GUIA 02.</strong></p>
             </div>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <a class="voltar" href="#menu">Voltar ao menu</a>
         </section>
-
-        <hr>
 
         <section id="mensageria">
             <h2>9.1.4 MENSAGERIA</h2>
@@ -218,14 +446,21 @@
             <div id="log-acoes">
                 <h3>LOG DE AÇÕES</h3>
 
-                <p><strong>FIGURA 46: MENSAGERIA LOG DE AÇÕES VÁLVULA.</strong></p>
+                <figure>
+                    <img src="./imagens/Capturar46.PNG" alt="Tela de log de ações da válvula">
+                    <figcaption>FIGURA 46: MENSAGERIA LOG DE AÇÕES VÁLVULA.</figcaption>
+                </figure>
 
-                <table border="1">
-                    <tr>
-                        <th>Nº</th>
-                        <th>Descrição</th>
-                    </tr>
-                    <tr><td>1</td><td>Avança para a próxima guia.</td></tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Avança para a próxima guia.</td></tr>
+                    </tbody>
                 </table>
 
                 <p><strong>TABELA 46: ÍCONES TELA MENSAGERIA LOG DE AÇÕES.</strong></p>
@@ -234,15 +469,22 @@
             <div id="alarmes-ativos">
                 <h3>ALARMES ATIVOS</h3>
 
-                <p><strong>FIGURA 47: MENSAGERIA ALARMES ATIVOS.</strong></p>
+                <figure>
+                    <img src="./imagens/Capturar47.PNG" alt="Tela de alarmes ativos da válvula">
+                    <figcaption>FIGURA 47: MENSAGERIA ALARMES ATIVOS.</figcaption>
+                </figure>
 
-                <table border="1">
-                    <tr>
-                        <th>Nº</th>
-                        <th>Descrição</th>
-                    </tr>
-                    <tr><td>1</td><td>Retorna à guia anterior.</td></tr>
-                    <tr><td>2</td><td>Avança para a próxima guia.</td></tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Retorna à guia anterior.</td></tr>
+                        <tr><td>2</td><td>Avança para a próxima guia.</td></tr>
+                    </tbody>
                 </table>
 
                 <p><strong>TABELA 47: ÍCONES TELA MENSAGERIA ALARMES ATIVOS.</strong></p>
@@ -251,23 +493,28 @@
             <div id="grafico-acionamentos">
                 <h3>GRÁFICO DE ACIONAMENTOS</h3>
 
-                <p><strong>FIGURA 48: MENSAGERIA GRÁFICO DE ACIONAMENTO.</strong></p>
+                <figure>
+                    <img src="./imagens/Capturar48.PNG" alt="Gráfico de acionamentos da válvula">
+                    <figcaption>FIGURA 48: MENSAGERIA GRÁFICO DE ACIONAMENTO.</figcaption>
+                </figure>
 
-                <table border="1">
-                    <tr>
-                        <th>Nº</th>
-                        <th>Descrição</th>
-                    </tr>
-                    <tr><td>1</td><td>Retorna à guia anterior.</td></tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Retorna à guia anterior.</td></tr>
+                    </tbody>
                 </table>
 
                 <p><strong>TABELA 48: ÍCONES TELA MENSAGERIA GRÁFICO DE ACIONAMENTOS.</strong></p>
             </div>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <a class="voltar" href="#menu">Voltar ao menu</a>
         </section>
-
-        <hr>
 
         <section id="interlock">
             <h2>9.1.5 INTERLOCK</h2>
@@ -278,52 +525,65 @@
                 Quando todos os interlocks estão liberados, a indicação "LIVRE" é exibida.
             </p>
 
-            <p><strong>FIGURA 49: TELA INTERLOCK - VÁLVULA.</strong></p>
+            <figure>
+                <img src="./imagens/Capturar49.PNG" alt="Tela de interlock da válvula">
+                <figcaption>FIGURA 49: TELA INTERLOCK - VÁLVULA.</figcaption>
+            </figure>
 
-            <table border="1">
-                <tr>
-                    <th>Nº</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr><td>1</td><td>Retorna à tela de operação.</td></tr>
-                <tr><td>2</td><td>Habilita o bypass individual de cada interlock.</td></tr>
-                <tr><td>3</td><td>Indica o status do interlock.</td></tr>
-                <tr><td>4</td><td>Descrição do interlock.</td></tr>
-                <tr><td>5</td><td>Segundo indicador de status do interlock.</td></tr>
-                <tr><td>6</td><td>Nome do equipamento.</td></tr>
-                <tr><td>7</td><td>Indica se a válvula está livre por interlock.</td></tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Retorna à tela de operação.</td></tr>
+                    <tr><td>2</td><td>Habilita o bypass individual de cada interlock.</td></tr>
+                    <tr><td>3</td><td>Indica o status do interlock.</td></tr>
+                    <tr><td>4</td><td>Descrição do interlock.</td></tr>
+                    <tr><td>5</td><td>Segundo indicador de status do interlock.</td></tr>
+                    <tr><td>6</td><td>Nome do equipamento.</td></tr>
+                    <tr><td>7</td><td>Indica se a válvula está livre por interlock.</td></tr>
+                </tbody>
             </table>
 
             <p><strong>TABELA 49: ÍCONES DA TELA DE INTERLOCK.</strong></p>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <a class="voltar" href="#menu">Voltar ao menu</a>
         </section>
-
-        <hr>
 
         <section id="diagnostico-falhas">
             <h2>9.1.6 DIAGNÓSTICO DE FALHAS</h2>
 
-            <p><strong>FIGURA 50: TELA DIAGNÓSTICO DE FALHAS - VÁLVULA.</strong></p>
+            <figure>
+                <img src="./imagens/Capturar50.PNG" alt="Tela de diagnóstico de falhas da válvula">
+                <figcaption>FIGURA 50: TELA DIAGNÓSTICO DE FALHAS - VÁLVULA.</figcaption>
+            </figure>
 
-            <table border="1">
-                <tr>
-                    <th>Nº</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr><td>1</td><td>Retorna à tela de operação.</td></tr>
-                <tr><td>2</td><td>Indica o status de ativo.</td></tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Retorna à tela de operação.</td></tr>
+                    <tr><td>2</td><td>Indica o status de ativo.</td></tr>
+                </tbody>
             </table>
 
             <p><strong>TABELA 50: ÍCONES DA TELA DE DIAGNÓSTICO DE FALHAS.</strong></p>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <a class="voltar" href="#menu">Voltar ao menu</a>
         </section>
 
     </main>
 
     <footer>
-        <hr>
+        <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
+        <p>Chapecó - Santa Catarina</p>
         <p>Documentação Técnica - Sistema de Automação</p>
         <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
     </footer>

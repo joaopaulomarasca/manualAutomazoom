@@ -5,6 +5,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temporizador e Atraso ON/OFF</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        header h2 {
+            margin: 8px 0 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        header hr {
+            max-width: 1100px;
+            margin: 20px auto 0;
+            border: 0;
+            border-top: 1px solid #66809b;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            color: #12345a;
+        }
+
+        nav ul {
+            padding-left: 25px;
+        }
+
+        nav li {
+            margin: 7px 0;
+        }
+
+        a {
+            color: #1d527f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 30px;
+        }
+
+        section {
+            margin: 25px 0;
+            padding: 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        section h1 {
+            color: #12345a;
+            font-size: 23px;
+            margin-top: 0;
+        }
+
+        section h2 {
+            color: #1d527f;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #345b7d;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        figure {
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid #d5dfeb;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            color: #555;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #cbd7e4;
+            padding: 11px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dce8f3;
+            color: #12345a;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f8fb;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        footer a {
+            display: inline-block;
+            margin-top: 12px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 22px;
+            }
+
+            header h2 {
+                font-size: 17px;
+            }
+
+            nav, section {
+                padding: 18px;
+            }
+
+            main {
+                padding: 0 12px 20px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -15,7 +213,7 @@
     <hr>
 </header>
 
-<nav>
+<nav id="menu">
     <h3>MENU PRINCIPAL</h3>
 
     <ul>
@@ -37,240 +235,234 @@
     </ul>
 </nav>
 
-<hr>
-
 <main>
 
-<section id="temporizador">
-    <h1>6.1 TEMPORIZADOR ON/OFF</h1>
+    <section id="temporizador">
+        <h1>6.1 TEMPORIZADOR ON/OFF</h1>
 
-    <p>
-        A popup de temporizador ON/OFF se refere a uma configuração adicional para alguns equipamentos
-        (motores, inversores e válvulas) que necessitam operar por um tempo determinado e posteriormente
-        ficarem desligados por mais um período de tempo.
-    </p>
+        <p>
+            A popup de temporizador ON/OFF se refere a uma configuração adicional para alguns equipamentos
+            (motores, inversores e válvulas) que necessitam operar por um tempo determinado e posteriormente
+            ficarem desligados por mais um período de tempo.
+        </p>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+    </section>
 
-<hr>
+    <section id="temporizador-faceplate">
+        <h2>6.1.1 FACEPLATE</h2>
 
-<section id="temporizador-faceplate">
-    <h2>6.1.1 FACEPLATE</h2>
+        <figure>
+            <img src="./imagens/Capturar35.PNG" alt="Faceplate Temporizador ON/OFF">
+            <figcaption>FIGURA 35: FACEPLATE TEMPORIZADOR ON/OFF</figcaption>
+        </figure>
 
-    <p>
-        Para cada equipamento no sistema que possuir a configuração de temporizador, existirá um símbolo
-        próximo do mesmo, o qual é mostrado na FIGURA 35. Ao clicar nesse símbolo, será aberta a popup
-        do temporizador.
-    </p>
+        <p>
+            Para cada equipamento no sistema que possuir a configuração de temporizador, existirá um símbolo
+            próximo do mesmo, o qual é mostrado na FIGURA 35. Ao clicar nesse símbolo, será aberta a popup
+            do temporizador.
+        </p>
 
-    <p>
-        Na FIGURA 36 é mostrada a popup com suas configurações.
-    </p>
+        <figure>
+            <img src="./imagens/Capturar36.PNG" alt="Popup Temporizador ON/OFF">
+            <figcaption>FIGURA 36: POP UP TEMPORIZADOR ON/OFF</figcaption>
+        </figure>
 
-    <h3>FIGURA 35: FACEPLATE TEMPORIZADOR ON/OFF</h3>
+        <p>
+            Na FIGURA 36 é mostrada a popup com suas configurações.
+        </p>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+    </section>
 
-<hr>
+    <section id="temporizador-operacao">
+        <h2>6.1.2 OPERAÇÃO</h2>
 
-<section id="temporizador-operacao">
-    <h2>6.1.2 OPERAÇÃO</h2>
+        <figure>
+            <img src="./imagens/Capturar36.PNG" alt="Popup Temporizador ON/OFF">
+            <figcaption>FIGURA 36: POP UP TEMPORIZADOR ON/OFF</figcaption>
+        </figure>
 
-    <h3>FIGURA 36: POP UP TEMPORIZADOR ON/OFF</h3>
+        <h3>ÍCONES POP UP TEMPORIZADOR ON/OFF</h3>
 
-    <h3>ÍCONES POP UP TEMPORIZADOR ON/OFF</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ITEM</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Botão que habilita o temporizador.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Campo para definir o total de horas ligado.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Campo para definir o total de minutos ligado.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Campo para definir o total de segundos ligado.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Campo para definir o total de horas desligado.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Campo para definir o total de minutos desligado.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Campo para definir o total de segundos desligado.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        Barra lateral que indica o percentual de tempo ligado e desligado.
+                        A parte da barra com a cor do fundo indica o tempo desligado,
+                        enquanto a parte azul indica o tempo ligado.
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>
+                        Indica o tempo decorrido de acionamento e desacionamento do equipamento.
+                        A barra na cor azul avança proporcionalmente ao tempo decorrido.
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Botão para fechar a popup.</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table border="1">
-        <tr>
-            <th>ITEM</th>
-            <th>DESCRIÇÃO</th>
-        </tr>
+        <p><strong>TABELA 36: ÍCONES POP UP TEMPORIZADOR ON/OFF</strong></p>
 
-        <tr>
-            <td>1</td>
-            <td>Botão que habilita o temporizador.</td>
-        </tr>
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+    </section>
 
-        <tr>
-            <td>2</td>
-            <td>Campo para definir o total de horas ligado.</td>
-        </tr>
+    <section id="atraso">
+        <h1>7.1 ATRASO ON/OFF</h1>
 
-        <tr>
-            <td>3</td>
-            <td>Campo para definir o total de minutos ligado.</td>
-        </tr>
+        <p>
+            A popup de atraso ON/OFF se refere a uma configuração adicional para alguns equipamentos
+            (motores, inversores e válvulas) que necessitam de um retardo em seu desligamento
+            ou em sua ativação.
+        </p>
 
-        <tr>
-            <td>4</td>
-            <td>Campo para definir o total de segundos ligado.</td>
-        </tr>
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+    </section>
 
-        <tr>
-            <td>5</td>
-            <td>Campo para definir o total de horas desligado.</td>
-        </tr>
+    <section id="atraso-faceplate">
+        <h2>7.1.1 FACEPLATE</h2>
 
-        <tr>
-            <td>6</td>
-            <td>Campo para definir o total de minutos desligado.</td>
-        </tr>
+        <figure>
+            <img src="./imagens/Capturar37.PNG" alt="Faceplate Atraso ON/OFF">
+            <figcaption>FIGURA 37: FACEPLATE ATRASO ON/OFF</figcaption>
+        </figure>
 
-        <tr>
-            <td>7</td>
-            <td>Campo para definir o total de segundos desligado.</td>
-        </tr>
+        <p>
+            Para cada equipamento no sistema que possuir a configuração de atraso, existirá um símbolo
+            próximo do mesmo, o qual é mostrado na FIGURA 37. Ao clicar nesse símbolo, será aberta a popup
+            do atraso ON/OFF.
+        </p>
 
-        <tr>
-            <td>8</td>
-            <td>
-                Barra lateral que indica o percentual de tempo ligado e desligado.
-                A parte da barra com a cor do fundo indica o tempo desligado,
-                enquanto a parte azul indica o tempo ligado.
-            </td>
-        </tr>
+        <figure>
+            <img src="./imagens/Capturar38.PNG" alt="Popup Atraso ON/OFF">
+            <figcaption>FIGURA 38: POP UP ATRASO ON/OFF</figcaption>
+        </figure>
 
-        <tr>
-            <td>9</td>
-            <td>
-                Indica o tempo decorrido de acionamento e desacionamento do equipamento.
-                A barra na cor azul avança proporcionalmente ao tempo decorrido.
-            </td>
-        </tr>
+        <p>
+            Na FIGURA 38 é mostrada a popup com suas configurações.
+        </p>
 
-        <tr>
-            <td>10</td>
-            <td>Botão para fechar a popup.</td>
-        </tr>
-    </table>
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+    </section>
 
-    <p>
-        <strong>TABELA 36: ÍCONES POP UP TEMPORIZADOR ON/OFF</strong>
-    </p>
+    <section id="atraso-operacao">
+        <h2>7.1.2 OPERAÇÃO</h2>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <figure>
+            <img src="./imagens/Capturar38.PNG" alt="Popup Atraso ON/OFF">
+            <figcaption>FIGURA 38: POP UP ATRASO ON/OFF</figcaption>
+        </figure>
 
-<hr>
+        <h3>ÍCONES POP UP ATRASO ON/OFF</h3>
 
-<section id="atraso">
-    <h1>7.1 ATRASO ON/OFF</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ITEM</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Botão que habilita o temporizador.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Campo para definir o total de horas de retardo para ligar.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Campo para definir o total de minutos de retardo para ligar.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Campo para definir o total de segundos de retardo para ligar.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Campo para definir o total de horas de retardo para desligar.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Campo para definir o total de minutos de retardo para desligar.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Campo para definir o total de segundos de retardo para desligar.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        Barra lateral que indica o percentual do tempo de retardo
+                        de acionamento decorrido.
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>
+                        Barra lateral que indica o percentual do tempo de retardo
+                        de desacionamento decorrido.
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Botão para fechar a popup.</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <p>
-        A popup de atraso ON/OFF se refere a uma configuração adicional para alguns equipamentos
-        (motores, inversores e válvulas) que necessitam de um retardo em seu desligamento
-        ou em sua ativação.
-    </p>
+        <p><strong>TABELA: ÍCONES POP UP ATRASO ON/OFF</strong></p>
 
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
-
-<hr>
-
-<section id="atraso-faceplate">
-    <h2>7.1.1 FACEPLATE</h2>
-
-    <p>
-        Para cada equipamento no sistema que possuir a configuração de atraso, existirá um símbolo
-        próximo do mesmo, o qual é mostrado na FIGURA 37. Ao clicar nesse símbolo, será aberta a popup
-        do atraso ON/OFF.
-    </p>
-
-    <p>
-        Na FIGURA 38 é mostrada a popup com suas configurações.
-    </p>
-
-    <h3>FIGURA 37: FACEPLATE ATRASO ON/OFF</h3>
-
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
-
-<hr>
-
-<section id="atraso-operacao">
-    <h2>7.1.2 OPERAÇÃO</h2>
-
-    <h3>FIGURA 38: POP UP ATRASO ON/OFF</h3>
-
-    <h3>ÍCONES POP UP ATRASO ON/OFF</h3>
-
-    <table border="1">
-        <tr>
-            <th>ITEM</th>
-            <th>DESCRIÇÃO</th>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>Botão que habilita o temporizador.</td>
-        </tr>
-
-        <tr>
-            <td>2</td>
-            <td>Campo para definir o total de horas de retardo para ligar.</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>Campo para definir o total de minutos de retardo para ligar.</td>
-        </tr>
-
-        <tr>
-            <td>4</td>
-            <td>Campo para definir o total de segundos de retardo para ligar.</td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>Campo para definir o total de horas de retardo para desligar.</td>
-        </tr>
-
-        <tr>
-            <td>6</td>
-            <td>Campo para definir o total de minutos de retardo para desligar.</td>
-        </tr>
-
-        <tr>
-            <td>7</td>
-            <td>Campo para definir o total de segundos de retardo para desligar.</td>
-        </tr>
-
-        <tr>
-            <td>8</td>
-            <td>
-                Barra lateral que indica o percentual do tempo de retardo
-                de acionamento decorrido.
-            </td>
-        </tr>
-
-        <tr>
-            <td>9</td>
-            <td>
-                Barra lateral que indica o percentual do tempo de retardo
-                de desacionamento decorrido.
-            </td>
-        </tr>
-
-        <tr>
-            <td>10</td>
-            <td>Botão para fechar a popup.</td>
-        </tr>
-    </table>
-
-    <p>
-        <strong>TABELA 38: ÍCONES POP UP ATRASO ON/OFF</strong>
-    </p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-</section>
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+    </section>
 
 </main>
 
-<hr>
-
 <footer>
+    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
+    <p>Chapecó - Santa Catarina</p>
     <p>Documentação Técnica - Sistema de Automação</p>
     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
 </footer>

@@ -5,6 +5,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensor Analógico</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        header h2 {
+            margin: 8px 0 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        header hr {
+            max-width: 1100px;
+            margin: 20px auto 0;
+            border: 0;
+            border-top: 1px solid #66809b;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            color: #12345a;
+        }
+
+        nav ul {
+            padding-left: 25px;
+        }
+
+        nav li {
+            margin: 7px 0;
+        }
+
+        a {
+            color: #1d527f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 30px;
+        }
+
+        section {
+            margin: 25px 0;
+            padding: 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        section h1 {
+            color: #12345a;
+            font-size: 23px;
+            margin-top: 0;
+        }
+
+        section h2 {
+            color: #1d527f;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #345b7d;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        figure {
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid #d5dfeb;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            color: #555;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #cbd7e4;
+            padding: 11px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dce8f3;
+            color: #12345a;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f8fb;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        footer a {
+            display: inline-block;
+            margin-top: 12px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 22px;
+            }
+
+            header h2 {
+                font-size: 17px;
+            }
+
+            nav, section {
+                padding: 18px;
+            }
+
+            main {
+                padding: 0 12px 20px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -15,311 +213,423 @@
     <hr>
 </header>
 
-<nav>
+<nav id="menu">
     <h3>MENU PRINCIPAL</h3>
 
     <ul>
-        <li><a href="#faceplate">5.1.1 - Faceplate</a></li>
+        <li><a href="#faceplate">5.1.1 - FACEPLATE</a></li>
 
         <li>
-            <a href="#operacao">5.1.2 - Operação</a>
+            <a href="#operacao">5.1.2 - OPERAÇÃO</a>
             <ul>
-                <li><a href="#operacao01">Guia 01</a></li>
-                <li><a href="#operacao02">Guia 02</a></li>
+                <li><a href="#operacao01">GUIA 01</a></li>
+                <li><a href="#operacao02">GUIA 02</a></li>
             </ul>
         </li>
 
         <li>
-            <a href="#parametros">5.1.3 - Parâmetros</a>
+            <a href="#parametros">5.1.3 - PARÂMETROS</a>
             <ul>
-                <li><a href="#parametros01">Guia 01</a></li>
-                <li><a href="#parametros02">Guia 02</a></li>
-                <li><a href="#parametros03">Guia 03</a></li>
+                <li><a href="#parametros01">GUIA 01</a></li>
+                <li><a href="#parametros02">GUIA 02</a></li>
+                <li><a href="#parametros03">GUIA 03</a></li>
             </ul>
         </li>
 
-        <li><a href="#mensageria">5.1.4 - Mensageria</a></li>
-        <li><a href="#logs">5.1.5 - Log de ações</a></li>
-        <li><a href="#valorreal">5.1.6 - Gráfico valor real</a></li>
-        <li><a href="#valorbruto">5.1.7 - Gráfico valor bruto</a></li>
-        <li><a href="#alarmes">5.1.8 - Alarmes ativos</a></li>
+        <li><a href="#mensageria">5.1.4 - MENSAGERIA</a></li>
+        <li><a href="#logs">5.1.5 - LOG DE AÇÕES</a></li>
+        <li><a href="#valorreal">5.1.6 - GRÁFICO VALOR REAL</a></li>
+        <li><a href="#valorbruto">5.1.7 - GRÁFICO VALOR BRUTO</a></li>
+        <li><a href="#alarmes">5.1.8 - ALARMES ATIVOS</a></li>
     </ul>
 </nav>
 
-<hr>
-
 <main>
 
-<!-- FACEPLATE -->
-<section id="faceplate">
-
-    <h2>5.1.1 - FACEPLATE</h2>
-
-    <p>
-        Cada sensor analógico possui um painel com informações básicas
-        do equipamento, conforme apresentado na FIGURA 25.
-        Ao clicar no painel, é possível acessar sua tela de operação.
-    </p>
-
-    <h3>Figura 25: Painel de informações resumidas sensor analógico</h3>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Nome do equipamento.</td></tr>
-        <tr><td>2</td><td>Valor real medido.</td></tr>
-        <tr><td>3</td><td>Unidade de medida.</td></tr>
-        <tr><td>4</td><td>Indicador de sinal real forçado.</td></tr>
-    </table>
-
-    <p><strong>Tabela 25: Ícones do painel sensor analógico.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- OPERAÇÃO -->
-<section id="operacao">
-
-    <h2>5.1.2 - OPERAÇÃO</h2>
-
-    <p>
-        A tela de operação possui duas guias, que apresentam informações
-        do sensor e permitem realizar algumas configurações conforme
-        o nível de acesso do usuário.
-    </p>
-
-    <h3 id="operacao01">Guia 01 - Operação</h3>
-
-    <p>Figura 26: Tela operação guia 01 - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Acessa a aba de operação.</td></tr>
-        <tr><td>2</td><td>Acessa a aba de parâmetros.</td></tr>
-        <tr><td>3</td><td>Acessa a aba de mensageria.</td></tr>
-        <tr><td>4</td><td>Nome da aba atual.</td></tr>
-        <tr><td>5</td><td>Nome do sensor.</td></tr>
-        <tr><td>6</td><td>Descrição do sensor.</td></tr>
-        <tr><td>7</td><td>Valor de offset atual.</td></tr>
-        <tr><td>8</td><td>Valor real forçado.</td></tr>
-        <tr><td>9</td><td>Habilita ou desabilita o valor forçado.</td></tr>
-        <tr><td>10</td><td>Indicador gráfico do valor real e das faixas de alarme.</td></tr>
-        <tr><td>11</td><td>Valor real de saída.</td></tr>
-        <tr><td>12</td><td>Indicação do alarme ativo.</td></tr>
-        <tr><td>13</td><td>Acessa a segunda guia.</td></tr>
-        <tr><td>14</td><td>Fecha o pop-up.</td></tr>
-    </table>
-
-    <p><strong>Tabela 26: Ícones da tela de operação guia 01.</strong></p>
-
-    <h3 id="operacao02">Guia 02 - Operação</h3>
-
-    <p>Figura 27: Tela operação guia 02 - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Habilita ou desabilita os alarmes.</td></tr>
-        <tr><td>2</td><td>Campos para configurar os limites dos alarmes.</td></tr>
-        <tr><td>3</td><td>Retorna à guia 01.</td></tr>
-    </table>
-
-    <p><strong>Tabela 27: Ícones da tela de operação guia 02.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- PARÂMETROS -->
-<section id="parametros">
-
-    <h2>5.1.3 - PARÂMETROS</h2>
-
-    <p>
-        Nesta tela são configurados os valores máximos e mínimos,
-        escala, offset, unidade de medida e filtro digital do sensor.
-    </p>
-
-    <p>
-        Também é possível configurar o modo acumulador, selecionar
-        o tipo de acumulação, definir sua unidade de medida e
-        zerar o valor acumulado.
-    </p>
-
-    <p>
-        Essas configurações são permitidas apenas para usuários
-        de manutenção ou administração.
-    </p>
-
-    <h3 id="parametros01">Guia 01 - Parâmetros</h3>
-
-    <p>Figura 28: Tela parâmetros guia 01 - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Valor analógico de entrada no CLP.</td></tr>
-        <tr><td>2</td><td>Valor de saída dentro da escala definida.</td></tr>
-        <tr><td>3</td><td>Inversão de escala.</td></tr>
-        <tr><td>4</td><td>Valor máximo da escala real.</td></tr>
-        <tr><td>5</td><td>Valor mínimo da escala real.</td></tr>
-        <tr><td>6</td><td>Configuração do offset.</td></tr>
-        <tr><td>7</td><td>Valor mínimo da escala analógica.</td></tr>
-        <tr><td>8</td><td>Valor máximo da escala analógica.</td></tr>
-        <tr><td>9</td><td>Seleção da unidade de medida.</td></tr>
-        <tr><td>10</td><td>Acessa a guia 02.</td></tr>
-    </table>
-
-    <p><strong>Tabela 28: Ícones da tela de parâmetros guia 01.</strong></p>
-
-    <h3 id="parametros02">Guia 02 - Parâmetros</h3>
-
-    <p>Figura 29: Tela parâmetros guia 02 - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Ativa o filtro digital.</td></tr>
-        <tr><td>2</td><td>Configura o intervalo entre as amostras.</td></tr>
-        <tr><td>3</td><td>Define o número de amostras.</td></tr>
-        <tr><td>4</td><td>Retorna à guia 01.</td></tr>
-        <tr><td>5</td><td>Acessa a guia 03.</td></tr>
-    </table>
-
-    <p><strong>Tabela 29: Ícones da tela de parâmetros guia 02.</strong></p>
-
-    <h3 id="parametros03">Guia 03 - Parâmetros</h3>
-
-    <p>Figura 30: Tela parâmetros guia 03 - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Retorna à guia 02.</td></tr>
-        <tr><td>2</td><td>Ativa o modo acumulador.</td></tr>
-        <tr><td>3</td><td>Define o modo de acumulação direta.</td></tr>
-        <tr><td>4</td><td>Define o modo de acumulação por pulsos.</td></tr>
-        <tr><td>5</td><td>Acumula apenas valores positivos.</td></tr>
-        <tr><td>6</td><td>Define a escala do acumulador.</td></tr>
-        <tr><td>7</td><td>Seleciona a unidade de medida do acumulador.</td></tr>
-        <tr><td>8</td><td>Zera o valor acumulado.</td></tr>
-    </table>
-
-    <p><strong>Tabela 30: Ícones da tela de parâmetros guia 03.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- MENSAGERIA -->
-<section id="mensageria">
-
-    <h2>5.1.4 - MENSAGERIA</h2>
-
-    <p>
-        A aba de mensageria dos sensores analógicos não acumulativos
-        possui três telas:
-    </p>
-
-    <ul>
-        <li>Log de ações dos usuários.</li>
-        <li>Alarmes ativos.</li>
-        <li>Gráfico do valor real do sensor na última hora.</li>
-    </ul>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- LOG DE AÇÕES -->
-<section id="logs">
-
-    <h2>5.1.5 - LOG DE AÇÕES</h2>
-
-    <p>Figura 31: Tela mensageria log de ações - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Avança para a tela de alarmes ativos.</td></tr>
-    </table>
-
-    <p><strong>Tabela 31: Ícones da tela log de ações.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- GRÁFICO VALOR REAL -->
-<section id="valorreal">
-
-    <h2>5.1.6 - GRÁFICO VALOR REAL</h2>
-
-    <p>Figura 32: Tela mensageria gráfico valor real sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Retorna à tela anterior.</td></tr>
-        <tr><td>2</td><td>Avança para a tela de gráfico de valor bruto.</td></tr>
-    </table>
-
-    <p><strong>Tabela 32: Ícones da tela gráfico valor real.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- GRÁFICO VALOR BRUTO -->
-<section id="valorbruto">
-
-    <h2>5.1.7 - GRÁFICO VALOR BRUTO</h2>
-
-    <p>Figura 33: Tela mensageria gráfico valor bruto sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Retorna à tela do gráfico de valor real.</td></tr>
-    </table>
-
-    <p><strong>Tabela 33: Ícones da tela gráfico valor bruto.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
-
-<hr>
-
-<!-- ALARMES ATIVOS -->
-<section id="alarmes">
-
-    <h2>5.1.8 - ALARMES ATIVOS</h2>
-
-    <p>Figura 34: Tela mensageria alarmes ativos - Sensor analógico.</p>
-
-    <table border="1">
-        <tr><th>Nº</th><th>Descrição</th></tr>
-        <tr><td>1</td><td>Avança para a tela do gráfico de valor real.</td></tr>
-        <tr><td>2</td><td>Retorna à tela de log de ações.</td></tr>
-    </table>
-
-    <p><strong>Tabela 34: Ícones da tela de alarmes ativos.</strong></p>
-
-    <p><a href="#">Voltar ao menu</a></p>
-
-</section>
+    <!-- FACEPLATE -->
+    <section id="faceplate">
+
+        <h2>5.1.1 - FACEPLATE</h2>
+
+        <p>
+            Cada sensor analógico possui um painel com informações básicas
+            do equipamento, conforme apresentado na FIGURA 25.
+            Ao clicar no painel, é possível acessar sua tela de operação.
+        </p>
+
+        <figure>
+            <img src="./imagens/Capturar25.PNG"
+                 alt="Painel de informações resumidas sensor analógico">
+            <figcaption>FIGURA 25: PAINEL DE INFORMAÇÕES RESUMIDAS SENSOR ANALÓGICO</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Nome do equipamento.</td></tr>
+                <tr><td>2</td><td>Valor real medido.</td></tr>
+                <tr><td>3</td><td>Unidade de medida.</td></tr>
+                <tr><td>4</td><td>Indicador de sinal real forçado.</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 25: ÍCONES DO PAINEL SENSOR ANALÓGICO.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- OPERAÇÃO -->
+    <section id="operacao">
+
+        <h2>5.1.2 - OPERAÇÃO</h2>
+
+        <p>
+            A tela de operação possui duas guias, que apresentam informações
+            do sensor e permitem realizar algumas configurações conforme
+            o nível de acesso do usuário.
+        </p>
+
+        <h3 id="operacao01">GUIA 01 - OPERAÇÃO</h3>
+
+        <figure>
+            <img src="./imagens/Capturar26.PNG"
+                 alt="Tela operação guia 01 - Sensor analógico">
+            <figcaption>FIGURA 26: TELA OPERAÇÃO GUIA 01 - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Acessa a aba de operação.</td></tr>
+                <tr><td>2</td><td>Acessa a aba de parâmetros.</td></tr>
+                <tr><td>3</td><td>Acessa a aba de mensageria.</td></tr>
+                <tr><td>4</td><td>Nome da aba atual.</td></tr>
+                <tr><td>5</td><td>Nome do sensor.</td></tr>
+                <tr><td>6</td><td>Descrição do sensor.</td></tr>
+                <tr><td>7</td><td>Valor de offset atual.</td></tr>
+                <tr><td>8</td><td>Valor real forçado.</td></tr>
+                <tr><td>9</td><td>Habilita ou desabilita o valor forçado.</td></tr>
+                <tr><td>10</td><td>Indicador gráfico do valor real e das faixas de alarme.</td></tr>
+                <tr><td>11</td><td>Valor real de saída.</td></tr>
+                <tr><td>12</td><td>Indicação do alarme ativo.</td></tr>
+                <tr><td>13</td><td>Acessa a segunda guia.</td></tr>
+                <tr><td>14</td><td>Fecha o pop-up.</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 26: ÍCONES DA TELA DE OPERAÇÃO GUIA 01.</strong></p>
+
+        <h3 id="operacao02">GUIA 02 - OPERAÇÃO</h3>
+
+        <figure>
+            <img src="./imagens/Capturar27.PNG"
+                 alt="Tela operação guia 02 - Sensor analógico">
+            <figcaption>FIGURA 27: TELA OPERAÇÃO GUIA 02 - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Habilita ou desabilita os alarmes.</td></tr>
+                <tr><td>2</td><td>Campos para configurar os limites dos alarmes.</td></tr>
+                <tr><td>3</td><td>Retorna à guia 01.</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 27: ÍCONES DA TELA DE OPERAÇÃO GUIA 02.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- PARÂMETROS -->
+    <section id="parametros">
+
+        <h2>5.1.3 - PARÂMETROS</h2>
+
+        <p>
+            Nesta tela são configurados os valores máximos e mínimos,
+            escala, offset, unidade de medida e filtro digital do sensor.
+        </p>
+
+        <p>
+            Também é possível configurar o modo acumulador, selecionar
+            o tipo de acumulação, definir sua unidade de medida e
+            zerar o valor acumulado.
+        </p>
+
+        <p>
+            Essas configurações são permitidas apenas para usuários
+            de manutenção ou administração.
+        </p>
+
+        <h3 id="parametros01">GUIA 01 - PARÂMETROS</h3>
+
+        <figure>
+            <img src="./imagens/Capturar28.PNG"
+                 alt="Tela parâmetros guia 01 - Sensor analógico">
+            <figcaption>FIGURA 28: TELA PARÂMETROS GUIA 01 - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Valor analógico de entrada no CLP.</td></tr>
+                <tr><td>2</td><td>Valor de saída dentro da escala definida.</td></tr>
+                <tr><td>3</td><td>Inversão de escala.</td></tr>
+                <tr><td>4</td><td>Valor máximo da escala real.</td></tr>
+                <tr><td>5</td><td>Valor mínimo da escala real.</td></tr>
+                <tr><td>6</td><td>Configuração do offset.</td></tr>
+                <tr><td>7</td><td>Valor mínimo da escala analógica.</td></tr>
+                <tr><td>8</td><td>Valor máximo da escala analógica.</td></tr>
+                <tr><td>9</td><td>Seleção da unidade de medida.</td></tr>
+                <tr><td>10</td><td>Acessa a guia 02.</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 28: ÍCONES DA TELA DE PARÂMETROS GUIA 01.</strong></p>
+
+        <h3 id="parametros02">GUIA 02 - PARÂMETROS</h3>
+
+        <figure>
+            <img src="./imagens/Capturar29.PNG"
+                 alt="Tela parâmetros guia 02 - Sensor analógico">
+            <figcaption>FIGURA 29: TELA PARÂMETROS GUIA 02 - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Ativa o filtro digital.</td></tr>
+                <tr><td>2</td><td>Configura o intervalo entre as amostras.</td></tr>
+                <tr><td>3</td><td>Define o número de amostras.</td></tr>
+                <tr><td>4</td><td>Retorna à guia 01.</td></tr>
+                <tr><td>5</td><td>Acessa a guia 03.</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 29: ÍCONES DA TELA DE PARÂMETROS GUIA 02.</strong></p>
+
+        <h3 id="parametros03">GUIA 03 - PARÂMETROS</h3>
+
+        <figure>
+            <img src="./imagens/Capturar30.PNG"
+                 alt="Tela parâmetros guia 03 - Sensor analógico">
+            <figcaption>FIGURA 30: TELA PARÂMETROS GUIA 03 - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Retorna à guia 02.</td></tr>
+                <tr><td>2</td><td>Ativa o modo acumulador.</td></tr>
+                <tr><td>3</td><td>Define o modo de acumulação direta.</td></tr>
+                <tr><td>4</td><td>Define o modo de acumulação por pulsos.</td></tr>
+                <tr><td>5</td><td>Acumula apenas valores positivos.</td></tr>
+                <tr><td>6</td><td>Define a escala do acumulador.</td></tr>
+                <tr><td>7</td><td>Seleciona a unidade de medida do acumulador.</td></tr>
+                <tr><td>8</td><td>Zera o valor acumulado.</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 30: ÍCONES DA TELA DE PARÂMETROS GUIA 03.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- MENSAGERIA -->
+    <section id="mensageria">
+
+        <h2>5.1.4 - MENSAGERIA</h2>
+
+        <p>
+            A aba de mensageria dos sensores analógicos não acumulativos
+            possui três telas:
+        </p>
+
+        <ul>
+            <li>Log de ações dos usuários.</li>
+            <li>Alarmes ativos.</li>
+            <li>Gráfico do valor real do sensor na última hora.</li>
+        </ul>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- LOG DE AÇÕES -->
+    <section id="logs">
+
+        <h2>5.1.5 - LOG DE AÇÕES</h2>
+
+        <figure>
+            <img src="./imagens/Capturar31.PNG"
+                 alt="Tela mensageria log de ações sensor analógico">
+            <figcaption>FIGURA 31: TELA MENSAGERIA LOG DE AÇÕES - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Avança para a tela de alarmes ativos.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 31: ÍCONES DA TELA LOG DE AÇÕES.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- GRÁFICO VALOR REAL -->
+    <section id="valorreal">
+
+        <h2>5.1.6 - GRÁFICO VALOR REAL</h2>
+
+        <figure>
+            <img src="./imagens/Capturar32.PNG"
+                 alt="Tela mensageria gráfico valor real sensor analógico">
+            <figcaption>FIGURA 32: TELA MENSAGERIA GRÁFICO VALOR REAL SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Retorna à tela anterior.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Avança para a tela de gráfico de valor bruto.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 32: ÍCONES DA TELA GRÁFICO VALOR REAL.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- GRÁFICO VALOR BRUTO -->
+    <section id="valorbruto">
+
+        <h2>5.1.7 - GRÁFICO VALOR BRUTO</h2>
+
+        <figure>
+            <img src="./imagens/Capturar33.PNG"
+                 alt="Tela mensageria gráfico valor bruto sensor analógico">
+            <figcaption>FIGURA 33: TELA MENSAGERIA GRÁFICO VALOR BRUTO SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Retorna à tela do gráfico de valor real.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 33: ÍCONES DA TELA GRÁFICO VALOR BRUTO.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
+
+    <!-- ALARMES ATIVOS -->
+    <section id="alarmes">
+
+        <h2>5.1.8 - ALARMES ATIVOS</h2>
+
+        <figure>
+            <img src="./imagens/Capturar34.PNG"
+                 alt="Tela mensageria alarmes ativos sensor analógico">
+            <figcaption>FIGURA 34: TELA MENSAGERIA ALARMES ATIVOS - SENSOR ANALÓGICO.</figcaption>
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Avança para a tela do gráfico de valor real.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Retorna à tela de log de ações.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>TABELA 34: ÍCONES DA TELA DE ALARMES ATIVOS.</strong></p>
+
+        <a class="voltar" href="#menu">Voltar ao menu</a>
+
+    </section>
 
 </main>
 
-<hr>
-
 <footer>
+    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
+    <p>Chapecó - Santa Catarina</p>
     <p>Documentação Técnica - Sistema de Automação</p>
     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
 </footer>

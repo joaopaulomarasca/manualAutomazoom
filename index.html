@@ -1,186 +1,373 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Manual - Sumário</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico</title>
 </head>
-<body>
 
-  <style>
+<style>
     :root {
-      color-scheme: light;
-      --azul-escuro: #123b68;
-      --azul: #1769aa;
-      --azul-claro: #eaf4ff;
-      --texto: #18324b;
-      --branco: #fff;
+        color-scheme: light;
+        --azul-escuro: #123b68;
+        --azul: #1769aa;
+        --azul-claro: #eaf4ff;
+        --fundo: #f3f7fc;
+        --texto: #18324b;
+        --borda: #dce7f2;
+        --branco: #ffffff;
     }
 
     * {
-      box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #eaf4ff, #f8fbff);
-      color: var(--texto);
-      font-family: Arial, Helvetica, sans-serif;
-    }   
-  header h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.7rem, 5vw, 2.4rem);
+        margin: 0;
+        padding: 35px 20px;
+        background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+        color: var(--texto);
+        font-family: Arial, Helvetica, sans-serif;
     }
-    header p {
-      margin: 0;
-      color: #e2f0ff;
-    }
-    .menu {
-      display: grid;
-      gap: 12px;
-    }
-    .menu-item {
-      overflow: hidden;
-      border: 1px solid #d5e6f7;
-      border-radius: 12px;
-      background: var(--branco);
-      box-shadow: 0 3px 12px #123b680d;
-    }
-    .menu-item summary {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 17px 20px;
-      color: var(--azul-escuro);
-      font-weight: 700;
-      cursor: pointer;
-      list-style: none;
-    }
-    .menu-item[open] summary {
-      background: var(--azul-claro);
-    }
-  </style>
-<nav class="navbar">
-<h2>MANUAL</h2>
 
-<div class="menu-item">
-<button class="menu-title">1. OPERAÇÕES PADRÕES</button>
-<div class="submenu">
-<a href="./padrao.html">Telas de operação padrões</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">2. PARTIDA DIRETA</button>
-<div class="submenu">
-<a href="./operacaoPadrao.html">Faceplate</a>
-<a href="./operacaoPadrao.html">Operação</a>
-<a href="./operacaoPadrao.html">Parâmetros</a>
-<a href="./operacaoPadrao.html">Mensageria</a>
-<a href="./operacaoPadrao.html">Interlock</a>
-<a href="./operacaoPadrao.html">Diagnóstico de falhas</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">3. INVERSOR DE FREQUÊNCIA</button>
-<div class="submenu">
-<a href="./inversor.html">Faceplate</a>
-<a href="./inversor.html">Operação</a>
-<a href="./inversor.html">Parâmetros do inversor</a>
-<a href="./inversor.html">Diagnóstico de falhas</a>
-<a href="./inversor.html">Parâmetros</a>
-<a href="./inversor.html">Mensageria</a>
-<a href="./inversor.html">Interlock</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">4. SENSOR DIGITAL</button>
-<div class="submenu">
-<a href="./sensorDigital.html">Faceplate</a>
-<a href="./sensorDigital.html">Operação</a>
-<a href="./sensorDigital.html">Parâmetros</a>
-<a href="./sensorDigital.html">Mensageria</a>
-<a href="./sensorDigital.html">Gráfico acionamentos</a>
-<a href="./sensorDigital.html">Log de ações</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">5. SENSOR ANALÓGICO</button>
-<div class="submenu">
-<a href="./sensorAnalogico.html">Faceplate</a>
-<a href="./sensorAnalogico.html">Operação</a>
-<a href="./sensorAnalogico.html">Parâmetros</a>
-<a href="./sensorAnalogico.html">Mensageria</a>
-<a href="./sensorAnalogico.html">Log ações</a>
-<a href="./sensorAnalogico.html">Gráfico valor real</a>
-<a href="./sensorAnalogico.html">Gráfico valor bruto</a>
-<a href="./sensorAnalogico.html">Alarmes ativos</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">6. TEMPORIZADOR ON/OFF</button>
-<div class="submenu">
-<a href="./OnOff.html">Faceplate</a>
-<a href="./OnOff.html">Operação</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">7. ATRASO ON/OFF</button>
-<div class="submenu">
-<a href="./OnOff.html">Faceplate</a>
-<a href="./OnOff.html">Operação</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">8. INTERMITÊNCIA 2 BOMBAS</button>
-<div class="submenu">
-<a href="./intermitencia.html">Faceplate</a>
-<a href="./intermitencia.html">Operação</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">9. VÁLVULA</button>
-<div class="submenu">
-<a href="./valvula.html">Faceplate</a>
-<a href="./valvula.html">Operação</a>
-<a href="./valvula.html">Parâmetros</a>
-<a href="./valvula.html">Mensageria</a>
-<a href="./valvula.html">Interlock</a>
-<a href="./valvula.html">Diagnóstico de falhas</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">10. SENSOR ANALÓGICO ACUMULATIVO</button>
-<div class="submenu">
-<a href="./sensorAcumulativo.html">Faceplate</a>
-<a href="./sensorAcumulativo.html">Operação</a>
-<a href="./sensorAcumulativo.html">Parâmetros</a>
-<a href="./sensorAcumulativo.html">Mensageria</a>
-<a href="./sensorAcumulativo.html">Log de ações</a>
-<a href="./sensorAcumulativo.html">Gráfico valor real</a>
-<a href="./sensorAcumulativo.html">Gráfico valor bruto</a>
-<a href="./sensorAcumulativo.html">Alarmes ativos</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">11. CONTROLE PID</button>
-<div class="submenu">
-<a href="./controlePid.html">Faceplate</a>
-<a href="./controlePid.html">Operação</a>
-<a href="./controlePid.html">Parâmetros</a>
-<a href="./controlePid.html">Mensageria</a>
-<a href="./controlePid.html">Log de ações</a>
-<a href="./controlePid.html">Alarmes ativos</a>
-<a href="./controlePid.html">Gráfico de Setpoint (SP) e PV</a>
-<a href="./controlePid.html">Gráfico do valor de saída do controlador (MV)</a>
-<a href="./controlePid.html">Interlock</a>
-</div>
-</div>
-<div class="menu-item">
-<button class="menu-title">12. CONTATOS</button>
-<div class="submenu">
-<a href="./contatos.html">Contatos</a>
-</div>
-</div>
-</nav>
+   
+
+    header {
+        max-width: 1100px;
+        margin: 0 auto 30px;
+        padding: 30px;
+        color: var(--branco);
+        background: linear-gradient(120deg, var(--azul-escuro), var(--azul));
+        border-radius: 14px;
+        box-shadow: 0 5px 18px #123b6825;
+    }
+
+    header h1 {
+        margin: 0 0 10px;
+        font-size: clamp(24px, 4vw, 32px);
+        letter-spacing: 1px;
+    }
+
+    header p {
+        margin: 0;
+        color: #dcecff;
+        font-size: 14px;
+    }
+
+  
+
+    nav {
+        max-width: 1100px;
+        margin: auto;
+        padding: 25px;
+        background: var(--branco);
+        border: 1px solid var(--borda);
+        border-radius: 14px;
+        box-shadow: 0 4px 18px #123b6810;
+    }
+
+    nav h2 {
+        margin: 0 0 20px;
+        padding-bottom: 15px;
+        color: var(--azul-escuro);
+        font-size: 18px;
+        border-bottom: 2px solid var(--azul-claro);
+        letter-spacing: 0.5px;
+    }
+
+
+    details {
+        margin-bottom: 10px;
+        overflow: hidden;
+        border: 1px solid var(--borda);
+        border-radius: 9px;
+        background: var(--branco);
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    details:hover {
+        border-color: #a9cbed;
+        box-shadow: 0 3px 10px #123b680c;
+    }
+
+    details[open] {
+        border-color: #a9cbed;
+        background: #fbfdff;
+    }
+
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 20px;
+        color: var(--azul-escuro);
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        list-style: none;
+        transition: 0.2s;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary::after {
+        content: "+";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 6px;
+        background: var(--azul-claro);
+        color: var(--azul);
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    details[open] summary {
+        background: var(--azul-claro);
+        color: var(--azul);
+    }
+
+    details[open] summary::after {
+        content: "−";
+    }
+
+    /* SUBMENU */
+
+    details ul {
+        margin: 0;
+        padding: 10px 20px 15px 40px;
+        list-style: none;
+    }
+
+    details li {
+        margin: 5px 0;
+    }
+
+    details li a {
+        display: block;
+        padding: 10px 13px;
+        color: #536b82;
+        font-size: 13px;
+        text-decoration: none;
+        border-left: 3px solid transparent;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+    details li a::before {
+        content: "›";
+        margin-right: 10px;
+        color: var(--azul);
+        font-weight: bold;
+    }
+
+    details li a:hover {
+        color: var(--azul);
+        background: var(--azul-claro);
+        border-left-color: var(--azul);
+        padding-left: 18px;
+    }
+
+  
+
+    main {
+        max-width: 1100px;
+        margin: 25px auto;
+        padding: 30px;
+        background: var(--branco);
+        border: 1px solid var(--borda);
+        border-radius: 14px;
+        box-shadow: 0 4px 18px #123b6810;
+    }
+
+    main h2 {
+        margin-top: 0;
+        color: var(--azul-escuro);
+        font-size: 22px;
+    }
+
+    main p {
+        color: #64788c;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    footer {
+        max-width: 1100px;
+        margin: 30px auto 0;
+        padding: 15px;
+        color: #8295a8;
+        text-align: center;
+        font-size: 12px;
+    }
+   
+</style>
+
+<body>
+
+    <header>
+        <h1>MANUAL TÉCNICO</h1>
+        <p>Documentação técnica | Operação | Configuração de equipamentos</p>
+        <hr>
+    </header>
+
+    <nav>
+        <h2>ÍNDICE DE CONTEÚDO</h2>
+
+        <details>
+            <summary>01. OPERAÇÕES PADRÕES</summary>
+            <ul>
+                <li><a href="./padrao.html">Telas de operação padrões</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>02. PARTIDA DIRETA</summary>
+            <ul>
+                <li><a href="./operacaoPadrao.html">Faceplate</a></li>
+                <li><a href="./operacaoPadrao.html">Operação</a></li>
+                <li><a href="./operacaoPadrao.html">Parâmetros</a></li>
+                <li><a href="./operacaoPadrao.html">Mensageria</a></li>
+                <li><a href="./operacaoPadrao.html">Interlock</a></li>
+                <li><a href="./operacaoPadrao.html">Diagnóstico de falhas</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>03. INVERSOR DE FREQUÊNCIA</summary>
+            <ul>
+                <li><a href="./inversor.html">Faceplate</a></li>
+                <li><a href="./inversor.html">Operação</a></li>
+                <li><a href="./inversor.html">Parâmetros do inversor</a></li>
+                <li><a href="./inversor.html">Diagnóstico de falhas</a></li>
+                <li><a href="./inversor.html">Parâmetros</a></li>
+                <li><a href="./inversor.html">Mensageria</a></li>
+                <li><a href="./inversor.html">Interlock</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>04. SENSOR DIGITAL</summary>
+            <ul>
+                <li><a href="./sensorDigital.html">Faceplate</a></li>
+                <li><a href="./sensorDigital.html">Operação</a></li>
+                <li><a href="./sensorDigital.html">Parâmetros</a></li>
+                <li><a href="./sensorDigital.html">Mensageria</a></li>
+                <li><a href="./sensorDigital.html">Gráfico acionamentos</a></li>
+                <li><a href="./sensorDigital.html">Log de ações</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>05. SENSOR ANALÓGICO</summary>
+            <ul>
+                <li><a href="./sensorAnalogico.html">Faceplate</a></li>
+                <li><a href="./sensorAnalogico.html">Operação</a></li>
+                <li><a href="./sensorAnalogico.html">Parâmetros</a></li>
+                <li><a href="./sensorAnalogico.html">Mensageria</a></li>
+                <li><a href="./sensorAnalogico.html">Log ações</a></li>
+                <li><a href="./sensorAnalogico.html">Gráfico valor real</a></li>
+                <li><a href="./sensorAnalogico.html">Gráfico valor bruto</a></li>
+                <li><a href="./sensorAnalogico.html">Alarmes ativos</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>06. TEMPORIZADOR ON/OFF</summary>
+            <ul>
+                <li><a href="./OnOff.html">Faceplate</a></li>
+                <li><a href="./OnOff.html">Operação</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>07. ATRASO ON/OFF</summary>
+            <ul>
+                <li><a href="./OnOff.html">Faceplate</a></li>
+                <li><a href="./OnOff.html">Operação</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>08. INTERMITÊNCIA 2 BOMBAS</summary>
+            <ul>
+                <li><a href="./intermitencia.html">Faceplate</a></li>
+                <li><a href="./intermitencia.html">Operação</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>09. VÁLVULA</summary>
+            <ul>
+                <li><a href="./valvula.html">Faceplate</a></li>
+                <li><a href="./valvula.html">Operação</a></li>
+                <li><a href="./valvula.html">Parâmetros</a></li>
+                <li><a href="./valvula.html">Mensageria</a></li>
+                <li><a href="./valvula.html">Interlock</a></li>
+                <li><a href="./valvula.html">Diagnóstico de falhas</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>10. SENSOR ANALÓGICO ACUMULATIVO</summary>
+            <ul>
+                <li><a href="./sensorAcumulativo.html">Faceplate</a></li>
+                <li><a href="./sensorAcumulativo.html">Operação</a></li>
+                <li><a href="./sensorAcumulativo.html">Parâmetros</a></li>
+                <li><a href="./sensorAcumulativo.html">Mensageria</a></li>
+                <li><a href="./sensorAcumulativo.html">Log de ações</a></li>
+                <li><a href="./sensorAcumulativo.html">Gráfico valor real</a></li>
+                <li><a href="./sensorAcumulativo.html">Gráfico valor bruto</a></li>
+                <li><a href="./sensorAcumulativo.html">Alarmes ativos</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>11. CONTROLE PID</summary>
+            <ul>
+                <li><a href="./controlePid.html">Faceplate</a></li>
+                <li><a href="./controlePid.html">Operação</a></li>
+                <li><a href="./controlePid.html">Parâmetros</a></li>
+                <li><a href="./controlePid.html">Mensageria</a></li>
+                <li><a href="./controlePid.html">Log de ações</a></li>
+                <li><a href="./controlePid.html">Alarmes ativos</a></li>
+                <li><a href="./controlePid.html">Gráfico de Setpoint (SP) e PV</a></li>
+                <li><a href="./controlePid.html">Gráfico do valor de saída do controlador (MV)</a></li>
+                <li><a href="./controlePid.html">Interlock</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>12. CONTATOS</summary>
+            <ul>
+                <li><a href="./contatos.html">Contatos</a></li>
+            </ul>
+        </details>
+
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>Bem-vindo ao Manual Técnico</h2>
+
+        <p>
+            Selecione um dos capítulos acima para consultar as informações,
+            operações, parâmetros e configurações dos equipamentos.
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Manual Técnico | Documentação de Equipamentos</p>
+    </footer>
+
 </body>
 </html>

@@ -4,8 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inversor de Frequência</title>
+    <title>Documentação - Inversor de Frequência</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef3f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12345a;
+            color: #fff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 20px 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            color: #12345a;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        nav li {
+            margin-bottom: 6px;
+        }
+
+        nav a {
+            color: #1d527f;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+            padding: 25px;
+            margin-bottom: 25px;
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            color: #12345a;
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dce6f1;
+        }
+
+        h3 {
+            color: #1d527f;
+            font-size: 18px;
+            margin: 25px 0 15px;
+        }
+
+        h4 {
+            color: #12345a;
+            font-size: 16px;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid #d5dfeb;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid #cbd7e4;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #dce8f3;
+            color: #12345a;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f8fb;
+        }
+
+        td ul {
+            padding-left: 20px;
+        }
+
+        td li {
+            margin-bottom: 3px;
+        }
+
+        main ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .legenda {
+            text-align: center;
+            font-weight: bold;
+            color: #12345a;
+            font-size: 14px;
+            margin: 15px 0 25px;
+        }
+
+        .voltar {
+            margin-top: 20px;
+        }
+
+        .voltar a {
+            color: #1d527f;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .voltar a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #dce6f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            nav, main {
+                margin: 15px auto;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
@@ -14,13 +234,13 @@
 
     <nav>
         <h3>MENU PRINCIPAL</h3>
+
         <ul>
             <li><a href="#faceplate">3.1.1 FACEPLATE</a></li>
             <li><a href="#operacao">3.1.2 OPERAÇÃO</a></li>
-            <li>
-                <a href="#parametros-inversor">3.1.3 PARÂMETROS DO INVERSOR</a>
-            </li>
+            <li><a href="#parametros-inversor">3.1.3 PARÂMETROS DO INVERSOR</a></li>
             <li><a href="#diagnostico-falhas">3.1.4 DIAGNÓSTICO DE FALHAS</a></li>
+
             <li>
                 <a href="#parametros">3.1.5 PARÂMETROS</a>
                 <ul>
@@ -28,6 +248,7 @@
                     <li><a href="#parametros-guia-02">Guia 02</a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="#mensageria">3.1.6 MENSAGERIA</a>
                 <ul>
@@ -37,12 +258,14 @@
                     <li><a href="#falhas-ativas">Falhas ativas</a></li>
                 </ul>
             </li>
+
             <li><a href="#interlock">3.1.7 INTERLOCK</a></li>
         </ul>
     </nav>
 
     <main>
 
+        <!-- FACEPLATE -->
         <section id="faceplate">
             <h2>3.1.1 FACEPLATE</h2>
 
@@ -51,11 +274,13 @@
                 Ao clicar nesse painel, é possível acessar a tela de operação do inversor.
             </p>
 
-            <p><strong>FIGURA 9: FACEPLATE INVERSOR DE FREQUÊNCIA.</strong></p>
+            <img src="./imagens/Capturar9.PNG" alt="Faceplate Inversor">
+
+            <p class="legenda">FIGURA 9: FACEPLATE INVERSOR DE FREQUÊNCIA.</p>
 
             <h3>ÍCONES FACEPLATE INVERSORES</h3>
 
-            <table border="1">
+            <table>
                 <tr>
                     <th>Ícone</th>
                     <th>Descrição</th>
@@ -103,13 +328,12 @@
                 </tr>
             </table>
 
-            <p><strong>TABELA 9: ÍCONES FACEPLATE – INVERSORES.</strong></p>
+            <p class="legenda">TABELA 9: ÍCONES FACEPLATE – INVERSORES.</p>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
-        <hr>
-
+        <!-- OPERAÇÃO -->
         <section id="operacao">
             <h2>3.1.2 OPERAÇÃO</h2>
 
@@ -118,11 +342,13 @@
                 com diferenças nas configurações e na visualização do setpoint de velocidade.
             </p>
 
-            <p><strong>FIGURA 10: OPERAÇÃO 01 INVERSOR.</strong></p>
+            <img src="./imagens/Capturar10.PNG" alt="Operação Inversor">
+
+            <p class="legenda">FIGURA 10: OPERAÇÃO 01 INVERSOR.</p>
 
             <h3>ÍCONES TELA DE OPERAÇÃO - INVERSORES</h3>
 
-            <table border="1">
+            <table>
                 <tr>
                     <th>Ícone</th>
                     <th>Descrição</th>
@@ -179,21 +405,22 @@
                 </tr>
             </table>
 
-            <p><strong>TABELA 10: ÍCONES TELA DE OPERAÇÃO – INVERSORES.</strong></p>
+            <p class="legenda">TABELA 10: ÍCONES TELA DE OPERAÇÃO – INVERSORES.</p>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
-        <hr>
-
+        <!-- PARÂMETROS DO INVERSOR -->
         <section id="parametros-inversor">
             <h2>3.1.3 PARÂMETROS DO INVERSOR</h2>
 
-            <p><strong>FIGURA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES.</strong></p>
+            <img src="./imagens/Capturar11.PNG" alt="Parâmetros Inversor">
+
+            <p class="legenda">FIGURA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES.</p>
 
             <h3>ÍCONES TELA DE PARÂMETROS - INVERSORES</h3>
 
-            <table border="1">
+            <table>
                 <tr>
                     <th>Ícone</th>
                     <th>Descrição</th>
@@ -204,13 +431,12 @@
                 </tr>
             </table>
 
-            <p><strong>TABELA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES.</strong></p>
+            <p class="legenda">TABELA 11: TELA PARÂMETROS ADICIONAIS – INVERSORES.</p>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
-        <hr>
-
+        <!-- DIAGNÓSTICO DE FALHAS -->
         <section id="diagnostico-falhas">
             <h2>3.1.4 DIAGNÓSTICO DE FALHAS</h2>
 
@@ -220,11 +446,11 @@
                 As falhas e condições inadequadas são indicadas em cinza escuro.
             </p>
 
-            <p><strong>FIGURA 12: TELA DIAGNÓSTICO DE FALHAS - INVERSOR.</strong></p>
+            <p class="legenda">FIGURA 12: TELA DIAGNÓSTICO DE FALHAS - INVERSOR.</p>
 
             <h3>ÍCONES TELA DIAGNÓSTICO DE FALHAS - INVERSOR</h3>
 
-            <table border="1">
+            <table>
                 <tr>
                     <th>Ícone</th>
                     <th>Descrição</th>
@@ -233,13 +459,14 @@
                 <tr><td>2</td><td>Indicador de status ativo.</td></tr>
             </table>
 
-            <p><strong>TABELA 12: ÍCONES TELA DIAGNÓSTICO DE FALHAS - INVERSOR.</strong></p>
+            <img src="./imagens/Capturar12.PNG" alt="Diagnóstico de falhas - Inversor">
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="legenda">TABELA 12: ÍCONES TELA DIAGNÓSTICO DE FALHAS - INVERSOR.</p>
+
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
-        <hr>
-
+        <!-- PARÂMETROS -->
         <section id="parametros">
             <h2>3.1.5 PARÂMETROS</h2>
 
@@ -251,11 +478,13 @@
             <div id="parametros-guia-01">
                 <h3>GUIA 01</h3>
 
-                <p><strong>FIGURA 13: ABA PARÂMETROS DO INVERSOR.</strong></p>
+                <img src="./imagens/Capturar13.PNG" alt="Parâmetros">
+
+                <p class="legenda">FIGURA 13: ABA PARÂMETROS DO INVERSOR.</p>
 
                 <h3>ÍCONES ABA PARÂMETROS - INVERSOR</h3>
 
-                <table border="1">
+                <table>
                     <tr>
                         <th>Ícone</th>
                         <th>Descrição</th>
@@ -271,17 +500,19 @@
                     <tr><td>9</td><td>Visualiza os parâmetros e as leituras do inversor.</td></tr>
                 </table>
 
-                <p><strong>TABELA 13: ÍCONES ABA PARÂMETROS - INVERSOR.</strong></p>
+                <p class="legenda">TABELA 13: ÍCONES ABA PARÂMETROS - INVERSOR.</p>
             </div>
 
             <div id="parametros-guia-02">
                 <h3>GUIA 02</h3>
 
-                <p><strong>FIGURA 14: ABA PARÂMETROS DO INVERSOR.</strong></p>
+                <img src="./imagens/Capturar14.PNG" alt="Parâmetros Guia 02">
+
+                <p class="legenda">FIGURA 14: ABA PARÂMETROS DO INVERSOR.</p>
 
                 <h3>ÍCONES ABA PARÂMETROS - INVERSOR</h3>
 
-                <table border="1">
+                <table>
                     <tr>
                         <th>Ícone</th>
                         <th>Descrição</th>
@@ -299,20 +530,17 @@
                     <tr><td>11</td><td>Indica o resultado da comunicação ou ação com o inversor.</td></tr>
                 </table>
 
-                <p><strong>TABELA 14: ÍCONES ABA PARÂMETROS - INVERSOR.</strong></p>
+                <p class="legenda">TABELA 14: ÍCONES ABA PARÂMETROS - INVERSOR.</p>
             </div>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
-        <hr>
-
+        <!-- MENSAGERIA -->
         <section id="mensageria">
             <h2>3.1.6 MENSAGERIA</h2>
 
-            <p>
-                A aba de mensageria possui quatro guias:
-            </p>
+            <p>A aba de mensageria possui quatro guias:</p>
 
             <ul>
                 <li>Histórico de ações dos usuários.</li>
@@ -324,9 +552,11 @@
             <div id="log-acoes">
                 <h3>3.1.6.1 LOG DE AÇÕES</h3>
 
-                <p><strong>FIGURA 15: TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.</strong></p>
+                <img src="./imagens/Capturar15.PNG" alt="Log de ações">
 
-                <table border="1">
+                <p class="legenda">FIGURA 15: TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.</p>
+
+                <table>
                     <tr>
                         <th>Ícone</th>
                         <th>Descrição</th>
@@ -337,15 +567,17 @@
                     </tr>
                 </table>
 
-                <p><strong>TABELA 15: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.</strong></p>
+                <p class="legenda">TABELA 15: ÍCONES TELA MENSAGERIA LOG DE AÇÕES - INVERSOR.</p>
             </div>
 
             <div id="grafico-velocidade">
                 <h3>3.1.6.2 GRÁFICO VELOCIDADE</h3>
 
-                <p><strong>FIGURA 16: TELA MENSAGERIA GRÁFICO DE VELOCIDADE - INVERSOR.</strong></p>
+                <img src="./imagens/Capturar16.PNG" alt="Gráfico de velocidade">
 
-                <table border="1">
+                <p class="legenda">FIGURA 16: TELA MENSAGERIA GRÁFICO DE VELOCIDADE - INVERSOR.</p>
+
+                <table>
                     <tr>
                         <th>Ícone</th>
                         <th>Descrição</th>
@@ -356,15 +588,17 @@
                     </tr>
                 </table>
 
-                <p><strong>TABELA 16: ÍCONES TELA MENSAGERIA GRÁFICO VELOCIDADE - INVERSOR.</strong></p>
+                <p class="legenda">TABELA 16: ÍCONES TELA MENSAGERIA GRÁFICO VELOCIDADE - INVERSOR.</p>
             </div>
 
             <div id="grafico-corrente">
                 <h3>3.1.6.3 GRÁFICO CORRENTE</h3>
 
-                <p><strong>FIGURA 17: TELA MENSAGERIA GRÁFICO CORRENTE - INVERSOR.</strong></p>
+                <img src="./imagens/Capturar17.PNG" alt="Gráfico de corrente">
 
-                <table border="1">
+                <p class="legenda">FIGURA 17: TELA MENSAGERIA GRÁFICO CORRENTE - INVERSOR.</p>
+
+                <table>
                     <tr>
                         <th>Ícone</th>
                         <th>Descrição</th>
@@ -373,15 +607,17 @@
                     <tr><td>2</td><td>Avança para a próxima tela (gráfico de velocidade).</td></tr>
                 </table>
 
-                <p><strong>TABELA 17: ÍCONES TELA MENSAGERIA GRÁFICO SETPOINT - INVERSOR.</strong></p>
+                <p class="legenda">TABELA 17: ÍCONES TELA MENSAGERIA GRÁFICO SETPOINT - INVERSOR.</p>
             </div>
 
             <div id="falhas-ativas">
                 <h3>3.1.6.4 FALHAS ATIVAS</h3>
 
-                <p><strong>FIGURA 18: TELA MENSAGERIA FALHAS ATIVAS - INVERSOR.</strong></p>
+                <img src="./imagens/Capturar18.PNG" alt="Falhas ativas">
 
-                <table border="1">
+                <p class="legenda">FIGURA 18: TELA MENSAGERIA FALHAS ATIVAS - INVERSOR.</p>
+
+                <table>
                     <tr>
                         <th>Ícone</th>
                         <th>Descrição</th>
@@ -390,14 +626,13 @@
                     <tr><td>2</td><td>Avança para a próxima tela (gráfico de corrente).</td></tr>
                 </table>
 
-                <p><strong>TABELA 18: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - INVERSOR.</strong></p>
+                <p class="legenda">TABELA 18: ÍCONES TELA MENSAGERIA ALARMES ATIVOS - INVERSOR.</p>
             </div>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
-        <hr>
-
+        <!-- INTERLOCK -->
         <section id="interlock">
             <h2>3.1.7 INTERLOCK</h2>
 
@@ -408,11 +643,13 @@
                 "LIVRE" é apresentada, informando que o equipamento está desbloqueado.
             </p>
 
-            <p><strong>FIGURA 19: TELA INTERLOCK – INVERSOR.</strong></p>
+            <img src="./imagens/Capturar19.PNG" alt="Tela Interlock Inversor">
+
+            <p class="legenda">FIGURA 19: TELA INTERLOCK – INVERSOR.</p>
 
             <h3>ÍCONES ABA DE INTERLOCK - INVERSOR</h3>
 
-            <table border="1">
+            <table>
                 <tr>
                     <th>Ícone</th>
                     <th>Descrição</th>
@@ -426,18 +663,18 @@
                 <tr><td>7</td><td>Indica que o equipamento está livre de bloqueios por interlock.</td></tr>
             </table>
 
-            <p><strong>TABELA 19: ÍCONES ABA DE INTERLOCK - POP UP INVERSOR.</strong></p>
+            <p class="legenda">TABELA 19: ÍCONES ABA DE INTERLOCK - POP UP INVERSOR.</p>
 
-            <p><a href="#">Voltar ao menu</a></p>
+            <p class="voltar"><a href="#">Voltar ao menu</a></p>
         </section>
 
     </main>
 
-    <footer>
-        <hr>
-        <p>Documentação Técnica - Sistema de Automação</p>
-        <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
-    </footer>
-
+  <footer>
+    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
+    <p>Chapecó - Santa Catarina</p>
+    <p>Documentação Técnica - Sistema de Automação</p>
+     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
+</footer>
 </body>
 </html>
