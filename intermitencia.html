@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentação - Intermitência 2 Bombas</title>
 
-    <style>
+    <meta name="description" content="Documentação técnica do sistema de intermitência de duas bombas - Automazoom Soluções Industriais">
+
+    <title>8.1 - Intermitência 2 Bombas | Automazoom</title>
+
+        <style>
         * {
             margin: 0;
             padding: 0;
@@ -33,14 +36,52 @@
             margin-bottom: 5px;
         }
 
-        header p {
+        header h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 20px 25px;
+            background-color: #fff;
+            border: 1px solid #d5dfeb;
+            border-radius: 6px;
+        }
+
+        nav h3 {
+            color: #12345a;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        nav li {
+            margin-bottom: 6px;
+        }
+
+        nav a {
+            color: #1d527f;
+            text-decoration: none;
             font-size: 14px;
-            color: #dce6f1;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         main {
             max-width: 1100px;
-            margin: 30px auto;
+            margin: 25px auto;
             padding: 0 20px;
         }
 
@@ -50,6 +91,7 @@
             border-radius: 6px;
             padding: 25px;
             margin-bottom: 25px;
+            scroll-margin-top: 20px;
         }
 
         h2 {
@@ -66,12 +108,6 @@
             margin: 25px 0 15px;
         }
 
-        h4 {
-            color: #12345a;
-            font-size: 16px;
-            margin: 20px 0 10px;
-        }
-
         p {
             margin-bottom: 15px;
             text-align: justify;
@@ -86,18 +122,31 @@
             border-radius: 4px;
         }
 
-        ol {
-            padding-left: 25px;
-            margin: 15px 0;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
         }
 
-        ol li {
-            margin-bottom: 12px;
-            padding-left: 5px;
-            text-align: justify;
+        th, td {
+            border: 1px solid #cbd7e4;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
         }
 
-        .figure-caption {
+        th {
+            background-color: #dce8f3;
+            color: #12345a;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f8fb;
+        }
+
+        .legenda {
             text-align: center;
             font-weight: bold;
             color: #12345a;
@@ -105,22 +154,32 @@
             margin: 15px 0 25px;
         }
 
+        .voltar {
+            margin-top: 20px;
+        }
+
+        .voltar a {
+            color: #1d527f;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .voltar a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #12345a;
             color: #fff;
             text-align: center;
-            padding: 18px;
+            padding: 20px;
             margin-top: 40px;
             font-size: 13px;
         }
 
-        footer a {
-            color: #dce6f1;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        footer p {
+            text-align: center;
+            margin-bottom: 5px;
         }
 
         @media (max-width: 600px) {
@@ -128,9 +187,14 @@
                 font-size: 20px;
             }
 
-            main {
-                padding: 0 12px;
-                margin: 20px auto;
+            header h2 {
+                font-size: 17px;
+            }
+
+            nav, main {
+                margin: 15px auto;
+                padding-left: 12px;
+                padding-right: 12px;
             }
 
             section {
@@ -139,6 +203,14 @@
 
             h2 {
                 font-size: 19px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
             }
         }
     </style>
@@ -149,138 +221,258 @@
     <header>
         <h1>DOCUMENTAÇÃO TÉCNICA</h1>
         <p>8.1 - INTERMITÊNCIA 2 BOMBAS</p>
+        <div class="header-line"></div>
     </header>
 
     <main>
 
-        <section>
-            <h2>8.1 INTERMITÊNCIA 2 BOMBAS</h2>
+        <nav class="menu" aria-label="Navegação da documentação">
+            <a href="#introducao">INTRODUÇÃO</a>
+            <a href="#faceplate">8.1.1 - FACEPLATE</a>
+            <a href="#operacao">8.1.2 - OPERAÇÃO</a>
+        </nav>
+
+        <section id="introducao">
+
+            <h2>8.1 - INTERMITÊNCIA 2 BOMBAS</h2>
 
             <p>
-                A popup de intermitência de duas bombas se refere a uma configuração
-                adicional para algumas bombas, que irão operar de forma intercalada
-                uma com a outra.
-            </p>
-
-            <h3>8.1.1 FACEPLATE</h3>
-
-            <img src="./imagens/Capturar39.PNG" alt="Faceplate temporizador ON/OFF">
-
-            <p>
-                Para cada equipamento no sistema que possuir a configuração de
-                temporizador, existirá um símbolo próximo do mesmo (o qual é mostrado
-                na FIGURA 39), que abrirá a popup do temporizador quando for realizado
-                um clique nele.
+                A funcionalidade de intermitência de duas bombas consiste em uma
+                configuração adicional aplicada a determinados equipamentos do
+                sistema, permitindo que duas bombas operem de forma alternada
+                entre si.
             </p>
 
             <p>
-                Na FIGURA 40 é mostrada a popup com suas configurações.
+                O sistema permite configurar diferentes modos de funcionamento,
+                possibilitando a alternância automática entre as bombas conforme
+                os parâmetros definidos pelo operador.
             </p>
 
-            <img src="./imagens/Capturar40.PNG" alt="Popup intermitência 2 bombas">
-
-            <p class="figure-caption">
-                FIGURA 39: FACEPLATE TEMPORIZADOR ON/OFF
-            </p>
-
-            <h3>8.1.2 OPERAÇÃO</h3>
-
-            <p class="figure-caption">
-                FIGURA 40: POP UP INTERMITÊNCIA 2 BOMBAS
-            </p>
-
-            <h4>ÍCONES POP UP INTERMITÊNCIA</h4>
-
-            <ol>
-                <li>
-                    Descrição indicando as bombas em intermitência controladas na popup.
-                </li>
-
-                <li>
-                    Indicador de comando automático para acionamento das bombas.
-                    Com a cor escura e sem ponto de exclamação dentro indica que não
-                    há sinal/comando, círculo azul com ponto de exclamação interno
-                    indica que há sinal/comando.
-                </li>
-
-                <li>
-                    Botão para alterar o modo de intermitência para alternância,
-                    cada vez que for dado o comando para ligar uma das bombas,
-                    ligará uma bomba diferente.
-                </li>
-
-                <li>
-                    Botão para alterar o modo de intermitência para modo por tempo,
-                    contará o tempo definido e após este tempo desligará a bomba
-                    e ligará a outra pelo mesmo período de tempo.
-                </li>
-
-                <li>
-                    Indicador do tipo barra do tempo decorrido, conforme o tempo
-                    decorrido for aumentando a barra verde aumenta, indicando o
-                    percentual de tempo decorrido.
-                </li>
-
-                <li>
-                    Botão de seleção de modo automático e manual.
-                </li>
-
-                <li>
-                    Botão invisível para ligar o equipamento.
-                </li>
-
-                <li>
-                    Indicador de equipamento indisponível.
-                </li>
-
-                <li>
-                    Verificar linha 4 da TABELA 4-9, os status vão ser os iguais.
-                </li>
-
-                <li>
-                    Botão fechar popup.
-                </li>
-
-                <li>
-                    Botão habilita bomba 2 para acionar em modo manual.
-                </li>
-
-                <li>
-                    Botão habilita bomba 1 para acionar em modo manual.
-                </li>
-
-                <li>
-                    Tempo em segundos de bomba ligada no modo de intermitência por tempo.
-                </li>
-
-                <li>
-                    Tempo em minutos de bomba ligada no modo de intermitência por tempo.
-                </li>
-
-                <li>
-                    Tempo em horas de bomba ligada no modo de intermitência por tempo.
-                </li>
-
-                <li>
-                    Seleção do modo de operação, sendo Intermitência, somente Motor 01
-                    ou Motor 02 e Ambos.
-                </li>
-            </ol>
-
-            <p class="figure-caption">
-                TABELA 40: ÍCONES POP UP INTERMITÊNCIA
-            </p>
+            <div class="info">
+                <p>
+                    <strong>Objetivo:</strong> permitir o revezamento automático
+                    entre duas bombas, proporcionando flexibilidade na operação
+                    do sistema.
+                </p>
+            </div>
 
         </section>
 
+        <section id="faceplate">
+
+            <h2>8.1.1 - FACEPLATE</h2>
+
+            <p>
+                Para cada equipamento do sistema que possuir a funcionalidade
+                de temporizador, será disponibilizado um símbolo de identificação
+                próximo ao equipamento, conforme apresentado na Figura 39.
+            </p>
+
+            <p>
+                Ao clicar nesse símbolo, será aberta a janela de configuração
+                (popup), permitindo ao operador acessar os parâmetros e modos
+                de funcionamento da intermitência.
+            </p>
+
+            <figure>
+                <img
+                    src="./imagens/Capturar39.PNG"
+                    alt="Faceplate do temporizador ON/OFF"
+                    loading="lazy"
+                >
+                <figcaption>
+                    FIGURA 39 - FACEPLATE TEMPORIZADOR ON/OFF
+                </figcaption>
+            </figure>
+
+            <p>
+                A Figura 40 apresenta a janela de configuração da intermitência
+                de duas bombas, na qual estão disponíveis os comandos,
+                indicadores e parâmetros necessários para a operação.
+            </p>
+
+            <figure>
+                <img
+                    src="./imagens/Capturar40.PNG"
+                    alt="Popup de configuração da intermitência de duas bombas"
+                    loading="lazy"
+                >
+                <figcaption>
+                    FIGURA 40 - POPUP INTERMITÊNCIA 2 BOMBAS
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <section id="operacao">
+
+            <h2>8.1.2 - OPERAÇÃO</h2>
+
+            <h4>DESCRIÇÃO DOS ÍCONES DA POPUP DE INTERMITÊNCIA</h4>
+
+            <p>
+                A seguir, são apresentados os elementos disponíveis na janela
+                de intermitência, juntamente com suas respectivas funções:
+            </p>
+        <table>
+           <tbody>
+            <ol class="lista-icones">
+               
+
+<table>
+    <tr>
+        <th>Ícone</th>
+        <th>Descrição</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>
+            Descrição que identifica as bombas configuradas para operar
+            em intermitência e que são controladas pela popup.
+        </td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>
+            Indicador de comando automático para acionamento das bombas.
+            Quando apresentado na cor escura, sem ponto de exclamação,
+            indica ausência de sinal/comando. Quando apresentado em azul,
+            com ponto de exclamação, indica presença de sinal/comando.
+        </td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>
+            Botão responsável por selecionar o modo de alternância.
+            A cada novo comando de acionamento, o sistema selecionará
+            uma bomba diferente.
+        </td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>
+            Botão responsável por selecionar o modo de operação por tempo.
+            Nesse modo, o sistema contabiliza o tempo configurado e,
+            ao final do período, desliga a bomba em operação e aciona
+            a outra pelo mesmo intervalo.
+        </td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>
+            Indicador gráfico em formato de barra que representa o tempo
+            decorrido. Conforme o tempo avança, a barra verde aumenta,
+            demonstrando o percentual já transcorrido.
+        </td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>
+            Botão para seleção do modo de operação automático ou manual.
+        </td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>
+            Botão de acionamento do equipamento, com comando
+            disponibilizado por elemento invisível na interface.
+        </td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td>
+            Indicador de indisponibilidade do equipamento.
+        </td>
+    </tr>
+
+    <tr>
+        <td>9</td>
+        <td>
+            Os estados correspondentes devem seguir as condições
+            descritas na linha 4 da Tabela 4-9.
+        </td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td>
+            Botão utilizado para fechar a janela de configuração (popup).
+        </td>
+    </tr>
+
+    <tr>
+        <td>11</td>
+        <td>
+            Botão de habilitação da Bomba 2 para acionamento no modo manual.
+        </td>
+    </tr>
+
+    <tr>
+        <td>12</td>
+        <td>
+            Botão de habilitação da Bomba 1 para acionamento no modo manual.
+        </td>
+    </tr>
+
+    <tr>
+        <td>13</td>
+        <td>
+            Campo de configuração do tempo, em segundos, durante o qual
+            a bomba permanecerá ligada no modo de intermitência por tempo.
+        </td>
+    </tr>
+
+    <tr>
+        <td>14</td>
+        <td>
+            Campo de configuração do tempo, em minutos, durante o qual
+            a bomba permanecerá ligada no modo de intermitência por tempo.
+        </td>
+    </tr>
+
+    <tr>
+        <td>15</td>
+        <td>
+            Campo de configuração do tempo, em horas, durante o qual
+            a bomba permanecerá ligada no modo de intermitência por tempo.
+        </td>
+    </tr>
+
+    <tr>
+        <td>16</td>
+        <td>
+            Seleção do modo de operação, permitindo escolher entre
+            Intermitência, Somente Motor 01, Somente Motor 02 ou Ambos.
+        </td>
+    </tr>
+</table>
+
+    
     </main>
 
-<footer>
-    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
-    <p>Chapecó - Santa Catarina</p>
-    <p>Documentação Técnica - Sistema de Automação</p>
-     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
-</footer>
+    <footer>
+
+        <p class="empresa">
+            AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS
+        </p>
+
+        <p>Chapecó - Santa Catarina</p>
+        <p>Documentação Técnica - Sistema de Automação</p>
+
+        <a href="./index.html">
+            ← VOLTAR À PÁGINA INICIAL
+        </a>
+
+    </footer>
 
 </body>
 </html>
