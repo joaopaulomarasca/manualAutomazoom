@@ -1,249 +1,326 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte - Automazoom</title>
 
-  <style>
+    <meta name="description" content="Central de suporte da Automazoom - Soluções Industriais. Entre em contato com nossa equipe.">
+
+    <title>Central de Suporte | Automazoom</title>
+
+    <style>
+        :root {
+            --primary: #12345a;
+            --secondary: #1d527f;
+            --background: #eef3f8;
+            --white: #ffffff;
+            --border: #d5dfeb;
+            --text: #333333;
+            --muted: #64748b;
+            --accent: #2878b9;
+        }
+
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #eef3f8;
-            color: #333;
+            background: var(--background);
+            color: var(--text);
             line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
+        /* CABEÇALHO */
+
         header {
-            background: #12345a;
-            color: #fff;
+            background: linear-gradient(135deg, #12345a, #1d527f);
+            color: var(--white);
             text-align: center;
-            padding: 30px 20px;
+            padding: 45px 20px;
+        }
+
+        .logo {
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            opacity: 0.9;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 26px;
+            font-size: 32px;
+            margin-bottom: 12px;
         }
 
-        nav {
-            max-width: 1100px;
-            margin: 25px auto;
+        header p {
+            font-size: 16px;
+            color: #dce8f3;
+            max-width: 550px;
+            margin: auto;
+        }
+
+        /* CONTEÚDO */
+
+        main {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .titulo-secao {
+            color: var(--primary);
+            font-size: 21px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #dce8f3;
+        }
+
+        .descricao {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 35px;
+        }
+
+        /* CARTÕES */
+
+        .contatos {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
             padding: 25px;
-            background: #fff;
-            border: 1px solid #d5dfeb;
-            border-radius: 6px;
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
         }
 
-        nav h3 {
-            margin-top: 0;
-            color: #12345a;
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(18, 52, 90, 0.09);
         }
 
-        nav ul {
-            padding-left: 22px;
-            margin-bottom: 0;
+        .card h2 {
+            color: var(--primary);
+            font-size: 19px;
+            margin-bottom: 15px;
         }
 
-        nav li {
-            margin: 7px 0;
+        .card p {
+            margin: 12px 0;
+            overflow-wrap: anywhere;
         }
 
-        a {
-            color: #1d527f;
+        .card strong {
+            color: var(--primary);
+        }
+
+        .card a {
+            color: var(--accent);
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
         }
 
-        a:hover {
+        .card a:hover {
+            color: var(--primary);
             text-decoration: underline;
         }
 
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 0 20px 30px;
+        .icone {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: #e8f1f9;
+            color: var(--secondary);
+            border-radius: 8px;
+            font-size: 21px;
+            margin-bottom: 12px;
         }
 
-        section {
-            background: #fff;
-            border: 1px solid #d5dfeb;
-            border-radius: 6px;
-            padding: 25px;
-            margin: 25px auto;
-        }
+        /* RODAPÉ */
 
-        section h2 {
-            color: #12345a;
-            border-bottom: 2px solid #dce8f3;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
-        section h3 {
-            color: #1d527f;
-            margin-top: 25px;
-        }
-
-        p {
-            text-align: justify;
-        }
-
-        figure {
-            margin: 25px auto;
+        footer {
+            background: var(--primary);
+            color: var(--white);
             text-align: center;
+            padding: 30px 20px;
+            margin-top: auto;
         }
 
-        figure img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-            border: 1px solid #d5dfeb;
-            border-radius: 4px;
+        footer p {
+            margin: 5px 0;
         }
 
-        figcaption {
-            margin-top: 10px;
-            font-size: 14px;
+        footer .empresa {
             font-weight: bold;
-            color: #345b7d;
+            letter-spacing: 1px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background: #fff;
-        }
-
-        th,
-        td {
-            border: 1px solid #cbd7e4;
-            padding: 11px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background: #dce8f3;
-            color: #12345a;
-        }
-
-        tr:nth-child(even) {
-            background: #f5f8fb;
-        }
-
-        td ul {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding-left: 22px;
+        footer .documentacao {
+            color: #cbd9e8;
+            font-size: 14px;
         }
 
         .voltar {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 18px;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 6px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 14px;
             font-weight: bold;
+            transition: background 0.2s;
         }
 
-        footer {
-            background: #12345a;
-            color: #fff;
-            text-align: center;
-            padding: 25px 15px;
-            margin-top: 30px;
+        .voltar:hover {
+            background: rgba(255,255,255,0.12);
         }
 
-        footer p {
-            text-align: center;
-            margin: 5px 0;
-        }
+        /* RESPONSIVIDADE */
 
-        footer a {
-            display: inline-block;
-            margin-top: 12px;
-            color: #fff;
-            font-weight: bold;
-        }
+        @media (max-width: 650px) {
 
-        @media (max-width: 600px) {
             header {
-                padding: 22px 15px;
+                padding: 35px 18px;
             }
 
             header h1 {
-                font-size: 22px;
-            }
-
-            nav,
-            section {
-                padding: 18px;
-                margin: 15px;
+                font-size: 26px;
             }
 
             main {
-                padding: 0 5px 20px;
+                margin: 25px auto;
+                padding: 0 15px;
             }
 
-            table {
-                font-size: 13px;
+            .contatos {
+                grid-template-columns: 1fr;
             }
 
-            th,
-            td {
-                padding: 8px;
+            .card {
+                padding: 20px;
+            }
+
+            footer {
+                padding: 25px 15px;
             }
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <header>
 
         <div class="logo">AUTOMAZOOM</div>
 
         <h1>Central de Suporte</h1>
-<p class="descricao">
-    Em caso de dúvidas referentes ao sistema,<br>
-    entre em contato com nossa equipe.<br>
-    Estamos à disposição para ajudar!
-</p>
+
+        <p>
+            Em caso de dúvidas referentes ao sistema,
+            entre em contato com nossa equipe.
+            Estamos à disposição para ajudar!
+        </p>
+
+    </header>
+
+    <main>
+
+        <p class="descricao">
+            Confira abaixo nossos canais de atendimento
+            e informações comerciais.
+        </p>
+
+        <h2 class="titulo-secao">
+            Informações e Contatos
+        </h2>
 
 
-        <h2>INFORMAÇÕES COMERCIAIS</h2>
 
-        <div class="contatos">
+            <section class="card">
 
-            <p>
-                <strong>Telefone:</strong>
-                <a href="tel:+554930255255">(49) 3025-5255</a>
-            </p>
+          
 
-            <p>
-                <strong>E-mail:</strong>
-                <a href="mailto:automazoom@automazoom.com.br">
-                    automazoom@automazoom.com.br
-                </a>
-            </p>
+                <h2>Informações Comerciais</h2>
 
-            <p>
-                <strong>Suporte:</strong> Nome: Suporte
-                <strong>Telefone do suporte:</strong>
-                <a href="tel:+5549999195489">(49) 9 9919-5489</a>
-            </p>
-        </div>
-        
-    </div>
+                <p>
+                    <strong>Telefone:</strong><br>
+
+                    <a href="tel:+554930255255">
+                        (49) 3025-5255
+                    </a>
+                </p>
+
+                <p>
+                    <strong>E-mail:</strong><br>
+
+                    <a href="mailto:automazoom@automazoom.com.br">
+                        automazoom@automazoom.com.br
+                    </a>
+                </p>
+                  <h2>Suporte Técnico</h2>
+
+                <p>
+                    <strong>Responsável:</strong><br>
+                    Equipe de Suporte
+                </p>
+
+                <p>
+                    <strong>Telefone do suporte:</strong><br>
+
+                    <a href="tel:+5549999195489">
+                        (49) 9 9919-5489
+                    </a>
+                </p>
+
+            </section>
+
+    </main>
+
     <footer>
-    <p><strong>AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS</strong></p>
-    <p>Chapecó - Santa Catarina</p>
-    <p>Documentação Técnica - Sistema de Automação</p>
-     <a href="./index.html">VOLTAR À PÁGINA INICIAL</a>
-</footer>
+
+        <p class="empresa">
+            AUTOMAZOOM - SOLUÇÕES INDUSTRIAIS
+        </p>
+
+        <p>Chapecó - Santa Catarina</p>
+
+        <p class="documentacao">
+            Documentação Técnica - Sistema de Automação
+        </p>
+
+        <a class="voltar" href="./index.html">
+            ← VOLTAR À PÁGINA INICIAL
+        </a>
+
+    </footer>
+
 </body>
 </html>
